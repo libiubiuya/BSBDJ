@@ -19,6 +19,25 @@
 
 @implementation HYTabBarController
 
++ (void)load
+{
+    // 设置tabBar的字体属性
+    UITabBarItem *item = [UITabBarItem appearance];
+    
+    // 正常状态
+    NSMutableDictionary *itemNor = [NSMutableDictionary dictionary];
+    itemNor[NSFontAttributeName] = HYTabBarItemFontSize
+    itemNor[NSForegroundColorAttributeName] = [UIColor grayColor];
+    [item setTitleTextAttributes:itemNor forState:UIControlStateNormal];
+    
+    // 选中状态
+    NSMutableDictionary *itemSel = [NSMutableDictionary dictionary];
+    itemSel[NSFontAttributeName] = HYTabBarItemFontSize
+    itemSel[NSForegroundColorAttributeName] = HYTabBarItemFontColor
+    [item setTitleTextAttributes:itemSel forState:UIControlStateSelected];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -72,7 +91,7 @@
     UIViewController *new = self.childViewControllers[1];
     new.tabBarItem.title = @"新帖";
     new.tabBarItem.image = [UIImage imageNamed:@"tabBar_new_icon"];
-    new.tabBarItem.selectedImage = [UIImage imageNamedWithOriginalImage:@"tabBar_essence_click_icon"];
+    new.tabBarItem.selectedImage = [UIImage imageNamedWithOriginalImage:@"tabBar_new_click_icon"];
     
     // 关注
     UIViewController *friendTrends = self.childViewControllers[2];
