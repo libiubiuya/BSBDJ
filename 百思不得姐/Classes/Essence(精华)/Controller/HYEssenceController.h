@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HYEssenceController.h
 //  百思不得姐
 //
 //  Created by 李好一 on 16/1/12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HYEssenceController : UIViewController
 
 @end
-

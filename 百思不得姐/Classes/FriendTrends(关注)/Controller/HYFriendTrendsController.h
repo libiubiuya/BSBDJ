@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  HYFriendTrendsController.h
 //  百思不得姐
 //
 //  Created by 李好一 on 16/1/12.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface HYFriendTrendsController : UIViewController
 
 @end
-

@@ -8,24 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		C478DBF11C45358800164830 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DBF01C45358800164830 /* main.m */; };
-		C478DBF41C45358800164830 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DBF31C45358800164830 /* AppDelegate.m */; };
-		C478DBF71C45358800164830 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DBF61C45358800164830 /* ViewController.m */; };
-		C478DBFA1C45358800164830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C478DBF81C45358800164830 /* Main.storyboard */; };
 		C478DBFC1C45358800164830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C478DBFB1C45358800164830 /* Assets.xcassets */; };
-		C478DBFF1C45358800164830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C478DBFD1C45358800164830 /* LaunchScreen.storyboard */; };
+		C478DC2E1C453BD500164830 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC241C453BD500164830 /* AppDelegate.m */; };
+		C478DC311C453F6D00164830 /* HYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC301C453F6D00164830 /* HYTabBarController.m */; };
+		C478DC341C4544A900164830 /* HYEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC331C4544A900164830 /* HYEssenceController.m */; };
+		C478DC371C4544CF00164830 /* HYFriendTrendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC361C4544CF00164830 /* HYFriendTrendsController.m */; };
+		C478DC3A1C4544F000164830 /* HYMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC391C4544F000164830 /* HYMeController.m */; };
+		C478DC3D1C4544FF00164830 /* HYNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC3C1C4544FF00164830 /* HYNewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C478DBEC1C45358800164830 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C478DBF01C45358800164830 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C478DBF21C45358800164830 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C478DBF31C45358800164830 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C478DBF51C45358800164830 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C478DBF61C45358800164830 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C478DBF91C45358800164830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C478DBFB1C45358800164830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C478DBFE1C45358800164830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C478DC001C45358800164830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C478DC231C453BD500164830 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C478DC241C453BD500164830 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C478DC2F1C453F6D00164830 /* HYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTabBarController.h; sourceTree = "<group>"; };
+		C478DC301C453F6D00164830 /* HYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTabBarController.m; sourceTree = "<group>"; };
+		C478DC321C4544A900164830 /* HYEssenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYEssenceController.h; sourceTree = "<group>"; };
+		C478DC331C4544A900164830 /* HYEssenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYEssenceController.m; sourceTree = "<group>"; };
+		C478DC351C4544CF00164830 /* HYFriendTrendsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYFriendTrendsController.h; sourceTree = "<group>"; };
+		C478DC361C4544CF00164830 /* HYFriendTrendsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYFriendTrendsController.m; sourceTree = "<group>"; };
+		C478DC381C4544EF00164830 /* HYMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYMeController.h; sourceTree = "<group>"; };
+		C478DC391C4544F000164830 /* HYMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYMeController.m; sourceTree = "<group>"; };
+		C478DC3B1C4544FF00164830 /* HYNewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYNewController.h; sourceTree = "<group>"; };
+		C478DC3C1C4544FF00164830 /* HYNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYNewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,8 @@
 		C478DBEE1C45358800164830 /* 百思不得姐 */ = {
 			isa = PBXGroup;
 			children = (
-				C478DBF21C45358800164830 /* AppDelegate.h */,
-				C478DBF31C45358800164830 /* AppDelegate.m */,
-				C478DBF51C45358800164830 /* ViewController.h */,
-				C478DBF61C45358800164830 /* ViewController.m */,
-				C478DBF81C45358800164830 /* Main.storyboard */,
+				C478DC061C453BD500164830 /* Classes */,
 				C478DBFB1C45358800164830 /* Assets.xcassets */,
-				C478DBFD1C45358800164830 /* LaunchScreen.storyboard */,
 				C478DC001C45358800164830 /* Info.plist */,
 				C478DBEF1C45358800164830 /* Supporting Files */,
 			);
@@ -77,6 +80,281 @@
 				C478DBF01C45358800164830 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C478DC061C453BD500164830 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C478DC071C453BD500164830 /* AD(广告) */,
+				C478DC0B1C453BD500164830 /* Essence(精华) */,
+				C478DC0F1C453BD500164830 /* FriendTrends(关注) */,
+				C478DC131C453BD500164830 /* Me(我) */,
+				C478DC1A1C453BD500164830 /* New(新帖) */,
+				C478DC1E1C453BD500164830 /* Other(其他) */,
+				C478DC281C453BD500164830 /* Setting(设置) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C478DC071C453BD500164830 /* AD(广告) */ = {
+			isa = PBXGroup;
+			children = (
+				C478DC081C453BD500164830 /* Controller */,
+				C478DC091C453BD500164830 /* Model */,
+				C478DC0A1C453BD500164830 /* View */,
+			);
+			path = "AD(广告)";
+			sourceTree = "<group>";
+		};
+		C478DC081C453BD500164830 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C478DC091C453BD500164830 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C478DC0A1C453BD500164830 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C478DC0B1C453BD500164830 /* Essence(精华) */ = {
+			isa = PBXGroup;
+			children = (
+				C478DC0C1C453BD500164830 /* Controller */,
+				C478DC0D1C453BD500164830 /* Model */,
+				C478DC0E1C453BD500164830 /* View */,
+			);
+			path = "Essence(精华)";
+			sourceTree = "<group>";
+		};
+		C478DC0C1C453BD500164830 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C478DC321C4544A900164830 /* HYEssenceController.h */,
+				C478DC331C4544A900164830 /* HYEssenceController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C478DC0D1C453BD500164830 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C478DC0E1C453BD500164830 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C478DC0F1C453BD500164830 /* FriendTrends(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				C478DC101C453BD500164830 /* Controller */,
+				C478DC111C453BD500164830 /* Model */,
+				C478DC121C453BD500164830 /* View */,
+			);
+			path = "FriendTrends(关注)";
+			sourceTree = "<group>";
+		};
+		C478DC101C453BD500164830 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C478DC351C4544CF00164830 /* HYFriendTrendsController.h */,
+				C478DC361C4544CF00164830 /* HYFriendTrendsController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C478DC111C453BD500164830 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C478DC121C453BD500164830 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C478DC131C453BD500164830 /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				C478DC141C453BD500164830 /* Controller */,
+				C478DC151C453BD500164830 /* Model */,
+				C478DC161C453BD500164830 /* View */,
+			);
+			path = "Me(我)";
+			sourceTree = "<group>";
+		};
+		C478DC141C453BD500164830 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C478DC381C4544EF00164830 /* HYMeController.h */,
+				C478DC391C4544F000164830 /* HYMeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C478DC151C453BD500164830 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C478DC161C453BD500164830 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C478DC1A1C453BD500164830 /* New(新帖) */ = {
+			isa = PBXGroup;
+			children = (
+				C478DC1B1C453BD500164830 /* Controller */,
+				C478DC1C1C453BD500164830 /* Model */,
+				C478DC1D1C453BD500164830 /* View */,
+			);
+			path = "New(新帖)";
+			sourceTree = "<group>";
+		};
+		C478DC1B1C453BD500164830 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C478DC3B1C4544FF00164830 /* HYNewController.h */,
+				C478DC3C1C4544FF00164830 /* HYNewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C478DC1C1C453BD500164830 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C478DC1D1C453BD500164830 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C478DC1E1C453BD500164830 /* Other(其他) */ = {
+			isa = PBXGroup;
+			children = (
+				C478DC1F1C453BD500164830 /* Category */,
+				C478DC201C453BD500164830 /* Controller */,
+				C478DC211C453BD500164830 /* Model */,
+				C478DC221C453BD500164830 /* System */,
+				C478DC251C453BD500164830 /* Tool */,
+				C478DC271C453BD500164830 /* View */,
+			);
+			path = "Other(其他)";
+			sourceTree = "<group>";
+		};
+		C478DC1F1C453BD500164830 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C478DC201C453BD500164830 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C478DC2F1C453F6D00164830 /* HYTabBarController.h */,
+				C478DC301C453F6D00164830 /* HYTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C478DC211C453BD500164830 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C478DC221C453BD500164830 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				C478DC231C453BD500164830 /* AppDelegate.h */,
+				C478DC241C453BD500164830 /* AppDelegate.m */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		C478DC251C453BD500164830 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				C478DC261C453BD500164830 /* DataTool */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		C478DC261C453BD500164830 /* DataTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataTool;
+			sourceTree = "<group>";
+		};
+		C478DC271C453BD500164830 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C478DC281C453BD500164830 /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				C478DC291C453BD500164830 /* Controller */,
+				C478DC2A1C453BD500164830 /* Model */,
+				C478DC2B1C453BD500164830 /* View */,
+			);
+			path = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		C478DC291C453BD500164830 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C478DC2A1C453BD500164830 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C478DC2B1C453BD500164830 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +383,7 @@
 		C478DBE41C45358800164830 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HY;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "李好一";
 				TargetAttributes = {
@@ -137,9 +416,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C478DBFF1C45358800164830 /* LaunchScreen.storyboard in Resources */,
 				C478DBFC1C45358800164830 /* Assets.xcassets in Resources */,
-				C478DBFA1C45358800164830 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,32 +427,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C478DBF71C45358800164830 /* ViewController.m in Sources */,
-				C478DBF41C45358800164830 /* AppDelegate.m in Sources */,
+				C478DC341C4544A900164830 /* HYEssenceController.m in Sources */,
+				C478DC311C453F6D00164830 /* HYTabBarController.m in Sources */,
+				C478DC3D1C4544FF00164830 /* HYNewController.m in Sources */,
+				C478DC371C4544CF00164830 /* HYFriendTrendsController.m in Sources */,
 				C478DBF11C45358800164830 /* main.m in Sources */,
+				C478DC3A1C4544F000164830 /* HYMeController.m in Sources */,
+				C478DC2E1C453BD500164830 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C478DBF81C45358800164830 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C478DBF91C45358800164830 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C478DBFD1C45358800164830 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C478DBFE1C45358800164830 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C478DC011C45358800164830 /* Debug */ = {
@@ -262,10 +524,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lihaoyi.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -273,10 +538,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lihaoyi.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
