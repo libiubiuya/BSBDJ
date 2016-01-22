@@ -66,25 +66,25 @@
     UIViewController *essence = self.childViewControllers[0];
     essence.tabBarItem.title = @"精华";
     essence.tabBarItem.image = [UIImage imageNamed:@"tabBar_essence_icon"];
-    essence.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_essence_click_icon"];
+    essence.tabBarItem.selectedImage = [UIImage imageNamedWithOriginalImage:@"tabBar_essence_click_icon"];
     
     // 新帖
     UIViewController *new = self.childViewControllers[1];
     new.tabBarItem.title = @"新帖";
     new.tabBarItem.image = [UIImage imageNamed:@"tabBar_new_icon"];
-    new.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_essence_click_icon"];
+    new.tabBarItem.selectedImage = [UIImage imageNamedWithOriginalImage:@"tabBar_essence_click_icon"];
     
     // 关注
     UIViewController *friendTrends = self.childViewControllers[2];
     friendTrends.tabBarItem.title = @"关注";
     friendTrends.tabBarItem.image = [UIImage imageNamed:@"tabBar_friendTrends_icon"];
-    friendTrends.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_friendTrends_click_icon"];
+    friendTrends.tabBarItem.selectedImage = [UIImage imageNamedWithOriginalImage:@"tabBar_friendTrends_click_icon"];
     
     // 我
     UIViewController *me = self.childViewControllers[3];
     me.tabBarItem.title = @"我";
     me.tabBarItem.image = [UIImage imageNamed:@"tabBar_me_icon"];
-    me.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_me_click_icon"];
+    me.tabBarItem.selectedImage = [UIImage imageNamedWithOriginalImage:@"tabBar_me_click_icon"];
 }
 
 
