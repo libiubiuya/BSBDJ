@@ -17,6 +17,8 @@
 		C48B75EE1C52E28100004871 /* UIImage+HYOriginal.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B75ED1C52E28100004871 /* UIImage+HYOriginal.m */; };
 		C48B75F91C55F39800004871 /* HYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B75F61C55F39800004871 /* HYTabBarController.m */; };
 		C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B75FB1C55F3C700004871 /* HYTabBar.m */; };
+		C48B75FF1C5641CD00004871 /* UIView+HYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B75FE1C5641CD00004871 /* UIView+HYFrame.m */; };
+		C48B76021C564EF600004871 /* UIBarButtonItem+HYItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B76011C564EF600004871 /* UIBarButtonItem+HYItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,10 @@
 		C48B75F61C55F39800004871 /* HYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTabBarController.m; sourceTree = "<group>"; };
 		C48B75FA1C55F3C700004871 /* HYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTabBar.h; sourceTree = "<group>"; };
 		C48B75FB1C55F3C700004871 /* HYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTabBar.m; sourceTree = "<group>"; };
+		C48B75FD1C5641CD00004871 /* UIView+HYFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HYFrame.h"; sourceTree = "<group>"; };
+		C48B75FE1C5641CD00004871 /* UIView+HYFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HYFrame.m"; sourceTree = "<group>"; };
+		C48B76001C564EF600004871 /* UIBarButtonItem+HYItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HYItem.h"; sourceTree = "<group>"; };
+		C48B76011C564EF600004871 /* UIBarButtonItem+HYItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HYItem.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +289,10 @@
 			children = (
 				C48B75EC1C52E28100004871 /* UIImage+HYOriginal.h */,
 				C48B75ED1C52E28100004871 /* UIImage+HYOriginal.m */,
+				C48B75FD1C5641CD00004871 /* UIView+HYFrame.h */,
+				C48B75FE1C5641CD00004871 /* UIView+HYFrame.m */,
+				C48B76001C564EF600004871 /* UIBarButtonItem+HYItem.h */,
+				C48B76011C564EF600004871 /* UIBarButtonItem+HYItem.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -448,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C48B75F91C55F39800004871 /* HYTabBarController.m in Sources */,
+				C48B75FF1C5641CD00004871 /* UIView+HYFrame.m in Sources */,
 				C478DC341C4544A900164830 /* HYEssenceController.m in Sources */,
 				C48B75EE1C52E28100004871 /* UIImage+HYOriginal.m in Sources */,
 				C478DC3D1C4544FF00164830 /* HYNewController.m in Sources */,
@@ -455,6 +466,7 @@
 				C478DBF11C45358800164830 /* main.m in Sources */,
 				C478DC3A1C4544F000164830 /* HYMeController.m in Sources */,
 				C478DC2E1C453BD500164830 /* AppDelegate.m in Sources */,
+				C48B76021C564EF600004871 /* UIBarButtonItem+HYItem.m in Sources */,
 				C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

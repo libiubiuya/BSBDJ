@@ -16,22 +16,39 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // 设置导航栏内容
+    [self setUpNavigationContent];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setUpNavigationContent
+{
+    self.navigationItem.title = @"百思不得姐";
+    
+    // 左边的barButtonItem
+    UIBarButtonItem *leftBtnItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"comment-bar-keyboard"] highImage:[UIImage imageNamed:@"comment-bar-keyboard-click"] target:self action:@selector(btnClick)];
+    self.navigationItem.leftBarButtonItem = leftBtnItem;
+    
+    // 右边的barButtonItem
+    UIBarButtonItem *rightBtnItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"comment_bar_at_icon"] highImage:[UIImage imageNamed:@"comment_bar_at_icon_click"] target:self action:@selector(btnClick)];
+    self.navigationItem.rightBarButtonItem = rightBtnItem;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)btnClick
+{
+    NSLog(@"%s", __func__);
 }
-*/
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+

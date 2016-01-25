@@ -36,8 +36,8 @@
     
     NSInteger count = self.items.count + 1;
     
-    CGFloat btnW = self.bounds.size.width / count;
-    CGFloat btnH = self.bounds.size.height;
+    CGFloat btnW = self.width / count;
+    CGFloat btnH = self.height;
     CGFloat btnX = 0;
     CGFloat btnY = 0;
     
