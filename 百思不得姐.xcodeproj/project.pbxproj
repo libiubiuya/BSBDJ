@@ -10,12 +10,13 @@
 		C478DBF11C45358800164830 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DBF01C45358800164830 /* main.m */; };
 		C478DBFC1C45358800164830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C478DBFB1C45358800164830 /* Assets.xcassets */; };
 		C478DC2E1C453BD500164830 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC241C453BD500164830 /* AppDelegate.m */; };
-		C478DC311C453F6D00164830 /* HYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC301C453F6D00164830 /* HYTabBarController.m */; };
 		C478DC341C4544A900164830 /* HYEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC331C4544A900164830 /* HYEssenceController.m */; };
 		C478DC371C4544CF00164830 /* HYFriendTrendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC361C4544CF00164830 /* HYFriendTrendsController.m */; };
 		C478DC3A1C4544F000164830 /* HYMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC391C4544F000164830 /* HYMeController.m */; };
 		C478DC3D1C4544FF00164830 /* HYNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC3C1C4544FF00164830 /* HYNewController.m */; };
 		C48B75EE1C52E28100004871 /* UIImage+HYOriginal.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B75ED1C52E28100004871 /* UIImage+HYOriginal.m */; };
+		C48B75F91C55F39800004871 /* HYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B75F61C55F39800004871 /* HYTabBarController.m */; };
+		C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B75FB1C55F3C700004871 /* HYTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +26,6 @@
 		C478DC001C45358800164830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C478DC231C453BD500164830 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C478DC241C453BD500164830 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C478DC2F1C453F6D00164830 /* HYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTabBarController.h; sourceTree = "<group>"; };
-		C478DC301C453F6D00164830 /* HYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTabBarController.m; sourceTree = "<group>"; };
 		C478DC321C4544A900164830 /* HYEssenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYEssenceController.h; sourceTree = "<group>"; };
 		C478DC331C4544A900164830 /* HYEssenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYEssenceController.m; sourceTree = "<group>"; };
 		C478DC351C4544CF00164830 /* HYFriendTrendsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYFriendTrendsController.h; sourceTree = "<group>"; };
@@ -38,6 +37,10 @@
 		C48B75EC1C52E28100004871 /* UIImage+HYOriginal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HYOriginal.h"; sourceTree = "<group>"; };
 		C48B75ED1C52E28100004871 /* UIImage+HYOriginal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HYOriginal.m"; sourceTree = "<group>"; };
 		C48B75EF1C52E42A00004871 /* HYPCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPCH.pch; sourceTree = "<group>"; };
+		C48B75F51C55F39800004871 /* HYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTabBarController.h; sourceTree = "<group>"; };
+		C48B75F61C55F39800004871 /* HYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTabBarController.m; sourceTree = "<group>"; };
+		C48B75FA1C55F3C700004871 /* HYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTabBar.h; sourceTree = "<group>"; };
+		C48B75FB1C55F3C700004871 /* HYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,7 @@
 		C478DC061C453BD500164830 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C48B75F31C55F39800004871 /* Main(主要) */,
 				C478DC071C453BD500164830 /* AD(广告) */,
 				C478DC0B1C453BD500164830 /* Essence(精华) */,
 				C478DC0F1C453BD500164830 /* FriendTrends(关注) */,
@@ -268,11 +272,8 @@
 			isa = PBXGroup;
 			children = (
 				C478DC1F1C453BD500164830 /* Category */,
-				C478DC201C453BD500164830 /* Controller */,
-				C478DC211C453BD500164830 /* Model */,
 				C478DC221C453BD500164830 /* System */,
 				C478DC251C453BD500164830 /* Tool */,
-				C478DC271C453BD500164830 /* View */,
 			);
 			path = "Other(其他)";
 			sourceTree = "<group>";
@@ -284,22 +285,6 @@
 				C48B75ED1C52E28100004871 /* UIImage+HYOriginal.m */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		C478DC201C453BD500164830 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				C478DC2F1C453F6D00164830 /* HYTabBarController.h */,
-				C478DC301C453F6D00164830 /* HYTabBarController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		C478DC211C453BD500164830 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		C478DC221C453BD500164830 /* System */ = {
@@ -324,13 +309,6 @@
 			children = (
 			);
 			path = DataTool;
-			sourceTree = "<group>";
-		};
-		C478DC271C453BD500164830 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		C478DC281C453BD500164830 /* Setting(设置) */ = {
@@ -360,6 +338,41 @@
 		C478DC2B1C453BD500164830 /* View */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C48B75F31C55F39800004871 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				C48B75F41C55F39800004871 /* Controller */,
+				C48B75F71C55F39800004871 /* Model */,
+				C48B75F81C55F39800004871 /* View */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		C48B75F41C55F39800004871 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C48B75F51C55F39800004871 /* HYTabBarController.h */,
+				C48B75F61C55F39800004871 /* HYTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C48B75F71C55F39800004871 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C48B75F81C55F39800004871 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C48B75FA1C55F3C700004871 /* HYTabBar.h */,
+				C48B75FB1C55F3C700004871 /* HYTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -434,14 +447,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48B75F91C55F39800004871 /* HYTabBarController.m in Sources */,
 				C478DC341C4544A900164830 /* HYEssenceController.m in Sources */,
 				C48B75EE1C52E28100004871 /* UIImage+HYOriginal.m in Sources */,
-				C478DC311C453F6D00164830 /* HYTabBarController.m in Sources */,
 				C478DC3D1C4544FF00164830 /* HYNewController.m in Sources */,
 				C478DC371C4544CF00164830 /* HYFriendTrendsController.m in Sources */,
 				C478DBF11C45358800164830 /* main.m in Sources */,
 				C478DC3A1C4544F000164830 /* HYMeController.m in Sources */,
 				C478DC2E1C453BD500164830 /* AppDelegate.m in Sources */,
+				C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

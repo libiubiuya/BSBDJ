@@ -11,6 +11,7 @@
 #import "HYFriendTrendsController.h"
 #import "HYNewController.h"
 #import "HYMeController.h"
+#import "HYTabBar.h"
 
 
 @interface HYTabBarController ()
@@ -46,6 +47,10 @@
     
     // tabBar的内容
     [self addTabBarButtonContent];
+    
+    // 添加tabBar
+    HYTabBar *tabBar = [[HYTabBar alloc] init];
+    [self setValue:tabBar forKeyPath:@"tabBar"];
     
 }
 
