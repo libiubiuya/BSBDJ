@@ -10,6 +10,28 @@
 
 @interface UIBarButtonItem (HYItem)
 
+/**
+ *  设置导航栏按钮高亮状态
+ *
+ *  @param image     原始图片
+ *  @param highImage 高亮图片
+ *  @param target    作用对象
+ *  @param action    执行方法
+ *
+ *  @return UIBarButtonItem
+ */
 + (UIBarButtonItem *)itemWithImage:(UIImage *)image highImage:(UIImage *)highImage target:(nullable id)target action:(nonnull SEL)action;
+
+/**
+ *  设置导航栏按钮选中状态
+ *
+ *  @param image     原始图片
+ *  @param highImage 选中图片
+ *  @param target    作用对象
+ *  @param action    执行方法
+ *
+ *  @return UIBarButtonItem
+ */
++ (UIBarButtonItem *)itemWithImage:(UIImage *)image selImage:(UIImage *)selImage target:(nullable id)target action:(nonnull SEL)action;
 
 @end

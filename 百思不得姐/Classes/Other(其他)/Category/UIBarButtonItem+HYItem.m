@@ -10,11 +10,23 @@
 
 @implementation UIBarButtonItem (HYItem)
 
+/** 高亮图片 */
 + (UIBarButtonItem *)itemWithImage:(UIImage *)image highImage:(UIImage *)highImage target:(nullable id)target action:(nonnull SEL)action
 {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setImage:image forState:UIControlStateNormal];
     [button setImage:highImage forState:UIControlStateHighlighted];
+    [button sizeToFit];
+    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    return [[UIBarButtonItem alloc] initWithCustomView:button];
+}
+
+/** 选中图片 */
++ (UIBarButtonItem *)itemWithImage:(UIImage *)image selImage:(UIImage *)selImage target:(nullable id)target action:(nonnull SEL)action
+{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:image forState:UIControlStateNormal];
+    [button setImage:selImage forState:UIControlStateSelected];
     [button sizeToFit];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     return [[UIBarButtonItem alloc] initWithCustomView:button];

@@ -26,11 +26,11 @@
     self.navigationItem.title = @"百思不得姐";
     
     // 左边的barButtonItem
-    UIBarButtonItem *leftBtnItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"comment-bar-keyboard"] highImage:[UIImage imageNamed:@"comment-bar-keyboard-click"] target:self action:@selector(btnClick)];
+    UIBarButtonItem *leftBtnItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"nav_item_game_icon"] highImage:[UIImage imageNamed:@"nav_item_game_click_icon"] target:self action:@selector(btnClick)];
     self.navigationItem.leftBarButtonItem = leftBtnItem;
     
     // 右边的barButtonItem
-    UIBarButtonItem *rightBtnItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"comment_bar_at_icon"] highImage:[UIImage imageNamed:@"comment_bar_at_icon_click"] target:self action:@selector(btnClick)];
+    UIBarButtonItem *rightBtnItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"navigationButtonRandom"] highImage:[UIImage imageNamed:@"navigationButtonRandomClick"] target:self action:@selector(btnClick)];
     self.navigationItem.rightBarButtonItem = rightBtnItem;
 }
 
