@@ -25,6 +25,8 @@
 {
     UIBarButtonItem *leftItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"friendsRecommentIcon"] highImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] target:self action:@selector(btnClick)];
     self.navigationItem.leftBarButtonItem = leftItem;
+    
+    self.navigationItem.title = @"关注";
 }
 
 - (void)btnClick

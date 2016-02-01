@@ -25,6 +25,9 @@
 {
     UIBarButtonItem *leftItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"MainTagSubIcon"] selImage:[UIImage imageNamed:@"MainTagSubIconClick"] target:self action:@selector(btnClick)];
     self.navigationItem.leftBarButtonItem = leftItem;
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    self.navigationItem.titleView = imageView;
 }
 
 - (void)btnClick

@@ -19,6 +19,7 @@
 		C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B75FB1C55F3C700004871 /* HYTabBar.m */; };
 		C48B75FF1C5641CD00004871 /* UIView+HYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B75FE1C5641CD00004871 /* UIView+HYFrame.m */; };
 		C48B76021C564EF600004871 /* UIBarButtonItem+HYItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B76011C564EF600004871 /* UIBarButtonItem+HYItem.m */; };
+		C4CB4E281C5EF563006FE981 /* HYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CB4E271C5EF563006FE981 /* HYSettingController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		C48B75FE1C5641CD00004871 /* UIView+HYFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HYFrame.m"; sourceTree = "<group>"; };
 		C48B76001C564EF600004871 /* UIBarButtonItem+HYItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HYItem.h"; sourceTree = "<group>"; };
 		C48B76011C564EF600004871 /* UIBarButtonItem+HYItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HYItem.m"; sourceTree = "<group>"; };
+		C4CB4E261C5EF563006FE981 /* HYSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSettingController.h; sourceTree = "<group>"; };
+		C4CB4E271C5EF563006FE981 /* HYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSettingController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +104,12 @@
 			children = (
 				C48B75F31C55F39800004871 /* Main(主要) */,
 				C478DC071C453BD500164830 /* AD(广告) */,
+				C478DC281C453BD500164830 /* Setting(设置) */,
 				C478DC0B1C453BD500164830 /* Essence(精华) */,
 				C478DC0F1C453BD500164830 /* FriendTrends(关注) */,
 				C478DC131C453BD500164830 /* Me(我) */,
 				C478DC1A1C453BD500164830 /* New(新帖) */,
 				C478DC1E1C453BD500164830 /* Other(其他) */,
-				C478DC281C453BD500164830 /* Setting(设置) */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -334,6 +337,8 @@
 		C478DC291C453BD500164830 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C4CB4E261C5EF563006FE981 /* HYSettingController.h */,
+				C4CB4E271C5EF563006FE981 /* HYSettingController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -468,6 +473,7 @@
 				C478DC2E1C453BD500164830 /* AppDelegate.m in Sources */,
 				C48B76021C564EF600004871 /* UIBarButtonItem+HYItem.m in Sources */,
 				C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */,
+				C4CB4E281C5EF563006FE981 /* HYSettingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

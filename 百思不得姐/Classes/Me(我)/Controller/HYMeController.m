@@ -7,6 +7,7 @@
 //
 
 #import "HYMeController.h"
+#import "HYSettingController.h"
 
 @interface HYMeController ()
 
@@ -26,12 +27,19 @@
     UIBarButtonItem *settingItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-setting-icon"] highImage:[UIImage imageNamed:@"mine-setting-icon-click"] target:self action:@selector(setting)];
     UIBarButtonItem *moonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-moon-icon"] selImage:[UIImage imageNamed:@"mine-moon-icon-click"] target:self action:@selector(moon:)];
     self.navigationItem.rightBarButtonItems = @[settingItem, moonItem];
+    
+    self.navigationItem.title = @"我的";
 }
 
 // 设置界面
 - (void)setting
 {
+    HYSettingController *setting = [[HYSettingController alloc] init];
     
+    // 隐藏tabBar
+    self.hidesBottomBarWhenPushed = YES;
+    
+    [self.navigationController pushViewController:setting animated:YES];
 }
 
 - (void)moon:(UIButton *)button

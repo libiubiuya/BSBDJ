@@ -23,8 +23,6 @@
 
 - (void)setUpNavigationContent
 {
-    self.navigationItem.title = @"百思不得姐";
-    
     // 左边的barButtonItem
     UIBarButtonItem *leftBtnItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"nav_item_game_icon"] highImage:[UIImage imageNamed:@"nav_item_game_click_icon"] target:self action:@selector(btnClick)];
     self.navigationItem.leftBarButtonItem = leftBtnItem;
@@ -32,6 +30,9 @@
     // 右边的barButtonItem
     UIBarButtonItem *rightBtnItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"navigationButtonRandom"] highImage:[UIImage imageNamed:@"navigationButtonRandomClick"] target:self action:@selector(btnClick)];
     self.navigationItem.rightBarButtonItem = rightBtnItem;
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    self.navigationItem.titleView = imageView;
 }
 
 - (void)btnClick
