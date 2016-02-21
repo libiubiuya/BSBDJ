@@ -20,6 +20,7 @@
 		C48B75FF1C5641CD00004871 /* UIView+HYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B75FE1C5641CD00004871 /* UIView+HYFrame.m */; };
 		C48B76021C564EF600004871 /* UIBarButtonItem+HYItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B76011C564EF600004871 /* UIBarButtonItem+HYItem.m */; };
 		C4CB4E281C5EF563006FE981 /* HYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CB4E271C5EF563006FE981 /* HYSettingController.m */; };
+		C4CB4E2B1C5F7F0B006FE981 /* HYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CB4E2A1C5F7F0B006FE981 /* HYNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		C48B76011C564EF600004871 /* UIBarButtonItem+HYItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HYItem.m"; sourceTree = "<group>"; };
 		C4CB4E261C5EF563006FE981 /* HYSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSettingController.h; sourceTree = "<group>"; };
 		C4CB4E271C5EF563006FE981 /* HYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSettingController.m; sourceTree = "<group>"; };
+		C4CB4E291C5F7F0B006FE981 /* HYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYNavigationController.h; sourceTree = "<group>"; };
+		C4CB4E2A1C5F7F0B006FE981 /* HYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -372,6 +375,8 @@
 			children = (
 				C48B75F51C55F39800004871 /* HYTabBarController.h */,
 				C48B75F61C55F39800004871 /* HYTabBarController.m */,
+				C4CB4E291C5F7F0B006FE981 /* HYNavigationController.h */,
+				C4CB4E2A1C5F7F0B006FE981 /* HYNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -472,6 +477,7 @@
 				C478DC3A1C4544F000164830 /* HYMeController.m in Sources */,
 				C478DC2E1C453BD500164830 /* AppDelegate.m in Sources */,
 				C48B76021C564EF600004871 /* UIBarButtonItem+HYItem.m in Sources */,
+				C4CB4E2B1C5F7F0B006FE981 /* HYNavigationController.m in Sources */,
 				C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */,
 				C4CB4E281C5EF563006FE981 /* HYSettingController.m in Sources */,
 			);

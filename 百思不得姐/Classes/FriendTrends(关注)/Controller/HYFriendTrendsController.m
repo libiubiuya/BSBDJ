@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor yellowColor];
+    
     // 设置导航条
     [self setUpNavigationContent];
 }

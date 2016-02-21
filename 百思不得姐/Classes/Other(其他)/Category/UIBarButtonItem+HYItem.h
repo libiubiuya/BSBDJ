@@ -34,4 +34,19 @@
  */
 + (UIBarButtonItem *)itemWithImage:(UIImage *)image selImage:(UIImage *)selImage target:(nullable id)target action:(nonnull SEL)action;
 
+/**
+ *  设置导航栏返回按钮
+ *
+ *  @param image     正常状态图片
+ *  @param highImage 高亮状态图片
+ *  @param target    作用对象
+ *  @param action    执行方法
+ *  @param norColor  正常状态标题颜色
+ *  @param highColor 高亮状态标题颜色
+ *  @param title     标题内容
+ *
+ *  @return UIBarButtonItem
+ */
++ (UIBarButtonItem *)itemWithImage:(UIImage *)image highImage:(UIImage *)highImage target:(nullable id)target action:(nonnull SEL)action norColor:(UIColor *)norColor highColor:(UIColor *)highColor title:(NSString *)title;
+
 @end

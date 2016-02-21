@@ -7,6 +7,7 @@
 //
 
 #import "HYTabBarController.h"
+#import "HYNavigationController.h"
 #import "HYEssenceController.h"
 #import "HYFriendTrendsController.h"
 #import "HYNewController.h"
@@ -61,24 +62,25 @@
 {
     // 精华
     HYEssenceController *essence = [[HYEssenceController alloc] init];
-    UINavigationController *navEssence = [[UINavigationController alloc] initWithRootViewController:essence];
-    [self addChildViewController:navEssence];
+    [self addChildViewController:essence];
     
     // 新帖
     HYNewController *new = [[HYNewController alloc] init];
-    UINavigationController *navNew = [[UINavigationController alloc] initWithRootViewController:new];
-    [self addChildViewController:navNew];
+    [self addChildViewController:new];
     
     // 关注
     HYFriendTrendsController *friendTrends = [[HYFriendTrendsController alloc] init];
-    UINavigationController *navFriendTrends = [[UINavigationController alloc] initWithRootViewController:friendTrends];
-    [self addChildViewController:navFriendTrends];
+    [self addChildViewController:friendTrends];
     
     // 我
     HYMeController *me = [[HYMeController alloc] init];
-    UINavigationController *navMe = [[UINavigationController alloc] initWithRootViewController:me];
-    [self addChildViewController:navMe];
-    
+    [self addChildViewController:me];
+}
+
+- (void)addChildViewController:(UIViewController *)childController
+{
+    HYNavigationController *navCon = [[HYNavigationController alloc] initWithRootViewController:childController];
+    [super addChildViewController:navCon];
 }
 
 /**

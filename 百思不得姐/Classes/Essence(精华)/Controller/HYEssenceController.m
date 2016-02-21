@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor redColor];
+    
     // 设置导航栏内容
     [self setUpNavigationContent];
 }

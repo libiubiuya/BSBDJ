@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor blueColor];
+    
     // 设置导航条
     [self setUpNavigationContent];
 }
@@ -37,7 +39,7 @@
     HYSettingController *setting = [[HYSettingController alloc] init];
     
     // 隐藏tabBar
-    self.hidesBottomBarWhenPushed = YES;
+    setting.hidesBottomBarWhenPushed = YES;
     
     [self.navigationController pushViewController:setting animated:YES];
 }

@@ -32,4 +32,28 @@
     return [[UIBarButtonItem alloc] initWithCustomView:button];
 }
 
+/** 导航栏返回按钮 */
++ (UIBarButtonItem *)itemWithImage:(UIImage *)image highImage:(UIImage *)highImage target:(nullable id)target action:(nonnull SEL)action norColor:(UIColor *)norColor highColor:(UIColor *)highColor title:(NSString *)title
+{
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    // 设置标题
+    [backButton setTitle:title forState:UIControlStateNormal];
+    
+    // 设置标题颜色
+    [backButton setTitleColor:norColor forState:UIControlStateNormal];
+    [backButton setTitleColor:highColor forState:UIControlStateHighlighted];
+    
+    // 设置图片
+    [backButton setImage:image forState:UIControlStateNormal];
+    [backButton setImage:highImage forState:UIControlStateHighlighted];
+    
+    [backButton sizeToFit];
+    [backButton addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    
+    // 设置内边距
+    backButton.contentEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
+    
+    return [[UIBarButtonItem alloc] initWithCustomView:backButton];
+}
 @end
