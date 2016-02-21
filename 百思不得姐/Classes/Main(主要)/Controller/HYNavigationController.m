@@ -8,12 +8,20 @@
 
 #import "HYNavigationController.h"
 
-@interface HYNavigationController ()
+@interface HYNavigationController ()<UIGestureRecognizerDelegate>
 
 @end
 
 @implementation HYNavigationController
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.interactivePopGestureRecognizer.delegate = self;
+}
+
+#pragma mark - 重写系统方法
 // 设置导航条
 + (void)load
 {
@@ -27,8 +35,7 @@
     [navBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
 }
 
-#pragma mark - 重写系统方法
-// 重写pushViewController:animated:方法
+// 设置全局返回按钮
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     if (self.childViewControllers.count > 0) {
@@ -44,6 +51,12 @@
 - (void)back
 {
     [self popViewControllerAnimated:YES];
+}
+
+#pragma mark - UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+{
+    return self.childViewControllers.count > 1;
 }
 
 @end
