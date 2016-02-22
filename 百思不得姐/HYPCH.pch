@@ -21,3 +21,9 @@
 #define HYTabBarItemFontColor [UIColor colorWithRed:(64) / 255 green:(64) / 255 blue:(64) / 255 alpha:1];
 // tabBar字体大小
 #define HYTabBarItemFontSize [UIFont systemFontOfSize:12];
+
+/*屏幕适配*/
+#define iPhone6 ([UIScreen mainScreen].bounds.size.height == 667)
+#define iPhone6P ([UIScreen mainScreen].bounds.size.height == 736)
+#define iPhone5 ([UIScreen mainScreen].bounds.size.height == 568)
+#define iPhone4 ([UIScreen mainScreen].bounds.size.height == 480)

@@ -21,6 +21,15 @@
 		C48B76021C564EF600004871 /* UIBarButtonItem+HYItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B76011C564EF600004871 /* UIBarButtonItem+HYItem.m */; };
 		C4CB4E281C5EF563006FE981 /* HYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CB4E271C5EF563006FE981 /* HYSettingController.m */; };
 		C4CB4E2B1C5F7F0B006FE981 /* HYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CB4E2A1C5F7F0B006FE981 /* HYNavigationController.m */; };
+		C4DA921D1C7AA9600080C9C3 /* HYAdController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DA921B1C7AA9600080C9C3 /* HYAdController.m */; };
+		C4DA921E1C7AA9600080C9C3 /* HYAdController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4DA921C1C7AA9600080C9C3 /* HYAdController.xib */; };
+		C4DA92271C7AAA2B0080C9C3 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DA92201C7AAA2B0080C9C3 /* LaunchImage-568h@2x.png */; };
+		C4DA92281C7AAA2B0080C9C3 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DA92211C7AAA2B0080C9C3 /* LaunchImage-700-568h@2x.png */; };
+		C4DA92291C7AAA2B0080C9C3 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DA92221C7AAA2B0080C9C3 /* LaunchImage-700@2x.png */; };
+		C4DA922A1C7AAA2B0080C9C3 /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DA92231C7AAA2B0080C9C3 /* LaunchImage-800-667h@2x.png */; };
+		C4DA922B1C7AAA2B0080C9C3 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DA92241C7AAA2B0080C9C3 /* LaunchImage-800-Portrait-736h@3x.png */; };
+		C4DA922C1C7AAA2B0080C9C3 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DA92251C7AAA2B0080C9C3 /* LaunchImage.png */; };
+		C4DA922D1C7AAA2B0080C9C3 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DA92261C7AAA2B0080C9C3 /* LaunchImage@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +62,16 @@
 		C4CB4E271C5EF563006FE981 /* HYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSettingController.m; sourceTree = "<group>"; };
 		C4CB4E291C5F7F0B006FE981 /* HYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYNavigationController.h; sourceTree = "<group>"; };
 		C4CB4E2A1C5F7F0B006FE981 /* HYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYNavigationController.m; sourceTree = "<group>"; };
+		C4DA921A1C7AA9600080C9C3 /* HYAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYAdController.h; sourceTree = "<group>"; };
+		C4DA921B1C7AA9600080C9C3 /* HYAdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYAdController.m; sourceTree = "<group>"; };
+		C4DA921C1C7AA9600080C9C3 /* HYAdController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYAdController.xib; sourceTree = "<group>"; };
+		C4DA92201C7AAA2B0080C9C3 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		C4DA92211C7AAA2B0080C9C3 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
+		C4DA92221C7AAA2B0080C9C3 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
+		C4DA92231C7AAA2B0080C9C3 /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		C4DA92241C7AAA2B0080C9C3 /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		C4DA92251C7AAA2B0080C9C3 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		C4DA92261C7AAA2B0080C9C3 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +116,7 @@
 		C478DBEF1C45358800164830 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C4DA921F1C7AAA2B0080C9C3 /* LaunchImage */,
 				C478DBF01C45358800164830 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -130,6 +150,9 @@
 		C478DC081C453BD500164830 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C4DA921A1C7AA9600080C9C3 /* HYAdController.h */,
+				C4DA921B1C7AA9600080C9C3 /* HYAdController.m */,
+				C4DA921C1C7AA9600080C9C3 /* HYAdController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -397,6 +420,20 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C4DA921F1C7AAA2B0080C9C3 /* LaunchImage */ = {
+			isa = PBXGroup;
+			children = (
+				C4DA92201C7AAA2B0080C9C3 /* LaunchImage-568h@2x.png */,
+				C4DA92211C7AAA2B0080C9C3 /* LaunchImage-700-568h@2x.png */,
+				C4DA92221C7AAA2B0080C9C3 /* LaunchImage-700@2x.png */,
+				C4DA92231C7AAA2B0080C9C3 /* LaunchImage-800-667h@2x.png */,
+				C4DA92241C7AAA2B0080C9C3 /* LaunchImage-800-Portrait-736h@3x.png */,
+				C4DA92251C7AAA2B0080C9C3 /* LaunchImage.png */,
+				C4DA92261C7AAA2B0080C9C3 /* LaunchImage@2x.png */,
+			);
+			path = LaunchImage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -456,7 +493,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DA922C1C7AAA2B0080C9C3 /* LaunchImage.png in Resources */,
+				C4DA922D1C7AAA2B0080C9C3 /* LaunchImage@2x.png in Resources */,
 				C478DBFC1C45358800164830 /* Assets.xcassets in Resources */,
+				C4DA922A1C7AAA2B0080C9C3 /* LaunchImage-800-667h@2x.png in Resources */,
+				C4DA92271C7AAA2B0080C9C3 /* LaunchImage-568h@2x.png in Resources */,
+				C4DA92291C7AAA2B0080C9C3 /* LaunchImage-700@2x.png in Resources */,
+				C4DA92281C7AAA2B0080C9C3 /* LaunchImage-700-568h@2x.png in Resources */,
+				C4DA921E1C7AA9600080C9C3 /* HYAdController.xib in Resources */,
+				C4DA922B1C7AAA2B0080C9C3 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +521,7 @@
 				C478DBF11C45358800164830 /* main.m in Sources */,
 				C478DC3A1C4544F000164830 /* HYMeController.m in Sources */,
 				C478DC2E1C453BD500164830 /* AppDelegate.m in Sources */,
+				C4DA921D1C7AA9600080C9C3 /* HYAdController.m in Sources */,
 				C48B76021C564EF600004871 /* UIBarButtonItem+HYItem.m in Sources */,
 				C4CB4E2B1C5F7F0B006FE981 /* HYNavigationController.m in Sources */,
 				C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */,

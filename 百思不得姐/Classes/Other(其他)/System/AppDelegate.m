@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "HYTabBarController.h"
+#import "HYAdController.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +22,13 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    HYTabBarController *tabBarVC = [[HYTabBarController alloc] init];
-    self.window.rootViewController = tabBarVC;
+    // 主界面
+//    HYTabBarController *tabBarVC = [[HYTabBarController alloc] init];
+//    self.window.rootViewController = tabBarVC;
+    
+    // 广告界面
+    HYAdController *adVc = [[HYAdController alloc] init];
+    self.window.rootViewController = adVc;
     
     [self.window makeKeyAndVisible];
     
