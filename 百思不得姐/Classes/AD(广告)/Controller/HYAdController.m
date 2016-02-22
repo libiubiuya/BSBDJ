@@ -10,6 +10,8 @@
 
 #import "HYAdItem.h"
 
+#import "HYTabBarController.h"
+
 #import <AFNetworking/AFNetworking.h>
 
 #import <MJExtension/MJExtension.h>
@@ -32,20 +34,16 @@
 /** 广告按钮 */
 @property (weak, nonatomic) IBOutlet UIButton *adButton;
 
+/** 定时器 */
+@property (weak, nonatomic) NSTimer *timer;
+
+/** 会话管理者 */
+@property (weak, nonatomic) AFHTTPSessionManager *mgr;
+
 
 @end
 
 @implementation HYAdController
-
-- (UIImageView *)adView
-{
-    if (_adView == nil) {
-        UIImageView *imageV = [[UIImageView alloc] init];
-        _adView = imageV;
-        [self.view insertSubview:imageV belowSubview:self.adButton];
-    }
-    return _adView;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,7 +53,29 @@
     
     // 加载广告
     [self loadData];
+    
+    // 添加定时器
+    [self addTimer];
 }
+
+#pragma mark - 懒加载
+
+- (UIImageView *)adView
+{
+    if (_adView == nil) {
+        UIImageView *imageV = [[UIImageView alloc] init];
+        _adView = imageV;
+        [self.view insertSubview:imageV belowSubview:self.adButton];
+        
+        // 添加点按手势
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(jump)];
+        imageV.userInteractionEnabled = YES;
+        [_adView addGestureRecognizer:tap];
+    }
+    return _adView;
+}
+
+#pragma mark - 加载广告数据
 
 - (void)loadData
 {
@@ -90,6 +110,8 @@
     }];
 }
 
+#pragma mark - 适配启动图片
+
 // 启动图片适配
 - (void)setUpLaunchImage
 {
@@ -102,6 +124,62 @@
     }else if (iPhone4){
         _launchImageView.image = [UIImage imageNamed:@"LaunchImage-700"];
     }
+}
+
+#pragma mark - 处理业务逻辑
+
+// 点击图片跳转
+- (void)jump
+{
+    NSURL *url = [NSURL URLWithString:_adItem.ori_curl];
+    
+    if ([[UIApplication sharedApplication] canOpenURL:url]) {
+        [[UIApplication sharedApplication] openURL:url];
+    }
+}
+
+// 添加定时器
+- (void)addTimer
+{
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeChange) userInfo:nil repeats:YES];
+}
+
+// 定时器
+- (void)timeChange
+{
+    static int time = 3;
+    
+    // 进入主界面
+    if (time == -1) {
+        [self clickAdButton];
+        return;
+    }
+    
+    NSString *timeStr = [NSString stringWithFormat:@"跳过(%d)", time];
+    [_adButton setTitle:timeStr forState:UIControlStateNormal];
+    
+    time--;
+}
+
+// 跳过
+- (IBAction)clickAdButton
+{
+    // 销毁定时器
+    [_timer invalidate];
+    
+    // 进入到主界面
+    HYTabBarController *tabBarVc = [[HYTabBarController alloc] init];
+    [UIApplication sharedApplication].keyWindow.rootViewController = tabBarVc;
+}
+
+// 销毁
+- (void)dealloc
+{
+    // 取消请求
+    [self.mgr.tasks makeObjectsPerformSelector:@selector(cancel)];
+    
+    // 销毁会话管理者
+    [self.mgr invalidateSessionCancelingTasks:NO];
 }
 
 @end
