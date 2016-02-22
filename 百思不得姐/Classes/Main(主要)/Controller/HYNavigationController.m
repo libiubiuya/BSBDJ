@@ -18,7 +18,18 @@
 {
     [super viewDidLoad];
     
-    self.interactivePopGestureRecognizer.delegate = self;
+    // 全屏滑动返回
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
+    
+    // 控制什么时候触发
+    pan.delegate = self;
+    
+    [self.view addGestureRecognizer:pan];
+    
+    // 禁止边缘手势
+    self.interactivePopGestureRecognizer.enabled = NO;
+    
+//    NSLog(@"%@", self.interactivePopGestureRecognizer);
 }
 
 #pragma mark - 重写系统方法
