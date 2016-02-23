@@ -8,6 +8,8 @@
 
 #import "HYNewController.h"
 
+#import "HYSubTagController.h"
+
 @interface HYNewController ()
 
 @end
@@ -34,7 +36,8 @@
 
 - (void)btnClick
 {
-    NSLog(@"%s", __func__);
+    HYSubTagController *subTagVc = [[HYSubTagController alloc] init];
+    [self.navigationController pushViewController:subTagVc animated:YES];
 }
 
 @end

@@ -59,6 +59,7 @@
         UIBarButtonItem *backItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"navigationButtonReturn"] highImage:[UIImage imageNamed:@"navigationButtonReturnClick"] target:self action:@selector(back) norColor:[UIColor blackColor] highColor:[UIColor redColor] title:@"返回"];
         
         viewController.navigationItem.leftBarButtonItem = backItem;
+        viewController.hidesBottomBarWhenPushed = YES;
     }
     
     [super pushViewController:viewController animated:animated];
