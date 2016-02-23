@@ -33,6 +33,8 @@
 - (void)awakeFromNib {
     // Initialization code
     
+    _iconView.layer.cornerRadius = _iconView.width * 0.5;
+    _iconView.layer.masksToBounds = YES;
 }
 
 - (void)setItem:(HYSubTagItem *)item
