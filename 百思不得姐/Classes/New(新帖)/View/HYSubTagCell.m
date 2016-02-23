@@ -32,6 +32,7 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    
 }
 
 - (void)setItem:(HYSubTagItem *)item
@@ -45,6 +46,13 @@
     _nameLabel.text = item.theme_name;
     
     // 订阅数
-    _numberLabel.text = item.sub_number;
+    CGFloat sub_num = [item.sub_number integerValue];
+    NSString *numStr = [NSString stringWithFormat:@"%@人订阅", item.sub_number];
+    if (sub_num > 10000) {
+        sub_num = sub_num / 10000.0;
+        numStr = [NSString stringWithFormat:@"%.1f万人订阅", sub_num];
+    }
+    
+    _numberLabel.text = numStr;
 }
 @end
