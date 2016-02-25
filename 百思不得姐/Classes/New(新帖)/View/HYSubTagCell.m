@@ -33,8 +33,13 @@
 - (void)awakeFromNib {
     // Initialization code
     
+    // 设置图片圆角
     _iconView.layer.cornerRadius = _iconView.width * 0.5;
     _iconView.layer.masksToBounds = YES;
+    
+    // 设置全屏分割线
+    self.separatorInset = UIEdgeInsetsZero;
+    self.layoutMargins = UIEdgeInsetsZero;
 }
 
 - (void)setItem:(HYSubTagItem *)item
