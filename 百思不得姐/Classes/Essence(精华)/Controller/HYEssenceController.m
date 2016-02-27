@@ -7,11 +7,15 @@
 //
 
 #import "HYEssenceController.h"
+#import "HYTitleButton.h"
 
 @interface HYEssenceController ()
 
 /** 标题栏 */
 @property (weak, nonatomic) UIView *titlesView;
+
+/** 被选中的按钮 */
+@property (weak, nonatomic) HYTitleButton *clickTitleButton;
 
 @end
 
@@ -53,6 +57,36 @@
     titlesView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
     [self.view addSubview:titlesView];
     self.titlesView = titlesView;
+    
+    // 添加标题按钮
+    [self setUpTitleButtons];
+}
+
+/**
+ *  添加标题按钮
+ */
+- (void)setUpTitleButtons
+{
+    // 按钮文字
+    NSArray *titles = @[@"全部", @"视频", @"声音", @"图片", @"段子"];
+    NSUInteger count = titles.count;
+    
+    // 标题宽高
+    CGFloat titleButtonW = self.titlesView.width / count;
+    CGFloat titleButtonH = self.titlesView.height;
+    
+    for (NSUInteger i = 0; i < count; i++) {
+        // 创建添加
+        HYTitleButton *titleButton = [HYTitleButton buttonWithType:UIButtonTypeCustom];
+        [titleButton addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
+        [self.titlesView addSubview:titleButton];
+        
+        // 设置属性
+        [titleButton setTitle:titles[i] forState:UIControlStateNormal];
+        
+        // 设置frame
+        titleButton.frame = CGRectMake(i * titleButtonW, 0, titleButtonW, titleButtonH);
+    }
 }
 
 - (void)setUpNavigationContent
@@ -67,6 +101,15 @@
     
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
     self.navigationItem.titleView = imageView;
+}
+
+
+#pragma mark - 监听
+- (void)titleClick:(HYTitleButton *)titleButton
+{
+    self.clickTitleButton.selected = NO;
+    titleButton.selected = YES;
+    self.clickTitleButton = titleButton;
 }
 
 - (void)btnClick

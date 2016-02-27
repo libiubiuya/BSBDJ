@@ -37,6 +37,7 @@
 		C4DF62631C7C424E00F6C963 /* HYSubTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF62611C7C424E00F6C963 /* HYSubTagCell.m */; };
 		C4DF62641C7C424E00F6C963 /* HYSubTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4DF62621C7C424E00F6C963 /* HYSubTagCell.xib */; };
 		C4DF62871C8180B000F6C963 /* HYGlobeConst.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF62861C8180B000F6C963 /* HYGlobeConst.m */; };
+		C4DF628A1C818AB100F6C963 /* HYTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF62891C818AB100F6C963 /* HYTitleButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +94,8 @@
 		C4DF62621C7C424E00F6C963 /* HYSubTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYSubTagCell.xib; sourceTree = "<group>"; };
 		C4DF62851C8180B000F6C963 /* HYGlobeConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYGlobeConst.h; sourceTree = "<group>"; };
 		C4DF62861C8180B000F6C963 /* HYGlobeConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYGlobeConst.m; sourceTree = "<group>"; };
+		C4DF62881C818AB100F6C963 /* HYTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTitleButton.h; sourceTree = "<group>"; };
+		C4DF62891C818AB100F6C963 /* HYTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTitleButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +246,8 @@
 		C478DC0E1C453BD500164830 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C4DF62881C818AB100F6C963 /* HYTitleButton.h */,
+				C4DF62891C818AB100F6C963 /* HYTitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -621,6 +626,7 @@
 				C478DC341C4544A900164830 /* HYEssenceController.m in Sources */,
 				C48B75EE1C52E28100004871 /* UIImage+HYOriginal.m in Sources */,
 				C478DC3D1C4544FF00164830 /* HYNewController.m in Sources */,
+				C4DF628A1C818AB100F6C963 /* HYTitleButton.m in Sources */,
 				C478DC371C4544CF00164830 /* HYFriendTrendsController.m in Sources */,
 				C4DF62631C7C424E00F6C963 /* HYSubTagCell.m in Sources */,
 				C478DBF11C45358800164830 /* main.m in Sources */,
