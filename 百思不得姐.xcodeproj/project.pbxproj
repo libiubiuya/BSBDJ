@@ -36,6 +36,7 @@
 		C4DF625F1C7C11CE00F6C963 /* HYSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF625E1C7C11CE00F6C963 /* HYSubTagItem.m */; };
 		C4DF62631C7C424E00F6C963 /* HYSubTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF62611C7C424E00F6C963 /* HYSubTagCell.m */; };
 		C4DF62641C7C424E00F6C963 /* HYSubTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4DF62621C7C424E00F6C963 /* HYSubTagCell.xib */; };
+		C4DF62871C8180B000F6C963 /* HYGlobeConst.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF62861C8180B000F6C963 /* HYGlobeConst.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,8 @@
 		C4DF62601C7C424E00F6C963 /* HYSubTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSubTagCell.h; sourceTree = "<group>"; };
 		C4DF62611C7C424E00F6C963 /* HYSubTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSubTagCell.m; sourceTree = "<group>"; };
 		C4DF62621C7C424E00F6C963 /* HYSubTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYSubTagCell.xib; sourceTree = "<group>"; };
+		C4DF62851C8180B000F6C963 /* HYGlobeConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYGlobeConst.h; sourceTree = "<group>"; };
+		C4DF62861C8180B000F6C963 /* HYGlobeConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYGlobeConst.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,6 +389,8 @@
 			isa = PBXGroup;
 			children = (
 				C478DC261C453BD500164830 /* DataTool */,
+				C4DF62851C8180B000F6C963 /* HYGlobeConst.h */,
+				C4DF62861C8180B000F6C963 /* HYGlobeConst.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -626,6 +631,7 @@
 				C4DA921D1C7AA9600080C9C3 /* HYAdController.m in Sources */,
 				C48B76021C564EF600004871 /* UIBarButtonItem+HYItem.m in Sources */,
 				C4CB4E2B1C5F7F0B006FE981 /* HYNavigationController.m in Sources */,
+				C4DF62871C8180B000F6C963 /* HYGlobeConst.m in Sources */,
 				C4DF625F1C7C11CE00F6C963 /* HYSubTagItem.m in Sources */,
 				C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */,
 				C4CB4E281C5EF563006FE981 /* HYSettingController.m in Sources */,

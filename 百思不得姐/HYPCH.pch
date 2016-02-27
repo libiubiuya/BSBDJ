@@ -12,7 +12,7 @@
 #import "UIImage+HYOriginal.h"
 #import "UIView+HYFrame.h"
 #import "UIBarButtonItem+HYItem.h"
-
+#import "HYGlobeConst.h"
 
 
 #pragma mark - 参数

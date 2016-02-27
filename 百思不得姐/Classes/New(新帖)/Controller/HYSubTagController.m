@@ -42,7 +42,7 @@
     parameters[@"action"] = @"sub";
     parameters[@"c"] = @"topic";
     
-    [mgr GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSArray * _Nullable responseObject) {
+    [mgr GET:baseUrl parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSArray * _Nullable responseObject) {
         
 //        [responseObject writeToFile:@"/Users/lihaoyi/Desktop/BSBDJ/百思/百思不得姐/百思不得姐/Classes/New(新帖)/subTag.plist" atomically:YES];
         
