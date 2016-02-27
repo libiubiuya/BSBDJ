@@ -18,5 +18,9 @@
 @property CGFloat x;
 /** y */
 @property CGFloat y;
+/** centerX */
+@property CGFloat centerX;
+/** centerY */
+@property CGFloat centerY;
 
 @end

@@ -17,6 +17,9 @@
 /** 被选中的按钮 */
 @property (weak, nonatomic) HYTitleButton *clickTitleButton;
 
+/** 标题栏底部下划线 */
+@property (weak, nonatomic) UIView *underlineView;
+
 @end
 
 @implementation HYEssenceController
@@ -60,6 +63,9 @@
     
     // 添加标题按钮
     [self setUpTitleButtons];
+    
+    // 添加标题栏底部下划线
+    [self setUpTitlesViewUnderLine];
 }
 
 /**
@@ -88,7 +94,37 @@
         titleButton.frame = CGRectMake(i * titleButtonW, 0, titleButtonW, titleButtonH);
     }
 }
+/**
+ *  添加标题栏底部下划线
+ */
+- (void)setUpTitlesViewUnderLine
+{
+    // 取出第一个标题按钮
+    HYTitleButton *firstTitleButton = self.titlesView.subviews.firstObject;
+    
+    // 标题栏
+    UIView *underlineView = [[UIView alloc] init];
+    underlineView.backgroundColor = [firstTitleButton titleColorForState:UIControlStateSelected];
+    underlineView.height = 2;
+    underlineView.y = self.titlesView.height - underlineView.height;
+    [self.titlesView addSubview:underlineView];
+    
+    // 默认选中第一个按钮
+    // 切换按钮状态
+    firstTitleButton.selected = YES; // 新点击的按钮
+    self.clickTitleButton = firstTitleButton;
+    // 下划线的宽度 == 按钮文字的宽度
+    [firstTitleButton.titleLabel sizeToFit]; // 通过这句代码计算按钮内部label的宽度
+    underlineView.width = firstTitleButton.titleLabel.width + HYMargin;
+    // 下划线的位置
+    underlineView.centerX = firstTitleButton.centerX;
+    
+    self.underlineView = underlineView;
+}
 
+/**
+ *  设置导航条
+ */
 - (void)setUpNavigationContent
 {
     // 左边的barButtonItem
@@ -110,6 +146,13 @@
     self.clickTitleButton.selected = NO;
     titleButton.selected = YES;
     self.clickTitleButton = titleButton;
+    
+    // 移动下划线
+    [UIView animateWithDuration:0.25 animations:^{
+        self.underlineView.width = titleButton.titleLabel.width + HYMargin;
+        
+        self.underlineView.centerX = titleButton.centerX;
+    }];
 }
 
 - (void)btnClick
