@@ -48,6 +48,9 @@
     
     // 添加标题栏
     [self setUpTitlesView];
+    
+    // 懒加载子控制器
+    [self addChildVcIntoScrollView];
 }
 
 /**
@@ -76,15 +79,6 @@
     
     // 添加子控制器的view到scrollView中
     NSUInteger count = self.childViewControllers.count;
-    for (NSUInteger i = 0; i < count; i++) {
-        UIViewController *childVc = self.childViewControllers[i];
-        
-        [scrollView addSubview:childVc.view];
-        
-        childVc.view.x = i * scrollView.width;
-        childVc.view.y = 0;
-        childVc.view.height = scrollView.height;
-    }
     
     scrollView.contentSize = CGSizeMake(count * scrollView.width, 0);
     
@@ -197,12 +191,30 @@
         CGPoint offset = self.scrollView.contentOffset;
         offset.x = index * self.scrollView.width;
         self.scrollView.contentOffset = offset;
+    } completion:^(BOOL finished) {
+        [self addChildVcIntoScrollView];
     }];
 }
 
 - (void)btnClick
 {
     HYFunc;
+}
+
+#pragma mark - 懒加载
+
+/**
+ *  添加子控制器view到scrollView
+ */
+- (void)addChildVcIntoScrollView
+{
+    NSUInteger index = self.scrollView.contentOffset.x / self.scrollView.width;
+    UIViewController *childVc = self.childViewControllers[index];
+    childVc.view.x = self.scrollView.contentOffset.x;
+    childVc.view.y = 0;
+    childVc.view.width = self.scrollView.width;
+    childVc.view.height = self.scrollView.height;
+    [self.scrollView addSubview:childVc.view];
 }
 
 @end
