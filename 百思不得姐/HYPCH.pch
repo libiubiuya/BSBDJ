@@ -35,4 +35,15 @@
 // 屏幕高度
 #define HYScreenH [UIScreen mainScreen].bounds.size.height
 
+// 自定义Log
+#ifdef DEBUG
+// 调试阶段 DEBUG
+#define HYLog(...) NSLog(__VA_ARGS__);
 
+#else
+// 发布阶段
+#define HYLog(...)
+
+#endif
+
+#define HYFunc HYLog(@"%s",__func__);

@@ -8,6 +8,11 @@
 
 #import "HYEssenceController.h"
 #import "HYTitleButton.h"
+#import "HYAllViewController.h"
+#import "HYVideoViewController.h"
+#import "HYVoiceViewController.h"
+#import "HYPictureViewController.h"
+#import "HYWordViewController.h"
 
 @interface HYEssenceController ()
 
@@ -32,11 +37,26 @@
     // 设置导航栏内容
     [self setUpNavigationContent];
     
+    // 添加子控制器
+    [self setUpChildController];
+    
     // 添加scrollView
     [self setUpScrollView];
     
     // 添加标题栏
     [self setUpTitlesView];
+}
+
+/**
+ *  添加子控制器
+ */
+- (void)setUpChildController
+{
+    [self addChildViewController:[[HYAllViewController alloc] init]];
+    [self addChildViewController:[[HYVideoViewController alloc] init]];
+    [self addChildViewController:[[HYVoiceViewController alloc] init]];
+    [self addChildViewController:[[HYPictureViewController alloc] init]];
+    [self addChildViewController:[[HYWordViewController alloc] init]];
 }
 
 /**
@@ -47,7 +67,23 @@
     UIScrollView *scrollView = [[UIScrollView alloc] init];
     scrollView.frame = self.view.bounds;
     scrollView.backgroundColor = [UIColor orangeColor];
+    scrollView.pagingEnabled = YES;
     [self.view addSubview:scrollView];
+    
+    // 添加子控制器的view到scrollView中
+    NSUInteger count = self.childViewControllers.count;
+    for (NSUInteger i = 0; i < count; i++) {
+        UIViewController *childVc = self.childViewControllers[i];
+        
+        [scrollView addSubview:childVc.view];
+        
+        childVc.view.x = i * scrollView.width;
+        childVc.view.y = 0;
+        childVc.view.height = scrollView.height;
+    }
+    
+    scrollView.contentSize = CGSizeMake(count * scrollView.width, 0);
+    
 }
 
 /**
@@ -157,7 +193,7 @@
 
 - (void)btnClick
 {
-    NSLog(@"%s", __func__);
+    HYFunc;
 }
 
 @end

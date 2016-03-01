@@ -38,6 +38,11 @@
 		C4DF62641C7C424E00F6C963 /* HYSubTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4DF62621C7C424E00F6C963 /* HYSubTagCell.xib */; };
 		C4DF62871C8180B000F6C963 /* HYGlobeConst.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF62861C8180B000F6C963 /* HYGlobeConst.m */; };
 		C4DF628A1C818AB100F6C963 /* HYTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF62891C818AB100F6C963 /* HYTitleButton.m */; };
+		C4DF62901C83332300F6C963 /* HYAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF628F1C83332300F6C963 /* HYAllViewController.m */; };
+		C4DF62931C83334700F6C963 /* HYVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF62921C83334700F6C963 /* HYVideoViewController.m */; };
+		C4DF62961C83336A00F6C963 /* HYVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF62951C83336A00F6C963 /* HYVoiceViewController.m */; };
+		C4DF62991C83338400F6C963 /* HYPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF62981C83338400F6C963 /* HYPictureViewController.m */; };
+		C4DF629C1C83339A00F6C963 /* HYWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF629B1C83339A00F6C963 /* HYWordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +101,16 @@
 		C4DF62861C8180B000F6C963 /* HYGlobeConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYGlobeConst.m; sourceTree = "<group>"; };
 		C4DF62881C818AB100F6C963 /* HYTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTitleButton.h; sourceTree = "<group>"; };
 		C4DF62891C818AB100F6C963 /* HYTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTitleButton.m; sourceTree = "<group>"; };
+		C4DF628E1C83332300F6C963 /* HYAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYAllViewController.h; sourceTree = "<group>"; };
+		C4DF628F1C83332300F6C963 /* HYAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYAllViewController.m; sourceTree = "<group>"; };
+		C4DF62911C83334700F6C963 /* HYVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYVideoViewController.h; sourceTree = "<group>"; };
+		C4DF62921C83334700F6C963 /* HYVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYVideoViewController.m; sourceTree = "<group>"; };
+		C4DF62941C83336A00F6C963 /* HYVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYVoiceViewController.h; sourceTree = "<group>"; };
+		C4DF62951C83336A00F6C963 /* HYVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYVoiceViewController.m; sourceTree = "<group>"; };
+		C4DF62971C83338400F6C963 /* HYPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPictureViewController.h; sourceTree = "<group>"; };
+		C4DF62981C83338400F6C963 /* HYPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPictureViewController.m; sourceTree = "<group>"; };
+		C4DF629A1C83339A00F6C963 /* HYWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYWordViewController.h; sourceTree = "<group>"; };
+		C4DF629B1C83339A00F6C963 /* HYWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYWordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +247,16 @@
 			children = (
 				C478DC321C4544A900164830 /* HYEssenceController.h */,
 				C478DC331C4544A900164830 /* HYEssenceController.m */,
+				C4DF628E1C83332300F6C963 /* HYAllViewController.h */,
+				C4DF628F1C83332300F6C963 /* HYAllViewController.m */,
+				C4DF62911C83334700F6C963 /* HYVideoViewController.h */,
+				C4DF62921C83334700F6C963 /* HYVideoViewController.m */,
+				C4DF62941C83336A00F6C963 /* HYVoiceViewController.h */,
+				C4DF62951C83336A00F6C963 /* HYVoiceViewController.m */,
+				C4DF62971C83338400F6C963 /* HYPictureViewController.h */,
+				C4DF62981C83338400F6C963 /* HYPictureViewController.m */,
+				C4DF629A1C83339A00F6C963 /* HYWordViewController.h */,
+				C4DF629B1C83339A00F6C963 /* HYWordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -627,17 +652,22 @@
 				C48B75EE1C52E28100004871 /* UIImage+HYOriginal.m in Sources */,
 				C478DC3D1C4544FF00164830 /* HYNewController.m in Sources */,
 				C4DF628A1C818AB100F6C963 /* HYTitleButton.m in Sources */,
+				C4DF62961C83336A00F6C963 /* HYVoiceViewController.m in Sources */,
 				C478DC371C4544CF00164830 /* HYFriendTrendsController.m in Sources */,
+				C4DF629C1C83339A00F6C963 /* HYWordViewController.m in Sources */,
+				C4DF62991C83338400F6C963 /* HYPictureViewController.m in Sources */,
 				C4DF62631C7C424E00F6C963 /* HYSubTagCell.m in Sources */,
 				C478DBF11C45358800164830 /* main.m in Sources */,
 				C478DC3A1C4544F000164830 /* HYMeController.m in Sources */,
 				C478DC2E1C453BD500164830 /* AppDelegate.m in Sources */,
+				C4DF62931C83334700F6C963 /* HYVideoViewController.m in Sources */,
 				C49E5A951C7B45AB003EDCB0 /* HYAdItem.m in Sources */,
 				C4DF625C1C7C0D4300F6C963 /* HYSubTagController.m in Sources */,
 				C4DA921D1C7AA9600080C9C3 /* HYAdController.m in Sources */,
 				C48B76021C564EF600004871 /* UIBarButtonItem+HYItem.m in Sources */,
 				C4CB4E2B1C5F7F0B006FE981 /* HYNavigationController.m in Sources */,
 				C4DF62871C8180B000F6C963 /* HYGlobeConst.m in Sources */,
+				C4DF62901C83332300F6C963 /* HYAllViewController.m in Sources */,
 				C4DF625F1C7C11CE00F6C963 /* HYSubTagItem.m in Sources */,
 				C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */,
 				C4CB4E281C5EF563006FE981 /* HYSettingController.m in Sources */,
