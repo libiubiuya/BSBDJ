@@ -25,6 +25,9 @@
 /** 标题栏底部下划线 */
 @property (weak, nonatomic) UIView *underlineView;
 
+/** 用来显示所有子控制器的scrollView */
+@property (weak, nonatomic) UIScrollView *scrollView;
+
 @end
 
 @implementation HYEssenceController
@@ -69,6 +72,7 @@
     scrollView.backgroundColor = [UIColor orangeColor];
     scrollView.pagingEnabled = YES;
     [self.view addSubview:scrollView];
+    self.scrollView = scrollView;
     
     // 添加子控制器的view到scrollView中
     NSUInteger count = self.childViewControllers.count;
@@ -120,6 +124,7 @@
     for (NSUInteger i = 0; i < count; i++) {
         // 创建添加
         HYTitleButton *titleButton = [HYTitleButton buttonWithType:UIButtonTypeCustom];
+        titleButton.tag = i;
         [titleButton addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.titlesView addSubview:titleButton];
         
@@ -147,12 +152,11 @@
     
     // 默认选中第一个按钮
     // 切换按钮状态
-    firstTitleButton.selected = YES; // 新点击的按钮
+    firstTitleButton.selected = YES;
     self.clickTitleButton = firstTitleButton;
     // 下划线的宽度 == 按钮文字的宽度
-    [firstTitleButton.titleLabel sizeToFit]; // 通过这句代码计算按钮内部label的宽度
+    [firstTitleButton.titleLabel sizeToFit];
     underlineView.width = firstTitleButton.titleLabel.width + HYMargin;
-    // 下划线的位置
     underlineView.centerX = firstTitleButton.centerX;
     
     self.underlineView = underlineView;
@@ -186,8 +190,13 @@
     // 移动下划线
     [UIView animateWithDuration:0.25 animations:^{
         self.underlineView.width = titleButton.titleLabel.width + HYMargin;
-        
         self.underlineView.centerX = titleButton.centerX;
+        
+        // 让scrollView滚动到对应位置
+        NSUInteger index = titleButton.tag;
+        CGPoint offset = self.scrollView.contentOffset;
+        offset.x = index * self.scrollView.width;
+        self.scrollView.contentOffset = offset;
     }];
 }
 
