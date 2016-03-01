@@ -14,7 +14,7 @@
 #import "HYPictureViewController.h"
 #import "HYWordViewController.h"
 
-@interface HYEssenceController ()
+@interface HYEssenceController () <UIScrollViewDelegate>
 
 /** 标题栏 */
 @property (weak, nonatomic) UIView *titlesView;
@@ -74,6 +74,9 @@
     scrollView.frame = self.view.bounds;
     scrollView.backgroundColor = [UIColor orangeColor];
     scrollView.pagingEnabled = YES;
+    scrollView.delegate = self;
+    scrollView.showsHorizontalScrollIndicator = NO;
+    scrollView.showsVerticalScrollIndicator = NO;
     [self.view addSubview:scrollView];
     self.scrollView = scrollView;
     
@@ -210,11 +213,23 @@
 {
     NSUInteger index = self.scrollView.contentOffset.x / self.scrollView.width;
     UIViewController *childVc = self.childViewControllers[index];
-    childVc.view.x = self.scrollView.contentOffset.x;
-    childVc.view.y = 0;
-    childVc.view.width = self.scrollView.width;
-    childVc.view.height = self.scrollView.height;
+    childVc.view.frame = self.scrollView.bounds;
     [self.scrollView addSubview:childVc.view];
+}
+
+#pragma mark - UIScrollViewDelegate
+
+/**
+ *  scrollView滚动完毕\静止的时候调用
+ *
+ *  @param scrollView scrollView
+ */
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    NSUInteger index = self.scrollView.contentOffset.x / self.scrollView.width;
+    HYTitleButton *titleButton = self.titlesView.subviews[index];
+    [self titleClick:titleButton];
+    
 }
 
 @end
