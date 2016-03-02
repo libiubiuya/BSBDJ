@@ -7,19 +7,95 @@
 //
 
 #import "HYAllViewController.h"
+#import "HYTopicItem.h"
+#import <AFHTTPSessionManager.h>
+#import <MJExtension/MJExtension.h>
+
+@interface HYAllViewController ()
+
+/** 下拉刷新控件 */
+@property (weak, nonatomic) UIRefreshControl *downRefresh;
+/** 会话管理者 */
+@property (weak, nonatomic) AFHTTPSessionManager *mgr;
+/** 帖子模型 */
+@property (nonatomic, strong) NSMutableArray *topicItems;
+
+@end
 
 @implementation HYAllViewController
+
+#pragma mark - init
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.tableView.contentInset = UIEdgeInsetsMake(HYTitlesViewH, 0, HYTabBarH, 0);
+    
+    // 设置tableView
+    [self setUpTableView];
+    
+    // 设置刷新控件
+    [self setUpRefresh];
+}
+
+#pragma mark - 自定义func
+/**
+ *  设置tableView
+ */
+- (void)setUpTableView
+{
+    self.tableView.contentInset = UIEdgeInsetsMake(HYNavMaxY + HYTitlesViewH, 0, HYTabBarH, 0);
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+}
+
+/**
+ *  设置刷新控件
+ */
+- (void)setUpRefresh
+{
+    // 下拉刷新
+    UIRefreshControl *downRefresh = [[UIRefreshControl alloc] init];
+    [downRefresh addTarget:self action:@selector(loadNewTopics) forControlEvents:UIControlEventValueChanged];
+    [self.tableView addSubview:downRefresh];
+    self.downRefresh = downRefresh;
+    
+    // 上拉刷新
+}
+
+/**
+ *  加载最新数据
+ */
+- (void)loadNewTopics
+{
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    parameters[@"a"] = @"list";
+    parameters[@"c"] = @"data";
+    parameters[@"type"] = @"1";
+    
+    [self.mgr GET:baseUrl parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        self.topicItems = [HYTopicItem mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        
+        [self.tableView reloadData];
+        
+        [self.downRefresh endRefreshing];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [self.downRefresh endRefreshing];
+    }];
+}
+
+#pragma mark - 懒加载
+- (AFHTTPSessionManager *)mgr
+{
+    if (_mgr == nil) {
+        _mgr = [AFHTTPSessionManager manager];
+    }
+    return _mgr;
 }
 
 #pragma mark - tableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 30;
+    return self.topicItems.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -28,10 +104,12 @@
     static NSString *ID = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %zd", self.class, indexPath.row];
+    HYTopicItem *topicItem = self.topicItems[indexPath.row];
+    cell.textLabel.text = topicItem.name;
+    cell.detailTextLabel.text = topicItem.text;
     
     return cell;
 }

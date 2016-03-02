@@ -20,6 +20,7 @@
 		C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B75FB1C55F3C700004871 /* HYTabBar.m */; };
 		C48B75FF1C5641CD00004871 /* UIView+HYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B75FE1C5641CD00004871 /* UIView+HYFrame.m */; };
 		C48B76021C564EF600004871 /* UIBarButtonItem+HYItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B76011C564EF600004871 /* UIBarButtonItem+HYItem.m */; };
+		C49AB12D1C868D95007B370D /* HYTopicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C49AB12C1C868D95007B370D /* HYTopicItem.m */; };
 		C49E5A951C7B45AB003EDCB0 /* HYAdItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C49E5A941C7B45AB003EDCB0 /* HYAdItem.m */; };
 		C4CB4E281C5EF563006FE981 /* HYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CB4E271C5EF563006FE981 /* HYSettingController.m */; };
 		C4CB4E2B1C5F7F0B006FE981 /* HYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CB4E2A1C5F7F0B006FE981 /* HYNavigationController.m */; };
@@ -74,6 +75,8 @@
 		C48B75FE1C5641CD00004871 /* UIView+HYFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HYFrame.m"; sourceTree = "<group>"; };
 		C48B76001C564EF600004871 /* UIBarButtonItem+HYItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HYItem.h"; sourceTree = "<group>"; };
 		C48B76011C564EF600004871 /* UIBarButtonItem+HYItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HYItem.m"; sourceTree = "<group>"; };
+		C49AB12B1C868D95007B370D /* HYTopicItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTopicItem.h; sourceTree = "<group>"; };
+		C49AB12C1C868D95007B370D /* HYTopicItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTopicItem.m; sourceTree = "<group>"; };
 		C49E5A931C7B45AB003EDCB0 /* HYAdItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYAdItem.h; sourceTree = "<group>"; };
 		C49E5A941C7B45AB003EDCB0 /* HYAdItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYAdItem.m; sourceTree = "<group>"; };
 		C4CB4E261C5EF563006FE981 /* HYSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSettingController.h; sourceTree = "<group>"; };
@@ -264,6 +267,8 @@
 		C478DC0D1C453BD500164830 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C49AB12B1C868D95007B370D /* HYTopicItem.h */,
+				C49AB12C1C868D95007B370D /* HYTopicItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -667,6 +672,7 @@
 				C48B76021C564EF600004871 /* UIBarButtonItem+HYItem.m in Sources */,
 				C4CB4E2B1C5F7F0B006FE981 /* HYNavigationController.m in Sources */,
 				C4DF62871C8180B000F6C963 /* HYGlobeConst.m in Sources */,
+				C49AB12D1C868D95007B370D /* HYTopicItem.m in Sources */,
 				C4DF62901C83332300F6C963 /* HYAllViewController.m in Sources */,
 				C4DF625F1C7C11CE00F6C963 /* HYSubTagItem.m in Sources */,
 				C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */,
