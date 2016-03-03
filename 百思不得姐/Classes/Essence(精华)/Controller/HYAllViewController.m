@@ -19,6 +19,10 @@
 @property (weak, nonatomic) AFHTTPSessionManager *mgr;
 /** 帖子模型 */
 @property (nonatomic, strong) NSMutableArray *topicItems;
+/** 上拉刷新控件里的文字 */
+@property (weak, nonatomic) UILabel *footerLabel;
+/** 是否正在加载更多数据 */
+@property(nonatomic, assign, getter=isLoadingMoreData) BOOL loadingMoreData;
 
 @end
 
@@ -58,6 +62,20 @@
     self.downRefresh = downRefresh;
     
     // 上拉刷新
+    UIView *footer = [[UIView alloc] init];
+    footer.backgroundColor = [UIColor orangeColor];
+    footer.height = HYTitlesViewH;
+    footer.hidden = YES;
+    self.tableView.tableFooterView = footer;
+    
+    // 上拉刷新的文字
+    UILabel *footerLabel = [[UILabel alloc] init];
+    footerLabel.text = @"上拉可以加载更多";
+    footerLabel.width = self.tableView.width;
+    footerLabel.height = footer.height;
+    footerLabel.textAlignment = NSTextAlignmentCenter;
+    [footer addSubview:footerLabel];
+    self.footerLabel = footerLabel;
 }
 
 /**
@@ -83,6 +101,19 @@
     }];
 }
 
+/**
+ *  加载更多数据
+ */
+- (void)loadMoreTopics
+{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.topicItems addObject:[[HYTopicItem alloc] init]];
+        [self.tableView reloadData];
+        self.footerLabel.text = @"上拉可以加载更多";
+        self.loadingMoreData = NO;
+    });
+}
+
 #pragma mark - 懒加载
 - (AFHTTPSessionManager *)mgr
 {
@@ -90,6 +121,22 @@
         _mgr = [AFHTTPSessionManager manager];
     }
     return _mgr;
+}
+
+#pragma mark - 代理方法
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if (self.topicItems.count == 0 || self.loadingMoreData) return;
+    
+    // 上拉刷新加载数据
+    CGFloat offsetY = scrollView.contentSize.height + scrollView.contentInset.bottom - scrollView.height;
+    if (scrollView.contentOffset.y >= offsetY) {
+        self.loadingMoreData = YES;
+        
+        self.footerLabel.text = @"正在加载更多的数据...";
+        
+        [self loadMoreTopics];
+    }
 }
 
 #pragma mark - tableViewDataSource
