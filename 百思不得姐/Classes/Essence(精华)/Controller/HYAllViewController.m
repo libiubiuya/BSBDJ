@@ -23,6 +23,8 @@
 @property (weak, nonatomic) UILabel *footerLabel;
 /** 是否正在加载更多数据 */
 @property(nonatomic, assign, getter=isLoadingMoreData) BOOL loadingMoreData;
+/** 加载下一页数据  */
+@property (nonatomic, copy) NSString *maxtime;
 
 @end
 
@@ -90,6 +92,7 @@
     
     [self.mgr GET:baseUrl parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
+        self.maxtime = responseObject[@"info"][@"maxtime"];
         self.topicItems = [HYTopicItem mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         
         [self.tableView reloadData];
@@ -107,12 +110,26 @@
  */
 - (void)loadMoreTopics
 {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.topicItems addObject:[[HYTopicItem alloc] init]];
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    parameters[@"a"] = @"list";
+    parameters[@"c"] = @"data";
+    parameters[@"type"] = @"1";
+    parameters[@"maxtime"] = self.maxtime;
+    
+    [self.mgr GET:baseUrl parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        self.maxtime = responseObject[@"info"][@"maxtime"];
+        NSArray *moreTopics = [HYTopicItem mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        [self.topicItems addObjectsFromArray:moreTopics];
+        
         [self.tableView reloadData];
-        self.footerLabel.text = @"上拉可以加载更多";
+        
         self.loadingMoreData = NO;
-    });
+        self.footerLabel.text = @"上拉可以加载更多";
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        self.loadingMoreData = NO;
+        self.footerLabel.text = @"上拉可以加载更多";
+    }];
 }
 
 #pragma mark - 懒加载
@@ -136,7 +153,10 @@
         
         self.footerLabel.text = @"正在加载更多的数据...";
         
-        [self loadMoreTopics];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            
+            [self loadMoreTopics];
+        });
     }
 }
 
