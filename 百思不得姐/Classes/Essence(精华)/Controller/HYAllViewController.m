@@ -95,6 +95,7 @@
         [self.tableView reloadData];
         
         [self.downRefresh endRefreshing];
+        self.tableView.tableFooterView.hidden = NO;
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [self.downRefresh endRefreshing];
