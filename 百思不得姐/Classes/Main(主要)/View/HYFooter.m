@@ -1,44 +1,44 @@
 //
-//  HYHeader.m
+//  HYFooter.m
 //  百思不得姐
 //
 //  Created by 李好一 on 16/3/3.
 //  Copyright © 2016年 李好一. All rights reserved.
 //
 
-#import "HYHeader.h"
+#import "HYFooter.h"
 
-@interface HYHeader ()
+@interface HYFooter ()
 
 /** logo */
 @property (weak, nonatomic) UIImageView *logo;
 
 @end
 
-@implementation HYHeader
+@implementation HYFooter
 
 // 初始化
 - (void)prepare
 {
     [super prepare];
     
-    self.automaticallyChangeAlpha = YES;
     self.stateLabel.textColor = [UIColor yellowColor];
-    self.lastUpdatedTimeLabel.hidden = NO;
     
     UIImageView *logo = [[UIImageView alloc] init];
     logo.contentMode = UIViewContentModeCenter;
     logo.image = [UIImage imageNamed:@"MainTitle"];
     [self addSubview:logo];
     self.logo = logo;
+
+//    self.automaticallyHidden = NO;
 }
 
-// 重新布局
+// 摆放子控件
 - (void)placeSubviews
 {
     [super placeSubviews];
     
-    self.logo.frame = CGRectMake(0, -60, self.width, 60);
+    self.logo.frame = CGRectMake(0, self.height, self.width, 60);
 }
 
 @end
