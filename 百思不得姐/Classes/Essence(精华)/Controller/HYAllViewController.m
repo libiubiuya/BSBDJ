@@ -8,13 +8,13 @@
 
 #import "HYAllViewController.h"
 #import "HYTopicItem.h"
+#import "HYHeader.h"
+
 #import <AFHTTPSessionManager.h>
 #import <MJExtension/MJExtension.h>
 
 @interface HYAllViewController ()
 
-/** 下拉刷新控件 */
-@property (weak, nonatomic) UIRefreshControl *downRefresh;
 /** 会话管理者 */
 @property (weak, nonatomic) AFHTTPSessionManager *mgr;
 /** 帖子模型 */
@@ -58,10 +58,7 @@
 - (void)setUpRefresh
 {
     // 下拉刷新
-    UIRefreshControl *downRefresh = [[UIRefreshControl alloc] init];
-    [downRefresh addTarget:self action:@selector(loadNewTopics) forControlEvents:UIControlEventValueChanged];
-    [self.tableView addSubview:downRefresh];
-    self.downRefresh = downRefresh;
+    self.tableView.mj_header = [HYHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopics)];
     
     // 上拉刷新
     UIView *footer = [[UIView alloc] init];
@@ -97,11 +94,11 @@
         
         [self.tableView reloadData];
         
-        [self.downRefresh endRefreshing];
+        [self.tableView.mj_header endRefreshing];
         self.tableView.tableFooterView.hidden = NO;
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        [self.downRefresh endRefreshing];
+        [self.tableView.mj_header endRefreshing];
     }];
 }
 
