@@ -10,6 +10,7 @@
 #import "HYTopicItem.h"
 #import "HYHeader.h"
 #import "HYFooter.h"
+#import "HYTopicCell.h"
 
 #import <AFHTTPSessionManager.h>
 #import <MJExtension/MJExtension.h>
@@ -26,6 +27,8 @@
 @end
 
 @implementation HYAllViewController
+
+static NSString * const HYTopicCellId = @"topic";
 
 #pragma mark - init
 - (void)viewDidLoad
@@ -47,6 +50,13 @@
 {
     self.tableView.contentInset = UIEdgeInsetsMake(HYNavMaxY + HYTitlesViewH, 0, HYTabBarH, 0);
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+    self.tableView.backgroundColor = [UIColor clearColor];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    // 注册cell
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([HYTopicCell class]) bundle:nil] forCellReuseIdentifier:HYTopicCellId];
+    
+    self.tableView.rowHeight = 300;
 }
 
 /**
@@ -54,8 +64,11 @@
  */
 - (void)setUpRefresh
 {
+    
     // 下拉刷新
     self.tableView.mj_header = [HYHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopics)];
+    // 一进入界面就刷新
+    [self.tableView.mj_header beginRefreshing];
     
     // 上拉刷新
     self.tableView.mj_footer = [HYFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
@@ -128,15 +141,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    static NSString *ID = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-    }
+    HYTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:HYTopicCellId];
     
-    HYTopicItem *topicItem = self.topicItems[indexPath.row];
-    cell.textLabel.text = topicItem.name;
-    cell.detailTextLabel.text = topicItem.text;
+    cell.topicItem = self.topicItems[indexPath.row];
     
     return cell;
 }

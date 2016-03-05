@@ -20,6 +20,8 @@
 		C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B75FB1C55F3C700004871 /* HYTabBar.m */; };
 		C48B75FF1C5641CD00004871 /* UIView+HYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B75FE1C5641CD00004871 /* UIView+HYFrame.m */; };
 		C48B76021C564EF600004871 /* UIBarButtonItem+HYItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B76011C564EF600004871 /* UIBarButtonItem+HYItem.m */; };
+		C492F9011C89CF6100BB761F /* HYTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C492F8FF1C89CF6100BB761F /* HYTopicCell.m */; };
+		C492F9041C89D64600BB761F /* HYTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C492F9031C89D64600BB761F /* HYTopicCell.xib */; };
 		C49AB12D1C868D95007B370D /* HYTopicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C49AB12C1C868D95007B370D /* HYTopicItem.m */; };
 		C49E5A951C7B45AB003EDCB0 /* HYAdItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C49E5A941C7B45AB003EDCB0 /* HYAdItem.m */; };
 		C4CB4E281C5EF563006FE981 /* HYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CB4E271C5EF563006FE981 /* HYSettingController.m */; };
@@ -77,6 +79,9 @@
 		C48B75FE1C5641CD00004871 /* UIView+HYFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HYFrame.m"; sourceTree = "<group>"; };
 		C48B76001C564EF600004871 /* UIBarButtonItem+HYItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HYItem.h"; sourceTree = "<group>"; };
 		C48B76011C564EF600004871 /* UIBarButtonItem+HYItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HYItem.m"; sourceTree = "<group>"; };
+		C492F8FE1C89CF6100BB761F /* HYTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTopicCell.h; sourceTree = "<group>"; };
+		C492F8FF1C89CF6100BB761F /* HYTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTopicCell.m; sourceTree = "<group>"; };
+		C492F9031C89D64600BB761F /* HYTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYTopicCell.xib; sourceTree = "<group>"; };
 		C49AB12B1C868D95007B370D /* HYTopicItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTopicItem.h; sourceTree = "<group>"; };
 		C49AB12C1C868D95007B370D /* HYTopicItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTopicItem.m; sourceTree = "<group>"; };
 		C49E5A931C7B45AB003EDCB0 /* HYAdItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYAdItem.h; sourceTree = "<group>"; };
@@ -284,6 +289,9 @@
 			children = (
 				C4DF62881C818AB100F6C963 /* HYTitleButton.h */,
 				C4DF62891C818AB100F6C963 /* HYTitleButton.m */,
+				C492F8FE1C89CF6100BB761F /* HYTopicCell.h */,
+				C492F8FF1C89CF6100BB761F /* HYTopicCell.m */,
+				C492F9031C89D64600BB761F /* HYTopicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -603,6 +611,7 @@
 				C4DA92281C7AAA2B0080C9C3 /* LaunchImage-700-568h@2x.png in Resources */,
 				C4DA921E1C7AA9600080C9C3 /* HYAdController.xib in Resources */,
 				C4DA922B1C7AAA2B0080C9C3 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				C492F9041C89D64600BB761F /* HYTopicCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +693,7 @@
 				C4CB4E2B1C5F7F0B006FE981 /* HYNavigationController.m in Sources */,
 				C4DA290E1C8866CC00B2DBDB /* HYHeader.m in Sources */,
 				C4DF62871C8180B000F6C963 /* HYGlobeConst.m in Sources */,
+				C492F9011C89CF6100BB761F /* HYTopicCell.m in Sources */,
 				C49AB12D1C868D95007B370D /* HYTopicItem.m in Sources */,
 				C4DF62901C83332300F6C963 /* HYAllViewController.m in Sources */,
 				C4DF625F1C7C11CE00F6C963 /* HYSubTagItem.m in Sources */,

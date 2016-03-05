@@ -26,5 +26,7 @@
 @property (nonatomic, assign) NSInteger repost;
 /** 评论数量 */
 @property (nonatomic, assign) NSInteger comment;
+/** 帖子类型 */
+@property (nonatomic, assign) NSInteger *type;
 
 @end
