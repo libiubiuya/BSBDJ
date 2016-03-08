@@ -70,6 +70,9 @@
  */
 - (void)setUpScrollView
 {
+    // 不要自动调整scrollView的contentInset
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     UIScrollView *scrollView = [[UIScrollView alloc] init];
     scrollView.frame = self.view.bounds;
     scrollView.backgroundColor = [UIColor orangeColor];
