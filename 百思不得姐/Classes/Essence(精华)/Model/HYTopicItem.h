@@ -19,14 +19,16 @@
 /** 帖子审核通过的时间 */
 @property (nonatomic, copy) NSString *created_at;
 /** 顶数量 */
-@property (nonatomic, assign) NSInteger ding;
+@property (nonatomic, copy) NSString *ding;
 /** 踩数量 */
-@property (nonatomic, assign) NSInteger cai;
+@property (nonatomic, copy) NSString *cai;
 /** 转发\分享数量 */
-@property (nonatomic, assign) NSInteger repost;
+@property (nonatomic, copy) NSString *repost;
 /** 评论数量 */
-@property (nonatomic, assign) NSInteger comment;
+@property (nonatomic, copy) NSString *comment;
 /** 帖子类型 */
 @property (nonatomic, assign) NSInteger *type;
+/** 最热评论(数组里面存放着最热评论数据) */
+@property (nonatomic, strong) NSArray *top_cmt;
 
 @end

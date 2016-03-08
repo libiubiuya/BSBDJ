@@ -53,10 +53,20 @@
     self.nameLabel.text = topicItem.name;
     self.createdAtLabel.text = topicItem.created_at;
     self.text_label.text = topicItem.text;
-    [self.dingButton setTitle:[NSString stringWithFormat:@"%zd", topicItem.ding] forState:UIControlStateNormal];
-    [self.caiButton setTitle:[NSString stringWithFormat:@"%zd", topicItem.cai] forState:UIControlStateNormal];
-    [self.repostButton setTitle:[NSString stringWithFormat:@"%zd", topicItem.repost] forState:UIControlStateNormal];
-    [self.commentButton setTitle:[NSString stringWithFormat:@"%zd", topicItem.comment] forState:UIControlStateNormal];
+    [self.dingButton setTitle:topicItem.ding forState:UIControlStateNormal];
+    [self.caiButton setTitle:topicItem.cai forState:UIControlStateNormal];
+    [self.repostButton setTitle:topicItem.repost forState:UIControlStateNormal];
+    [self.commentButton setTitle:topicItem.comment forState:UIControlStateNormal];
+    
+    // 最热评论
+    if (topicItem.top_cmt.count) {
+        self.topCmtView.hidden = NO;
+        
+        NSDictionary *cmt = topicItem.top_cmt.firstObject;
+        self.topCmtLabel.text = [NSString stringWithFormat:@"%@ : %@", cmt[@"user"][@"username"], cmt[@"content"]];
+    } else {
+        self.topCmtView.hidden = YES;
+    }
 }
 
 - (void)setFrame:(CGRect)frame
