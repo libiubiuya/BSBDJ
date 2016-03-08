@@ -148,4 +148,42 @@ static NSString * const HYTopicCellId = @"topic";
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGFloat cellHeight = 0;
+    HYTopicItem *topicItem = self.topicItems[indexPath.row];
+    
+    // 头像
+    cellHeight = 35 + HYMargin;
+    
+    // 文字
+    CGFloat textMaxW = HYScreenW - 2 * HYMargin;
+    cellHeight += [topicItem.text boundingRectWithSize:CGSizeMake(textMaxW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:15]} context:nil].size.height + HYMargin;
+    
+    // 中间
+    cellHeight += HYMargin;
+    
+    // 最热评论
+    if (topicItem.top_cmt.count) {
+        
+        // 最热评论
+        cellHeight += 20 + HYMargin;
+        
+        // 评论内容
+        NSDictionary *cmt = topicItem.top_cmt.firstObject;
+        NSString *username = cmt[@"user"][@"username"];
+        NSString *content = cmt[@"content"];
+        if (content.length == 0) {
+            content = @"[语音评论]";
+        }
+        NSString *cmt_text = [NSString stringWithFormat:@"%@ : %@", username, content];
+        
+        cellHeight += [cmt_text boundingRectWithSize:CGSizeMake(textMaxW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:15]} context:nil].size.height + HYMargin;
+    }
+    
+    // 底部工具条
+    cellHeight += 35 + HYMargin;
+    return cellHeight;
+}
+
 @end

@@ -63,7 +63,12 @@
         self.topCmtView.hidden = NO;
         
         NSDictionary *cmt = topicItem.top_cmt.firstObject;
-        self.topCmtLabel.text = [NSString stringWithFormat:@"%@ : %@", cmt[@"user"][@"username"], cmt[@"content"]];
+        NSString *username = cmt[@"user"][@"username"];
+        NSString *content = cmt[@"content"];
+        if (content.length == 0) { // 语音评论
+            content = @"[语音评论]";
+        }
+        self.topCmtLabel.text = [NSString stringWithFormat:@"%@ : %@", username, content];
     } else {
         self.topCmtView.hidden = YES;
     }
