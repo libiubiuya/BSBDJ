@@ -10,6 +10,48 @@
 
 @implementation HYTopicItem
 
+- (CGFloat)cellHeight
+{
+    // 头像
+    _cellHeight = 35 + HYMargin;
+    
+    // 文字
+    CGFloat textMaxW = HYScreenW - 2 * HYMargin;
+    _cellHeight += [self.text boundingRectWithSize:CGSizeMake(textMaxW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:15]} context:nil].size.height + HYMargin;
+    
+    // 中间
+    if (self.type != HYTopicTypeWord) {
+        CGFloat cellW = textMaxW;
+        CGFloat cellH = self.height * cellW / self.width;
+        _cellHeight += cellH + HYMargin;
+    } else {
+        _cellHeight += HYMargin;
+    }
+    
+    // 最热评论
+    if (self.top_cmt.count) {
+        
+        // 最热评论
+        _cellHeight += 20 + HYMargin;
+        
+        // 评论内容
+        NSDictionary *cmt = self.top_cmt.firstObject;
+        NSString *username = cmt[@"user"][@"username"];
+        NSString *content = cmt[@"content"];
+        if (content.length == 0) {
+            content = @"[语音评论]";
+        }
+        NSString *cmt_text = [NSString stringWithFormat:@"%@ : %@", username, content];
+        
+        _cellHeight += [cmt_text boundingRectWithSize:CGSizeMake(textMaxW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:15]} context:nil].size.height + HYMargin;
+    }
+    
+    // 底部工具条
+    _cellHeight += 35 + HYMargin;
+    
+    return _cellHeight;
+}
+
 - (NSString *)buttonTitle:(NSString *)numberStr placeholder:(NSString *)placeholder
 {
     NSInteger number = numberStr.integerValue;
