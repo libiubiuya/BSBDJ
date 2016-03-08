@@ -48,7 +48,7 @@ static NSString * const HYTopicCellId = @"topic";
  */
 - (void)setUpTableView
 {
-    self.tableView.contentInset = UIEdgeInsetsMake(HYNavMaxY + HYTitlesViewH, 0, HYTabBarH, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(HYTitlesViewH, 0, HYTabBarH, 0);
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
     self.tableView.backgroundColor = [UIColor clearColor];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
