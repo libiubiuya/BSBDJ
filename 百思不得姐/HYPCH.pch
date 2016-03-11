@@ -13,6 +13,7 @@
 #import "UIView+HYFrame.h"
 #import "UIBarButtonItem+HYItem.h"
 #import "HYGlobeConst.h"
+#import "UIView+HYInit.h"
 
 
 #pragma mark - 参数

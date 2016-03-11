@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		76C1DF3804DC15DDF3163AD3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4801C05ACDCAED193D19F934 /* libPods.a */; };
+		C44C92591C8FE373002FC507 /* HYTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = C44C92581C8FE373002FC507 /* HYTopicPictureView.m */; };
+		C44C925B1C8FE38D002FC507 /* HYTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44C925A1C8FE38D002FC507 /* HYTopicPictureView.xib */; };
+		C44C925E1C8FE3CF002FC507 /* HYTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = C44C925D1C8FE3CF002FC507 /* HYTopicVoiceView.m */; };
+		C44C92601C8FE3E1002FC507 /* HYTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44C925F1C8FE3E1002FC507 /* HYTopicVoiceView.xib */; };
+		C44C92631C8FE40F002FC507 /* HYTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C44C92621C8FE40F002FC507 /* HYTopicVideoView.m */; };
+		C44C92651C8FE422002FC507 /* HYTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44C92641C8FE422002FC507 /* HYTopicVideoView.xib */; };
+		C44C92681C8FE698002FC507 /* UIView+HYInit.m in Sources */ = {isa = PBXBuildFile; fileRef = C44C92671C8FE698002FC507 /* UIView+HYInit.m */; };
 		C478DBF11C45358800164830 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DBF01C45358800164830 /* main.m */; };
 		C478DBFC1C45358800164830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C478DBFB1C45358800164830 /* Assets.xcassets */; };
 		C478DC2E1C453BD500164830 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC241C453BD500164830 /* AppDelegate.m */; };
@@ -54,6 +61,17 @@
 		0FE83424EF42512036031C5C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4801C05ACDCAED193D19F934 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CAD60CA60ECC5B554FD4EF9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C44C92571C8FE373002FC507 /* HYTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTopicPictureView.h; sourceTree = "<group>"; };
+		C44C92581C8FE373002FC507 /* HYTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTopicPictureView.m; sourceTree = "<group>"; };
+		C44C925A1C8FE38D002FC507 /* HYTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYTopicPictureView.xib; sourceTree = "<group>"; };
+		C44C925C1C8FE3CF002FC507 /* HYTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTopicVoiceView.h; sourceTree = "<group>"; };
+		C44C925D1C8FE3CF002FC507 /* HYTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTopicVoiceView.m; sourceTree = "<group>"; };
+		C44C925F1C8FE3E1002FC507 /* HYTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYTopicVoiceView.xib; sourceTree = "<group>"; };
+		C44C92611C8FE40F002FC507 /* HYTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTopicVideoView.h; sourceTree = "<group>"; };
+		C44C92621C8FE40F002FC507 /* HYTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTopicVideoView.m; sourceTree = "<group>"; };
+		C44C92641C8FE422002FC507 /* HYTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYTopicVideoView.xib; sourceTree = "<group>"; };
+		C44C92661C8FE698002FC507 /* UIView+HYInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HYInit.h"; sourceTree = "<group>"; };
+		C44C92671C8FE698002FC507 /* UIView+HYInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HYInit.m"; sourceTree = "<group>"; };
 		C478DBEC1C45358800164830 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C478DBF01C45358800164830 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C478DBFB1C45358800164830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -292,6 +310,15 @@
 				C492F8FE1C89CF6100BB761F /* HYTopicCell.h */,
 				C492F8FF1C89CF6100BB761F /* HYTopicCell.m */,
 				C492F9031C89D64600BB761F /* HYTopicCell.xib */,
+				C44C92571C8FE373002FC507 /* HYTopicPictureView.h */,
+				C44C92581C8FE373002FC507 /* HYTopicPictureView.m */,
+				C44C925A1C8FE38D002FC507 /* HYTopicPictureView.xib */,
+				C44C925C1C8FE3CF002FC507 /* HYTopicVoiceView.h */,
+				C44C925D1C8FE3CF002FC507 /* HYTopicVoiceView.m */,
+				C44C925F1C8FE3E1002FC507 /* HYTopicVoiceView.xib */,
+				C44C92611C8FE40F002FC507 /* HYTopicVideoView.h */,
+				C44C92621C8FE40F002FC507 /* HYTopicVideoView.m */,
+				C44C92641C8FE422002FC507 /* HYTopicVideoView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -421,6 +448,8 @@
 				C48B75FE1C5641CD00004871 /* UIView+HYFrame.m */,
 				C48B76001C564EF600004871 /* UIBarButtonItem+HYItem.h */,
 				C48B76011C564EF600004871 /* UIBarButtonItem+HYItem.m */,
+				C44C92661C8FE698002FC507 /* UIView+HYInit.h */,
+				C44C92671C8FE698002FC507 /* UIView+HYInit.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -603,11 +632,14 @@
 			files = (
 				C4DA922C1C7AAA2B0080C9C3 /* LaunchImage.png in Resources */,
 				C4DA922D1C7AAA2B0080C9C3 /* LaunchImage@2x.png in Resources */,
+				C44C925B1C8FE38D002FC507 /* HYTopicPictureView.xib in Resources */,
+				C44C92651C8FE422002FC507 /* HYTopicVideoView.xib in Resources */,
 				C478DBFC1C45358800164830 /* Assets.xcassets in Resources */,
 				C4DA922A1C7AAA2B0080C9C3 /* LaunchImage-800-667h@2x.png in Resources */,
 				C4DA92271C7AAA2B0080C9C3 /* LaunchImage-568h@2x.png in Resources */,
 				C4DA92291C7AAA2B0080C9C3 /* LaunchImage-700@2x.png in Resources */,
 				C4DF62641C7C424E00F6C963 /* HYSubTagCell.xib in Resources */,
+				C44C92601C8FE3E1002FC507 /* HYTopicVoiceView.xib in Resources */,
 				C4DA92281C7AAA2B0080C9C3 /* LaunchImage-700-568h@2x.png in Resources */,
 				C4DA921E1C7AA9600080C9C3 /* HYAdController.xib in Resources */,
 				C4DA922B1C7AAA2B0080C9C3 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
@@ -672,6 +704,7 @@
 			files = (
 				C48B75F91C55F39800004871 /* HYTabBarController.m in Sources */,
 				C48B75FF1C5641CD00004871 /* UIView+HYFrame.m in Sources */,
+				C44C92681C8FE698002FC507 /* UIView+HYInit.m in Sources */,
 				C478DC341C4544A900164830 /* HYEssenceController.m in Sources */,
 				C48B75EE1C52E28100004871 /* UIImage+HYOriginal.m in Sources */,
 				C478DC3D1C4544FF00164830 /* HYNewController.m in Sources */,
@@ -694,11 +727,14 @@
 				C4DA290E1C8866CC00B2DBDB /* HYHeader.m in Sources */,
 				C4DF62871C8180B000F6C963 /* HYGlobeConst.m in Sources */,
 				C492F9011C89CF6100BB761F /* HYTopicCell.m in Sources */,
+				C44C925E1C8FE3CF002FC507 /* HYTopicVoiceView.m in Sources */,
 				C49AB12D1C868D95007B370D /* HYTopicItem.m in Sources */,
 				C4DF62901C83332300F6C963 /* HYAllViewController.m in Sources */,
+				C44C92591C8FE373002FC507 /* HYTopicPictureView.m in Sources */,
 				C4DF625F1C7C11CE00F6C963 /* HYSubTagItem.m in Sources */,
 				C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */,
 				C4CB4E281C5EF563006FE981 /* HYSettingController.m in Sources */,
+				C44C92631C8FE40F002FC507 /* HYTopicVideoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

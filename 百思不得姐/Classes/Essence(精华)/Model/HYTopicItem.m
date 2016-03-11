@@ -23,6 +23,9 @@
     if (self.type != HYTopicTypeWord) {
         CGFloat cellW = textMaxW;
         CGFloat cellH = self.height * cellW / self.width;
+        
+        // 中间内容的frame
+        self.centerFrame = CGRectMake(HYMargin, _cellHeight + HYMargin, cellW, cellH);
         _cellHeight += cellH + HYMargin;
     } else {
         _cellHeight += HYMargin;
