@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class HYTopicItem;
 @interface HYTopicVoiceView : UIView
+
+/** 帖子模型 */
+@property (nonatomic, strong) HYTopicItem *topicItem;
 
 @end

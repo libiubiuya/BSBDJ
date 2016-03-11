@@ -8,12 +8,57 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HYTopicVoiceView">
-            <rect key="frame" x="0.0" y="0.0" width="273" height="130"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="262"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qll-Ui-hdy">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="262"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234次播放" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qtt-Tb-UE6">
+                    <rect key="frame" x="339" y="0.0" width="75" height="17"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03:20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayB-y4-ry7">
+                    <rect key="frame" x="375" y="245" width="39" height="17"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4a8-C4-cuQ">
+                    <rect key="frame" x="176" y="100" width="63" height="63"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="playButtonPlay" backgroundImage="playButton"/>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ayB-y4-ry7" secondAttribute="bottom" id="3Jg-1M-sdR"/>
+                <constraint firstItem="Qll-Ui-hdy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="B7a-go-yWH"/>
+                <constraint firstItem="Qtt-Tb-UE6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Hfb-yj-jSX"/>
+                <constraint firstItem="4a8-C4-cuQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="NLo-bt-hX6"/>
+                <constraint firstItem="Qll-Ui-hdy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ns9-XG-Gd3"/>
+                <constraint firstItem="4a8-C4-cuQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="R5m-Xf-NBd"/>
+                <constraint firstAttribute="trailing" secondItem="Qll-Ui-hdy" secondAttribute="trailing" id="WWW-IV-DF8"/>
+                <constraint firstAttribute="bottom" secondItem="Qll-Ui-hdy" secondAttribute="bottom" id="Zdx-NZ-xHo"/>
+                <constraint firstAttribute="trailing" secondItem="Qtt-Tb-UE6" secondAttribute="trailing" id="v6d-5i-aa3"/>
+                <constraint firstAttribute="trailing" secondItem="ayB-y4-ry7" secondAttribute="trailing" id="zgn-Go-gvO"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="314.5" y="384"/>
+            <connections>
+                <outlet property="imageView" destination="Qll-Ui-hdy" id="Xmd-VS-Spr"/>
+                <outlet property="playCountLabel" destination="Qtt-Tb-UE6" id="Gdz-it-akx"/>
+                <outlet property="voiceTimeLabel" destination="ayB-y4-ry7" id="PWp-84-dbh"/>
+            </connections>
+            <point key="canvasLocation" x="307" y="314"/>
         </view>
     </objects>
+    <resources>
+        <image name="playButton" width="63" height="63"/>
+        <image name="playButtonPlay" width="30" height="30"/>
+    </resources>
 </document>

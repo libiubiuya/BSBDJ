@@ -13,7 +13,7 @@
 - (CGFloat)cellHeight
 {
     // 头像
-    _cellHeight = 35 + HYMargin;
+    _cellHeight = 45 + HYMargin;
     
     // 文字
     CGFloat textMaxW = HYScreenW - 2 * HYMargin;
@@ -25,17 +25,15 @@
         CGFloat cellH = self.height * cellW / self.width;
         
         // 中间内容的frame
-        self.centerFrame = CGRectMake(HYMargin, _cellHeight + HYMargin, cellW, cellH);
-        _cellHeight += cellH + HYMargin;
-    } else {
-        _cellHeight += HYMargin;
+        self.centerFrame = CGRectMake(HYMargin, _cellHeight, cellW, cellH);
+        _cellHeight += (cellH + HYMargin);
     }
     
     // 最热评论
     if (self.top_cmt.count) {
         
         // 最热评论
-        _cellHeight += 20 + HYMargin;
+        _cellHeight += 20;
         
         // 评论内容
         NSDictionary *cmt = self.top_cmt.firstObject;
@@ -50,7 +48,7 @@
     }
     
     // 底部工具条
-    _cellHeight += 35 + HYMargin;
+    _cellHeight += (HYMargin + 35);
     
     return _cellHeight;
 }

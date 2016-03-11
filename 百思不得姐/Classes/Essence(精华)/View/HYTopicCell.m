@@ -119,6 +119,7 @@
         self.pictureView.hidden = YES;
         self.videoView.hidden = YES;
         self.voiceView.hidden = NO;
+        self.voiceView.topicItem = topicItem;
     } else if (topicItem.type == HYTopicTypePicture) { // 图片
         self.pictureView.hidden = NO;
         self.videoView.hidden = YES;
