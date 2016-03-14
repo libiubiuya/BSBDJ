@@ -23,6 +23,10 @@
     if (self.type != HYTopicTypeWord) {
         CGFloat cellW = textMaxW;
         CGFloat cellH = self.height * cellW / self.width;
+        if (cellH >= 400) {
+            cellH = 300;
+            self.bigPicture = YES;
+        }
         
         // 中间内容的frame
         self.centerFrame = CGRectMake(HYMargin, _cellHeight, cellW, cellH);

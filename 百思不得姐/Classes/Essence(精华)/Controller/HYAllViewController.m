@@ -82,7 +82,7 @@ static NSString * const HYTopicCellId = @"topic";
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"a"] = @"list";
     parameters[@"c"] = @"data";
-    parameters[@"type"] = @(HYTopicTypeVideo);
+    parameters[@"type"] = @(HYTopicTypeAll);
     
     [self.mgr GET:baseUrl parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
@@ -106,7 +106,7 @@ static NSString * const HYTopicCellId = @"topic";
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"a"] = @"list";
     parameters[@"c"] = @"data";
-    parameters[@"type"] = @(HYTopicTypeVideo);
+    parameters[@"type"] = @(HYTopicTypeAll);
     parameters[@"maxtime"] = self.maxtime;
     
     [self.mgr GET:baseUrl parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {

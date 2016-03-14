@@ -59,11 +59,15 @@ typedef NS_ENUM(NSUInteger, HYTopicType) {
 @property (nonatomic, copy) NSString *image1;
 /** 中图片 */
 @property (nonatomic, copy) NSString *image2;
+/** 是否是动态图 */
+@property (nonatomic, assign) BOOL is_gif;
 
 // 辅助属性
 /** cell的高度 */
 @property (nonatomic, assign) CGFloat cellHeight;
 /** 中间内容的frame */
 @property (nonatomic, assign) CGRect centerFrame;
+/** 是否为动态图 */
+@property (nonatomic, assign, getter=isBigPicture) BOOL bigPicture;
 
 @end

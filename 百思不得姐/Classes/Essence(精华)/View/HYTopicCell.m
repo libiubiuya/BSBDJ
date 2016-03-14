@@ -114,8 +114,8 @@
     } else if (topicItem.type == HYTopicTypeVideo) { // 视频
         self.pictureView.hidden = YES;
         self.videoView.hidden = NO;
-        self.voiceView.hidden = YES;
         self.videoView.topicItem = topicItem;
+        self.voiceView.hidden = YES;
     } else if (topicItem.type == HYTopicTypeVoice) { // 声音
         self.pictureView.hidden = YES;
         self.videoView.hidden = YES;
@@ -123,6 +123,7 @@
         self.voiceView.topicItem = topicItem;
     } else if (topicItem.type == HYTopicTypePicture) { // 图片
         self.pictureView.hidden = NO;
+        self.pictureView.topicItem = topicItem;
         self.videoView.hidden = YES;
         self.voiceView.hidden = YES;
     }

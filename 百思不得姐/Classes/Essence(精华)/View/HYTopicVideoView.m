@@ -31,6 +31,13 @@
     // 背景
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:topicItem.image1]];
     
+    // 大图片
+    if (topicItem.isBigPicture) {
+        self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    } else {
+        self.imageView.contentMode = UIViewContentModeScaleToFill;
+    }
+    
     // 播放数量
     if (topicItem.playcount >= 10000) {
         self.playCountLabel.text = [NSString stringWithFormat:@"%.1f万次播放", topicItem.playcount / 10000.0];
