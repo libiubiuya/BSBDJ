@@ -73,7 +73,8 @@
     [self addChildViewController:friendTrends];
     
     // 我
-    HYMeController *me = [[HYMeController alloc] init];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:NSStringFromClass([HYMeController class]) bundle:nil];
+    HYMeController *me = [storyboard instantiateInitialViewController];
     [self addChildViewController:me];
 }
 

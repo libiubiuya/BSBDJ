@@ -20,7 +20,6 @@
 		C478DC2E1C453BD500164830 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC241C453BD500164830 /* AppDelegate.m */; };
 		C478DC341C4544A900164830 /* HYEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC331C4544A900164830 /* HYEssenceController.m */; };
 		C478DC371C4544CF00164830 /* HYFriendTrendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC361C4544CF00164830 /* HYFriendTrendsController.m */; };
-		C478DC3A1C4544F000164830 /* HYMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC391C4544F000164830 /* HYMeController.m */; };
 		C478DC3D1C4544FF00164830 /* HYNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC3C1C4544FF00164830 /* HYNewController.m */; };
 		C48B75EE1C52E28100004871 /* UIImage+HYOriginal.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B75ED1C52E28100004871 /* UIImage+HYOriginal.m */; };
 		C48B75F91C55F39800004871 /* HYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B75F61C55F39800004871 /* HYTabBarController.m */; };
@@ -31,6 +30,8 @@
 		C492F9041C89D64600BB761F /* HYTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C492F9031C89D64600BB761F /* HYTopicCell.xib */; };
 		C49AB12D1C868D95007B370D /* HYTopicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C49AB12C1C868D95007B370D /* HYTopicItem.m */; };
 		C49E5A951C7B45AB003EDCB0 /* HYAdItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C49E5A941C7B45AB003EDCB0 /* HYAdItem.m */; };
+		C4AE1CF11CB545E500EFF7CF /* HYMeController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4AE1CF01CB545E500EFF7CF /* HYMeController.storyboard */; };
+		C4AE1CF41CBA1C1200EFF7CF /* HYMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AE1CF31CBA1C1200EFF7CF /* HYMeController.m */; };
 		C4CB4E281C5EF563006FE981 /* HYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CB4E271C5EF563006FE981 /* HYSettingController.m */; };
 		C4CB4E2B1C5F7F0B006FE981 /* HYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CB4E2A1C5F7F0B006FE981 /* HYNavigationController.m */; };
 		C4DA290E1C8866CC00B2DBDB /* HYHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DA290D1C8866CC00B2DBDB /* HYHeader.m */; };
@@ -82,8 +83,6 @@
 		C478DC331C4544A900164830 /* HYEssenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYEssenceController.m; sourceTree = "<group>"; };
 		C478DC351C4544CF00164830 /* HYFriendTrendsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYFriendTrendsController.h; sourceTree = "<group>"; };
 		C478DC361C4544CF00164830 /* HYFriendTrendsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYFriendTrendsController.m; sourceTree = "<group>"; };
-		C478DC381C4544EF00164830 /* HYMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYMeController.h; sourceTree = "<group>"; };
-		C478DC391C4544F000164830 /* HYMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYMeController.m; sourceTree = "<group>"; };
 		C478DC3B1C4544FF00164830 /* HYNewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYNewController.h; sourceTree = "<group>"; };
 		C478DC3C1C4544FF00164830 /* HYNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYNewController.m; sourceTree = "<group>"; };
 		C48B75EC1C52E28100004871 /* UIImage+HYOriginal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HYOriginal.h"; sourceTree = "<group>"; };
@@ -104,6 +103,9 @@
 		C49AB12C1C868D95007B370D /* HYTopicItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTopicItem.m; sourceTree = "<group>"; };
 		C49E5A931C7B45AB003EDCB0 /* HYAdItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYAdItem.h; sourceTree = "<group>"; };
 		C49E5A941C7B45AB003EDCB0 /* HYAdItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYAdItem.m; sourceTree = "<group>"; };
+		C4AE1CF01CB545E500EFF7CF /* HYMeController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HYMeController.storyboard; sourceTree = "<group>"; };
+		C4AE1CF21CBA1C1200EFF7CF /* HYMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYMeController.h; sourceTree = "<group>"; };
+		C4AE1CF31CBA1C1200EFF7CF /* HYMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYMeController.m; sourceTree = "<group>"; };
 		C4CB4E261C5EF563006FE981 /* HYSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSettingController.h; sourceTree = "<group>"; };
 		C4CB4E271C5EF563006FE981 /* HYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSettingController.m; sourceTree = "<group>"; };
 		C4CB4E291C5F7F0B006FE981 /* HYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYNavigationController.h; sourceTree = "<group>"; };
@@ -369,8 +371,9 @@
 		C478DC141C453BD500164830 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C478DC381C4544EF00164830 /* HYMeController.h */,
-				C478DC391C4544F000164830 /* HYMeController.m */,
+				C4AE1CF21CBA1C1200EFF7CF /* HYMeController.h */,
+				C4AE1CF31CBA1C1200EFF7CF /* HYMeController.m */,
+				C4AE1CF01CB545E500EFF7CF /* HYMeController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -638,6 +641,7 @@
 				C4DA922A1C7AAA2B0080C9C3 /* LaunchImage-800-667h@2x.png in Resources */,
 				C4DA92271C7AAA2B0080C9C3 /* LaunchImage-568h@2x.png in Resources */,
 				C4DA92291C7AAA2B0080C9C3 /* LaunchImage-700@2x.png in Resources */,
+				C4AE1CF11CB545E500EFF7CF /* HYMeController.storyboard in Resources */,
 				C4DF62641C7C424E00F6C963 /* HYSubTagCell.xib in Resources */,
 				C44C92601C8FE3E1002FC507 /* HYTopicVoiceView.xib in Resources */,
 				C4DA92281C7AAA2B0080C9C3 /* LaunchImage-700-568h@2x.png in Resources */,
@@ -712,10 +716,10 @@
 				C4DF62961C83336A00F6C963 /* HYVoiceViewController.m in Sources */,
 				C478DC371C4544CF00164830 /* HYFriendTrendsController.m in Sources */,
 				C4DF629C1C83339A00F6C963 /* HYWordViewController.m in Sources */,
+				C4AE1CF41CBA1C1200EFF7CF /* HYMeController.m in Sources */,
 				C4DF62991C83338400F6C963 /* HYPictureViewController.m in Sources */,
 				C4DF62631C7C424E00F6C963 /* HYSubTagCell.m in Sources */,
 				C478DBF11C45358800164830 /* main.m in Sources */,
-				C478DC3A1C4544F000164830 /* HYMeController.m in Sources */,
 				C4DA29111C886AC400B2DBDB /* HYFooter.m in Sources */,
 				C478DC2E1C453BD500164830 /* AppDelegate.m in Sources */,
 				C4DF62931C83334700F6C963 /* HYVideoViewController.m in Sources */,

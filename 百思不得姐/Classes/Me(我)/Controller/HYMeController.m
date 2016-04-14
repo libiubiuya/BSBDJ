@@ -2,7 +2,7 @@
 //  HYMeController.m
 //  百思不得姐
 //
-//  Created by 李好一 on 16/1/12.
+//  Created by 李好一 on 16/4/10.
 //  Copyright © 2016年 李好一. All rights reserved.
 //
 
@@ -17,13 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.view.backgroundColor = [UIColor blueColor];
+    self.view.backgroundColor = [UIColor lightGrayColor];
     
     // 设置导航条
     [self setUpNavigationContent];
 }
 
+/**
+ *  设置导航条
+ */
 - (void)setUpNavigationContent
 {
     UIBarButtonItem *settingItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-setting-icon"] highImage:[UIImage imageNamed:@"mine-setting-icon-click"] target:self action:@selector(setting)];
@@ -33,7 +35,9 @@
     self.navigationItem.title = @"我的";
 }
 
-// 设置界面
+/**
+ *  设置界面
+ */
 - (void)setting
 {
     HYSettingController *setting = [[HYSettingController alloc] init];
@@ -44,6 +48,11 @@
     [self.navigationController pushViewController:setting animated:YES];
 }
 
+/**
+ *  夜间模式
+ *
+ *  @param button 点击的按钮
+ */
 - (void)moon:(UIButton *)button
 {
     button.selected = !button.selected;
