@@ -32,6 +32,9 @@
 		C49E5A951C7B45AB003EDCB0 /* HYAdItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C49E5A941C7B45AB003EDCB0 /* HYAdItem.m */; };
 		C4AE1CF11CB545E500EFF7CF /* HYMeController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4AE1CF01CB545E500EFF7CF /* HYMeController.storyboard */; };
 		C4AE1CF41CBA1C1200EFF7CF /* HYMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AE1CF31CBA1C1200EFF7CF /* HYMeController.m */; };
+		C4AE1CF71CBFD7FD00EFF7CF /* HYSquareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AE1CF61CBFD7FD00EFF7CF /* HYSquareItem.m */; };
+		C4AE1CFB1CBFDCB100EFF7CF /* HYSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AE1CF91CBFDCB100EFF7CF /* HYSquareCell.m */; };
+		C4AE1CFC1CBFDCB100EFF7CF /* HYSquareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4AE1CFA1CBFDCB100EFF7CF /* HYSquareCell.xib */; };
 		C4CB4E281C5EF563006FE981 /* HYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CB4E271C5EF563006FE981 /* HYSettingController.m */; };
 		C4CB4E2B1C5F7F0B006FE981 /* HYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CB4E2A1C5F7F0B006FE981 /* HYNavigationController.m */; };
 		C4DA290E1C8866CC00B2DBDB /* HYHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DA290D1C8866CC00B2DBDB /* HYHeader.m */; };
@@ -106,6 +109,11 @@
 		C4AE1CF01CB545E500EFF7CF /* HYMeController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HYMeController.storyboard; sourceTree = "<group>"; };
 		C4AE1CF21CBA1C1200EFF7CF /* HYMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYMeController.h; sourceTree = "<group>"; };
 		C4AE1CF31CBA1C1200EFF7CF /* HYMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYMeController.m; sourceTree = "<group>"; };
+		C4AE1CF51CBFD7FD00EFF7CF /* HYSquareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSquareItem.h; sourceTree = "<group>"; };
+		C4AE1CF61CBFD7FD00EFF7CF /* HYSquareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSquareItem.m; sourceTree = "<group>"; };
+		C4AE1CF81CBFDCB100EFF7CF /* HYSquareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSquareCell.h; sourceTree = "<group>"; };
+		C4AE1CF91CBFDCB100EFF7CF /* HYSquareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSquareCell.m; sourceTree = "<group>"; };
+		C4AE1CFA1CBFDCB100EFF7CF /* HYSquareCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYSquareCell.xib; sourceTree = "<group>"; };
 		C4CB4E261C5EF563006FE981 /* HYSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSettingController.h; sourceTree = "<group>"; };
 		C4CB4E271C5EF563006FE981 /* HYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSettingController.m; sourceTree = "<group>"; };
 		C4CB4E291C5F7F0B006FE981 /* HYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYNavigationController.h; sourceTree = "<group>"; };
@@ -381,6 +389,8 @@
 		C478DC151C453BD500164830 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C4AE1CF51CBFD7FD00EFF7CF /* HYSquareItem.h */,
+				C4AE1CF61CBFD7FD00EFF7CF /* HYSquareItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -388,6 +398,9 @@
 		C478DC161C453BD500164830 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C4AE1CF81CBFDCB100EFF7CF /* HYSquareCell.h */,
+				C4AE1CF91CBFDCB100EFF7CF /* HYSquareCell.m */,
+				C4AE1CFA1CBFDCB100EFF7CF /* HYSquareCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -636,6 +649,7 @@
 				C4DA922C1C7AAA2B0080C9C3 /* LaunchImage.png in Resources */,
 				C4DA922D1C7AAA2B0080C9C3 /* LaunchImage@2x.png in Resources */,
 				C44C925B1C8FE38D002FC507 /* HYTopicPictureView.xib in Resources */,
+				C4AE1CFC1CBFDCB100EFF7CF /* HYSquareCell.xib in Resources */,
 				C44C92651C8FE422002FC507 /* HYTopicVideoView.xib in Resources */,
 				C478DBFC1C45358800164830 /* Assets.xcassets in Resources */,
 				C4DA922A1C7AAA2B0080C9C3 /* LaunchImage-800-667h@2x.png in Resources */,
@@ -708,6 +722,7 @@
 			files = (
 				C48B75F91C55F39800004871 /* HYTabBarController.m in Sources */,
 				C48B75FF1C5641CD00004871 /* UIView+HYFrame.m in Sources */,
+				C4AE1CF71CBFD7FD00EFF7CF /* HYSquareItem.m in Sources */,
 				C44C92681C8FE698002FC507 /* UIView+HYInit.m in Sources */,
 				C478DC341C4544A900164830 /* HYEssenceController.m in Sources */,
 				C48B75EE1C52E28100004871 /* UIImage+HYOriginal.m in Sources */,
@@ -734,6 +749,7 @@
 				C44C925E1C8FE3CF002FC507 /* HYTopicVoiceView.m in Sources */,
 				C49AB12D1C868D95007B370D /* HYTopicItem.m in Sources */,
 				C4DF62901C83332300F6C963 /* HYAllViewController.m in Sources */,
+				C4AE1CFB1CBFDCB100EFF7CF /* HYSquareCell.m in Sources */,
 				C44C92591C8FE373002FC507 /* HYTopicPictureView.m in Sources */,
 				C4DF625F1C7C11CE00F6C963 /* HYSubTagItem.m in Sources */,
 				C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */,
