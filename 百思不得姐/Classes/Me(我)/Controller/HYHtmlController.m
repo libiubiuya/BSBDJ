@@ -15,14 +15,15 @@
 
 /** 网页 */
 @property (weak, nonatomic) WKWebView *webView;
+/** 进度条 */
+@property (weak, nonatomic) UIProgressView *progressView;
 /** 网页内容 */
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 /** 返回按钮 */
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *backButton;
 /** 前进按钮 */
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *goButton;
-/** 刷新按钮 */
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *refreshButton;
+
 @end
 
 @implementation HYHtmlController
@@ -30,18 +31,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor blueColor];
-    
     // 加载网页
     [self setUpLoadData];
+    
+    // 添加进度条
+    [self setUpProgressView];
 }
 
+/**
+ *  重新布局
+ */
 - (void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
     
     _webView.frame = self.contentView.bounds;
-    
 }
 
 /**
@@ -57,6 +61,41 @@
     NSURL *url = [NSURL URLWithString:_squareItem.url];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:request];
+}
+
+/**
+ *  添加进度条
+ */
+- (void)setUpProgressView
+{
+    UIProgressView *progressView = [[UIProgressView alloc] init];
+    progressView.frame = CGRectMake(0, HYNavMaxY, HYScreenW, 1);
+    progressView.progressTintColor = [UIColor orangeColor];
+    _progressView = progressView;
+    [self.contentView addSubview:progressView];
+    
+    // 添加监听
+    [self.webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
+}
+
+/**
+ *  监听
+ */
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
+{
+    // 进度条
+    self.progressView.progress = self.webView.estimatedProgress;
+    if (self.progressView.progress == 1.0) {
+        self.progressView.hidden = YES;
+    }
+}
+
+/**
+ *  移除
+ */
+- (void)dealloc
+{
+    [self.webView removeObserver:self forKeyPath:@"estimatedProgress"];
 }
 
 #pragma mark - 按钮点击

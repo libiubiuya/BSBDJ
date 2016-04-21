@@ -10,7 +10,6 @@
                 <outlet property="backButton" destination="45I-7S-wS4" id="KyW-MO-5TF"/>
                 <outlet property="contentView" destination="ycz-Vj-byg" id="3G6-8U-370"/>
                 <outlet property="goButton" destination="c8d-2I-MAi" id="aoZ-AA-lwi"/>
-                <outlet property="refreshButton" destination="SL0-BM-a3S" id="Uzd-RH-09T"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
