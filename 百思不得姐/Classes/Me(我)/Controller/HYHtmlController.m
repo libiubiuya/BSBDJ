@@ -36,6 +36,9 @@
     
     // 添加进度条
     [self setUpProgressView];
+    
+    // 添加监听
+    [self setUpObserver];
 }
 
 /**
@@ -73,9 +76,21 @@
     progressView.progressTintColor = [UIColor orangeColor];
     _progressView = progressView;
     [self.contentView addSubview:progressView];
-    
-    // 添加监听
+}
+
+/**
+ *  添加监听
+ */
+- (void)setUpObserver
+{
+    // 返回
+    [self.webView addObserver:self forKeyPath:@"canGoBack" options:NSKeyValueObservingOptionNew context:nil];
+    // 前进
+    [self.webView addObserver:self forKeyPath:@"canGoForward" options:NSKeyValueObservingOptionNew context:nil];
+    // 进度条
     [self.webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
+    // 标题
+    [self.webView addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:nil];
 }
 
 /**
@@ -83,19 +98,31 @@
  */
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
 {
+    // 返回
+    _backButton.enabled = self.webView.canGoBack;
+    
+    // 前进
+    _goButton.enabled = self.webView.canGoForward;
+    
     // 进度条
     self.progressView.progress = self.webView.estimatedProgress;
     if (self.progressView.progress == 1.0) {
         self.progressView.hidden = YES;
     }
+    
+    // 标题
+    self.title = self.webView.title;
 }
 
 /**
- *  移除
+ *  移除监听
  */
 - (void)dealloc
 {
+    [self.webView removeObserver:self forKeyPath:@"canGoBack"];
+    [self.webView removeObserver:self forKeyPath:@"canGoForward"];
     [self.webView removeObserver:self forKeyPath:@"estimatedProgress"];
+    [self.webView removeObserver:self forKeyPath:@"title"];
 }
 
 #pragma mark - 按钮点击
