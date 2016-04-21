@@ -9,13 +9,13 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HYSquareCell">
-            <rect key="frame" x="0.0" y="0.0" width="80" height="98"/>
+            <rect key="frame" x="0.0" y="0.0" width="201" height="165"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="80" height="98"/>
+                <rect key="frame" x="0.0" y="0.0" width="201" height="165"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L4b-FT-TZ7">
-                        <rect key="frame" x="15" y="10" width="50" height="50"/>
+                        <rect key="frame" x="76" y="10" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="6WZ-R4-O7P"/>
                             <constraint firstAttribute="width" constant="50" id="6of-Zq-92E"/>
@@ -23,7 +23,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvM-Em-5yE">
-                        <rect key="frame" x="21" y="70" width="38" height="18"/>
+                        <rect key="frame" x="82" y="70" width="38" height="85"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -36,14 +36,15 @@
                 <constraint firstItem="AvM-Em-5yE" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Tjg-Jk-orE"/>
                 <constraint firstItem="L4b-FT-TZ7" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="hGg-PJ-siG"/>
                 <constraint firstItem="L4b-FT-TZ7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="jfM-BX-yvY"/>
+                <constraint firstAttribute="bottom" secondItem="AvM-Em-5yE" secondAttribute="bottom" constant="10" id="wKl-cm-cW1"/>
                 <constraint firstItem="AvM-Em-5yE" firstAttribute="top" secondItem="L4b-FT-TZ7" secondAttribute="bottom" constant="10" id="xn0-sR-iPZ"/>
             </constraints>
-            <size key="customSize" width="80" height="98"/>
+            <size key="customSize" width="201" height="165"/>
             <connections>
                 <outlet property="iconView" destination="L4b-FT-TZ7" id="Pn1-eb-t6O"/>
                 <outlet property="nameLabel" destination="AvM-Em-5yE" id="4wQ-TS-zsk"/>
             </connections>
-            <point key="canvasLocation" x="247" y="323"/>
+            <point key="canvasLocation" x="307.5" y="356.5"/>
         </collectionViewCell>
     </objects>
 </document>

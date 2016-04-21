@@ -10,6 +10,7 @@
 #import "HYSettingController.h"
 #import "HYSquareItem.h"
 #import "HYSquareCell.h"
+#import "HYHtmlController.h"
 
 #import <AFNetworking/AFNetworking.h>
 #import <MJExtension/MJExtension.h>
@@ -97,7 +98,7 @@ static NSString *const ID = @"cell";
     layout.minimumLineSpacing = margin;
     
     // 创建collectionView
-    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, HYScreenW, 300) collectionViewLayout:layout];
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, HYScreenW, 0) collectionViewLayout:layout];
     collectionView.backgroundColor = [UIColor clearColor];
     collectionView.scrollEnabled = NO;
     
@@ -154,6 +155,18 @@ static NSString *const ID = @"cell";
     cell.squareItem = squareItem;
     
     return cell;
+}
+
+
+#pragma mark - UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    HYSquareItem *squareItem = self.squareItems[indexPath.row];
+    if ([squareItem.url hasPrefix:@"http"]) {
+        HYHtmlController *html = [[HYHtmlController alloc] init];
+        html.squareItem = squareItem;
+        [self.navigationController pushViewController:html animated:YES];
+    }
 }
 
 @end

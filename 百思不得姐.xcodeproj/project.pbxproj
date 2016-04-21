@@ -35,6 +35,8 @@
 		C4AE1CF71CBFD7FD00EFF7CF /* HYSquareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AE1CF61CBFD7FD00EFF7CF /* HYSquareItem.m */; };
 		C4AE1CFB1CBFDCB100EFF7CF /* HYSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AE1CF91CBFDCB100EFF7CF /* HYSquareCell.m */; };
 		C4AE1CFC1CBFDCB100EFF7CF /* HYSquareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4AE1CFA1CBFDCB100EFF7CF /* HYSquareCell.xib */; };
+		C4AE1D0A1CC20C7400EFF7CF /* HYHtmlController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AE1D081CC20C7400EFF7CF /* HYHtmlController.m */; };
+		C4AE1D0B1CC20C7400EFF7CF /* HYHtmlController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4AE1D091CC20C7400EFF7CF /* HYHtmlController.xib */; };
 		C4CB4E281C5EF563006FE981 /* HYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CB4E271C5EF563006FE981 /* HYSettingController.m */; };
 		C4CB4E2B1C5F7F0B006FE981 /* HYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CB4E2A1C5F7F0B006FE981 /* HYNavigationController.m */; };
 		C4DA290E1C8866CC00B2DBDB /* HYHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DA290D1C8866CC00B2DBDB /* HYHeader.m */; };
@@ -114,6 +116,9 @@
 		C4AE1CF81CBFDCB100EFF7CF /* HYSquareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSquareCell.h; sourceTree = "<group>"; };
 		C4AE1CF91CBFDCB100EFF7CF /* HYSquareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSquareCell.m; sourceTree = "<group>"; };
 		C4AE1CFA1CBFDCB100EFF7CF /* HYSquareCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYSquareCell.xib; sourceTree = "<group>"; };
+		C4AE1D071CC20C7400EFF7CF /* HYHtmlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYHtmlController.h; sourceTree = "<group>"; };
+		C4AE1D081CC20C7400EFF7CF /* HYHtmlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYHtmlController.m; sourceTree = "<group>"; };
+		C4AE1D091CC20C7400EFF7CF /* HYHtmlController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYHtmlController.xib; sourceTree = "<group>"; };
 		C4CB4E261C5EF563006FE981 /* HYSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSettingController.h; sourceTree = "<group>"; };
 		C4CB4E271C5EF563006FE981 /* HYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSettingController.m; sourceTree = "<group>"; };
 		C4CB4E291C5F7F0B006FE981 /* HYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYNavigationController.h; sourceTree = "<group>"; };
@@ -382,6 +387,9 @@
 				C4AE1CF21CBA1C1200EFF7CF /* HYMeController.h */,
 				C4AE1CF31CBA1C1200EFF7CF /* HYMeController.m */,
 				C4AE1CF01CB545E500EFF7CF /* HYMeController.storyboard */,
+				C4AE1D071CC20C7400EFF7CF /* HYHtmlController.h */,
+				C4AE1D081CC20C7400EFF7CF /* HYHtmlController.m */,
+				C4AE1D091CC20C7400EFF7CF /* HYHtmlController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -650,6 +658,7 @@
 				C4DA922D1C7AAA2B0080C9C3 /* LaunchImage@2x.png in Resources */,
 				C44C925B1C8FE38D002FC507 /* HYTopicPictureView.xib in Resources */,
 				C4AE1CFC1CBFDCB100EFF7CF /* HYSquareCell.xib in Resources */,
+				C4AE1D0B1CC20C7400EFF7CF /* HYHtmlController.xib in Resources */,
 				C44C92651C8FE422002FC507 /* HYTopicVideoView.xib in Resources */,
 				C478DBFC1C45358800164830 /* Assets.xcassets in Resources */,
 				C4DA922A1C7AAA2B0080C9C3 /* LaunchImage-800-667h@2x.png in Resources */,
@@ -751,6 +760,7 @@
 				C4DF62901C83332300F6C963 /* HYAllViewController.m in Sources */,
 				C4AE1CFB1CBFDCB100EFF7CF /* HYSquareCell.m in Sources */,
 				C44C92591C8FE373002FC507 /* HYTopicPictureView.m in Sources */,
+				C4AE1D0A1CC20C7400EFF7CF /* HYHtmlController.m in Sources */,
 				C4DF625F1C7C11CE00F6C963 /* HYSubTagItem.m in Sources */,
 				C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */,
 				C4CB4E281C5EF563006FE981 /* HYSettingController.m in Sources */,
