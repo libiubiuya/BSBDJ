@@ -67,7 +67,7 @@ typedef NS_ENUM(NSUInteger, HYTopicType) {
 @property (nonatomic, assign) CGFloat cellHeight;
 /** 中间内容的frame */
 @property (nonatomic, assign) CGRect centerFrame;
-/** 是否为动态图 */
+/** 是否为大图 */
 @property (nonatomic, assign, getter=isBigPicture) BOOL bigPicture;
 
 @end

@@ -30,6 +30,10 @@
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4a8-C4-cuQ">
                     <rect key="frame" x="176" y="100" width="63" height="63"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="63" id="5Si-gX-xdb"/>
+                        <constraint firstAttribute="width" constant="63" id="eiC-A0-JtG"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" image="playButtonPlay" backgroundImage="playButton"/>
                 </button>
