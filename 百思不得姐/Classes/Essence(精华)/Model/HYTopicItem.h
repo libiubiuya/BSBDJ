@@ -47,8 +47,12 @@ typedef NS_ENUM(NSUInteger, HYTopicType) {
 @property (nonatomic, assign) NSInteger width;
 /** 中间图片的高度 */
 @property (nonatomic, assign) NSInteger height;
+/** 视频url */
+@property (nonatomic, copy) NSString *videouri;
 /** 视频的时长 */
 @property (nonatomic, assign) NSInteger videotime;
+/** 音频url */
+@property (nonatomic, copy) NSString *voiceuri;
 /** 音频的时长 */
 @property (nonatomic, assign) NSInteger voicetime;
 /** 播放数量 */
