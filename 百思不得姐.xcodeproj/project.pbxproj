@@ -12,6 +12,7 @@
 		C4278FC81CDDCAE400591560 /* HYSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4278FC71CDDCAE400591560 /* HYSubTagItem.m */; };
 		C4278FCC1CDDCAEF00591560 /* HYSubTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4278FCA1CDDCAEF00591560 /* HYSubTagCell.m */; };
 		C4278FCD1CDDCAEF00591560 /* HYSubTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4278FCB1CDDCAEF00591560 /* HYSubTagCell.xib */; };
+		C4278FE21CDE393400591560 /* HYTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4278FE11CDE393400591560 /* HYTopicController.m */; };
 		C44C92591C8FE373002FC507 /* HYTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = C44C92581C8FE373002FC507 /* HYTopicPictureView.m */; };
 		C44C925B1C8FE38D002FC507 /* HYTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44C925A1C8FE38D002FC507 /* HYTopicPictureView.xib */; };
 		C44C925E1C8FE3CF002FC507 /* HYTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = C44C925D1C8FE3CF002FC507 /* HYTopicVoiceView.m */; };
@@ -74,6 +75,8 @@
 		C4278FC91CDDCAEF00591560 /* HYSubTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSubTagCell.h; sourceTree = "<group>"; };
 		C4278FCA1CDDCAEF00591560 /* HYSubTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSubTagCell.m; sourceTree = "<group>"; };
 		C4278FCB1CDDCAEF00591560 /* HYSubTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYSubTagCell.xib; sourceTree = "<group>"; };
+		C4278FE01CDE393400591560 /* HYTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTopicController.h; sourceTree = "<group>"; };
+		C4278FE11CDE393400591560 /* HYTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTopicController.m; sourceTree = "<group>"; };
 		C44C92571C8FE373002FC507 /* HYTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTopicPictureView.h; sourceTree = "<group>"; };
 		C44C92581C8FE373002FC507 /* HYTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTopicPictureView.m; sourceTree = "<group>"; };
 		C44C925A1C8FE38D002FC507 /* HYTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYTopicPictureView.xib; sourceTree = "<group>"; };
@@ -306,6 +309,8 @@
 				C4DF629B1C83339A00F6C963 /* HYWordViewController.m */,
 				C4278FC01CD6132A00591560 /* HYVideoPlayController.h */,
 				C4278FC11CD6132A00591560 /* HYVideoPlayController.m */,
+				C4278FE01CDE393400591560 /* HYTopicController.h */,
+				C4278FE11CDE393400591560 /* HYTopicController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -746,6 +751,7 @@
 				C4278FC21CD6132A00591560 /* HYVideoPlayController.m in Sources */,
 				C478DBF11C45358800164830 /* main.m in Sources */,
 				C4DA29111C886AC400B2DBDB /* HYFooter.m in Sources */,
+				C4278FE21CDE393400591560 /* HYTopicController.m in Sources */,
 				C478DC2E1C453BD500164830 /* AppDelegate.m in Sources */,
 				C4DF62931C83334700F6C963 /* HYVideoViewController.m in Sources */,
 				C49E5A951C7B45AB003EDCB0 /* HYAdItem.m in Sources */,

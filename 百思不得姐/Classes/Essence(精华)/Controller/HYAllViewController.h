@@ -6,8 +6,8 @@
 //  Copyright © 2016年 李好一. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "HYTopicController.h"
 
-@interface HYAllViewController : UITableViewController
+@interface HYAllViewController : HYTopicController
 
 @end

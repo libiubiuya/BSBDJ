@@ -13,6 +13,7 @@
 @end
 
 @implementation HYNewController
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
