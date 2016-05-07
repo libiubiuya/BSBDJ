@@ -102,7 +102,7 @@
     new.tabBarItem.selectedImage = [UIImage imageNamedWithOriginalImage:@"tabBar_new_click_icon"];
     
     // 关注
-    UIViewController *friendTrends = self.childViewControllers[2];
+    UITableViewController *friendTrends = self.childViewControllers[2];
     friendTrends.tabBarItem.title = @"关注";
     friendTrends.tabBarItem.image = [UIImage imageNamed:@"tabBar_friendTrends_icon"];
     friendTrends.tabBarItem.selectedImage = [UIImage imageNamedWithOriginalImage:@"tabBar_friendTrends_click_icon"];

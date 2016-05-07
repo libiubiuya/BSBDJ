@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HYFriendTrendsController : UIViewController
+@interface HYFriendTrendsController : UITableViewController
 
 @end

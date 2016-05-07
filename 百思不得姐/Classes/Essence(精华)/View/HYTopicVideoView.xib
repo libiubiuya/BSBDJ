@@ -25,6 +25,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oK-Yo-Rcp">
                     <rect key="frame" x="161" y="92" width="71" height="71"/>
                     <state key="normal" image="video-play"/>
+                    <connections>
+                        <action selector="playOrPause:" destination="iN0-l3-epB" eventType="touchUpInside" id="Fkc-sa-9vO"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234次播放" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvD-Pg-fgv">
                     <rect key="frame" x="318" y="0.0" width="75" height="17"/>

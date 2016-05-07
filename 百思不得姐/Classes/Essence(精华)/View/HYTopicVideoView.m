@@ -8,6 +8,7 @@
 
 #import "HYTopicVideoView.h"
 #import "HYTopicItem.h"
+#import "HYVideoPlayController.h"
 
 #import <UIImageView+WebCache.h>
 
@@ -51,4 +52,15 @@
     self.videoTimeLabel.text = [NSString stringWithFormat:@"%02zd : %02zd", minute, second];
 }
 
+- (IBAction)playOrPause:(UIButton *)sender
+{
+    [sender addTarget:self action:@selector(videoPlay) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)videoPlay
+{
+    HYVideoPlayController *videoPlayController = [[HYVideoPlayController alloc] init];
+    videoPlayController.topicItem = self.topicItem;
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:videoPlayController animated:YES completion:nil];
+}
 @end

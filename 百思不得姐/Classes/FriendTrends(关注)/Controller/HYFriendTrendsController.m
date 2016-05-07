@@ -7,8 +7,16 @@
 //
 
 #import "HYFriendTrendsController.h"
+#import "HYSubTagItem.h"
+#import "HYSubTagCell.h"
+
+#import <AFNetworking/AFNetworking.h>
+#import <MJExtension/MJExtension.h>
 
 @interface HYFriendTrendsController ()
+
+/** 订阅标签模型 */
+@property (nonatomic, strong) NSMutableArray *subTagItem;
 
 @end
 
@@ -17,23 +25,64 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor yellowColor];
+    self.view.backgroundColor = [UIColor lightGrayColor];
     
     // 设置导航条
-    [self setUpNavigationContent];
-}
-
-- (void)setUpNavigationContent
-{
-    UIBarButtonItem *leftItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"friendsRecommentIcon"] highImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] target:self action:@selector(btnClick)];
-    self.navigationItem.leftBarButtonItem = leftItem;
+    [self setUpNavContent];
     
-    self.navigationItem.title = @"关注";
+    // 加载数据
+    [self loadData];
 }
 
-- (void)btnClick
+- (void)setUpNavContent
 {
-    NSLog(@"%s" ,__func__);
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    self.navigationItem.titleView = imageView;
 }
 
+- (void)loadData
+{
+    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    parameters[@"a"] = @"tag_recommend";
+    parameters[@"action"] = @"sub";
+    parameters[@"c"] = @"topic";
+    
+    [mgr GET:baseUrl parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSArray * _Nullable responseObject) {
+        
+        _subTagItem = [HYSubTagItem mj_objectArrayWithKeyValuesArray:responseObject];
+        
+        // 刷新tableview
+        [self.tableView reloadData];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _subTagItem.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *ID = @"cell";
+    HYSubTagCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (cell == nil) {
+        cell = [HYSubTagCell subTagCell];
+    }
+    
+    HYSubTagItem *item = _subTagItem[indexPath.row];
+    cell.item = item;
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 80;
+}
 @end

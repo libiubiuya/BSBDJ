@@ -8,36 +8,14 @@
 
 #import "HYNewController.h"
 
-#import "HYSubTagController.h"
-
 @interface HYNewController ()
 
 @end
 
 @implementation HYNewController
-
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
-    self.view.backgroundColor = [UIColor purpleColor];
-    
-    // 设置导航栏内容
-    [self setUpNavigationContent];
-}
-
-- (void)setUpNavigationContent
-{
-    UIBarButtonItem *leftItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"MainTagSubIcon"] selImage:[UIImage imageNamed:@"MainTagSubIconClick"] target:self action:@selector(btnClick)];
-    self.navigationItem.leftBarButtonItem = leftItem;
-    
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
-    self.navigationItem.titleView = imageView;
-}
-
-- (void)btnClick
-{
-    HYSubTagController *subTagVc = [[HYSubTagController alloc] init];
-    [self.navigationController pushViewController:subTagVc animated:YES];
 }
 
 @end

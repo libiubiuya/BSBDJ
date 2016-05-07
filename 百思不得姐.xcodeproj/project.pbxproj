@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		76C1DF3804DC15DDF3163AD3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4801C05ACDCAED193D19F934 /* libPods.a */; };
+		C4278FC21CD6132A00591560 /* HYVideoPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4278FC11CD6132A00591560 /* HYVideoPlayController.m */; };
+		C4278FC81CDDCAE400591560 /* HYSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4278FC71CDDCAE400591560 /* HYSubTagItem.m */; };
+		C4278FCC1CDDCAEF00591560 /* HYSubTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4278FCA1CDDCAEF00591560 /* HYSubTagCell.m */; };
+		C4278FCD1CDDCAEF00591560 /* HYSubTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4278FCB1CDDCAEF00591560 /* HYSubTagCell.xib */; };
 		C44C92591C8FE373002FC507 /* HYTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = C44C92581C8FE373002FC507 /* HYTopicPictureView.m */; };
 		C44C925B1C8FE38D002FC507 /* HYTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44C925A1C8FE38D002FC507 /* HYTopicPictureView.xib */; };
 		C44C925E1C8FE3CF002FC507 /* HYTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = C44C925D1C8FE3CF002FC507 /* HYTopicVoiceView.m */; };
@@ -50,10 +54,6 @@
 		C4DA922B1C7AAA2B0080C9C3 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DA92241C7AAA2B0080C9C3 /* LaunchImage-800-Portrait-736h@3x.png */; };
 		C4DA922C1C7AAA2B0080C9C3 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DA92251C7AAA2B0080C9C3 /* LaunchImage.png */; };
 		C4DA922D1C7AAA2B0080C9C3 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DA92261C7AAA2B0080C9C3 /* LaunchImage@2x.png */; };
-		C4DF625C1C7C0D4300F6C963 /* HYSubTagController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF625B1C7C0D4300F6C963 /* HYSubTagController.m */; };
-		C4DF625F1C7C11CE00F6C963 /* HYSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF625E1C7C11CE00F6C963 /* HYSubTagItem.m */; };
-		C4DF62631C7C424E00F6C963 /* HYSubTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF62611C7C424E00F6C963 /* HYSubTagCell.m */; };
-		C4DF62641C7C424E00F6C963 /* HYSubTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4DF62621C7C424E00F6C963 /* HYSubTagCell.xib */; };
 		C4DF62871C8180B000F6C963 /* HYGlobeConst.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF62861C8180B000F6C963 /* HYGlobeConst.m */; };
 		C4DF628A1C818AB100F6C963 /* HYTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF62891C818AB100F6C963 /* HYTitleButton.m */; };
 		C4DF62901C83332300F6C963 /* HYAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF628F1C83332300F6C963 /* HYAllViewController.m */; };
@@ -67,6 +67,13 @@
 		0FE83424EF42512036031C5C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4801C05ACDCAED193D19F934 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CAD60CA60ECC5B554FD4EF9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C4278FC01CD6132A00591560 /* HYVideoPlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYVideoPlayController.h; sourceTree = "<group>"; };
+		C4278FC11CD6132A00591560 /* HYVideoPlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYVideoPlayController.m; sourceTree = "<group>"; };
+		C4278FC61CDDCAE400591560 /* HYSubTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSubTagItem.h; sourceTree = "<group>"; };
+		C4278FC71CDDCAE400591560 /* HYSubTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSubTagItem.m; sourceTree = "<group>"; };
+		C4278FC91CDDCAEF00591560 /* HYSubTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSubTagCell.h; sourceTree = "<group>"; };
+		C4278FCA1CDDCAEF00591560 /* HYSubTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSubTagCell.m; sourceTree = "<group>"; };
+		C4278FCB1CDDCAEF00591560 /* HYSubTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYSubTagCell.xib; sourceTree = "<group>"; };
 		C44C92571C8FE373002FC507 /* HYTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTopicPictureView.h; sourceTree = "<group>"; };
 		C44C92581C8FE373002FC507 /* HYTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTopicPictureView.m; sourceTree = "<group>"; };
 		C44C925A1C8FE38D002FC507 /* HYTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYTopicPictureView.xib; sourceTree = "<group>"; };
@@ -137,13 +144,6 @@
 		C4DA92241C7AAA2B0080C9C3 /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
 		C4DA92251C7AAA2B0080C9C3 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
 		C4DA92261C7AAA2B0080C9C3 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
-		C4DF625A1C7C0D4300F6C963 /* HYSubTagController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSubTagController.h; sourceTree = "<group>"; };
-		C4DF625B1C7C0D4300F6C963 /* HYSubTagController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSubTagController.m; sourceTree = "<group>"; };
-		C4DF625D1C7C11CE00F6C963 /* HYSubTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSubTagItem.h; sourceTree = "<group>"; };
-		C4DF625E1C7C11CE00F6C963 /* HYSubTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSubTagItem.m; sourceTree = "<group>"; };
-		C4DF62601C7C424E00F6C963 /* HYSubTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSubTagCell.h; sourceTree = "<group>"; };
-		C4DF62611C7C424E00F6C963 /* HYSubTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSubTagCell.m; sourceTree = "<group>"; };
-		C4DF62621C7C424E00F6C963 /* HYSubTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYSubTagCell.xib; sourceTree = "<group>"; };
 		C4DF62851C8180B000F6C963 /* HYGlobeConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYGlobeConst.h; sourceTree = "<group>"; };
 		C4DF62861C8180B000F6C963 /* HYGlobeConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYGlobeConst.m; sourceTree = "<group>"; };
 		C4DF62881C818AB100F6C963 /* HYTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTitleButton.h; sourceTree = "<group>"; };
@@ -304,6 +304,8 @@
 				C4DF62981C83338400F6C963 /* HYPictureViewController.m */,
 				C4DF629A1C83339A00F6C963 /* HYWordViewController.h */,
 				C4DF629B1C83339A00F6C963 /* HYWordViewController.m */,
+				C4278FC01CD6132A00591560 /* HYVideoPlayController.h */,
+				C4278FC11CD6132A00591560 /* HYVideoPlayController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -360,6 +362,8 @@
 		C478DC111C453BD500164830 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C4278FC61CDDCAE400591560 /* HYSubTagItem.h */,
+				C4278FC71CDDCAE400591560 /* HYSubTagItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -367,6 +371,9 @@
 		C478DC121C453BD500164830 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C4278FC91CDDCAEF00591560 /* HYSubTagCell.h */,
+				C4278FCA1CDDCAEF00591560 /* HYSubTagCell.m */,
+				C4278FCB1CDDCAEF00591560 /* HYSubTagCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -428,8 +435,6 @@
 			children = (
 				C478DC3B1C4544FF00164830 /* HYNewController.h */,
 				C478DC3C1C4544FF00164830 /* HYNewController.m */,
-				C4DF625A1C7C0D4300F6C963 /* HYSubTagController.h */,
-				C4DF625B1C7C0D4300F6C963 /* HYSubTagController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -437,8 +442,6 @@
 		C478DC1C1C453BD500164830 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C4DF625D1C7C11CE00F6C963 /* HYSubTagItem.h */,
-				C4DF625E1C7C11CE00F6C963 /* HYSubTagItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -446,9 +449,6 @@
 		C478DC1D1C453BD500164830 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C4DF62601C7C424E00F6C963 /* HYSubTagCell.h */,
-				C4DF62611C7C424E00F6C963 /* HYSubTagCell.m */,
-				C4DF62621C7C424E00F6C963 /* HYSubTagCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -658,6 +658,7 @@
 				C4DA922D1C7AAA2B0080C9C3 /* LaunchImage@2x.png in Resources */,
 				C44C925B1C8FE38D002FC507 /* HYTopicPictureView.xib in Resources */,
 				C4AE1CFC1CBFDCB100EFF7CF /* HYSquareCell.xib in Resources */,
+				C4278FCD1CDDCAEF00591560 /* HYSubTagCell.xib in Resources */,
 				C4AE1D0B1CC20C7400EFF7CF /* HYHtmlController.xib in Resources */,
 				C44C92651C8FE422002FC507 /* HYTopicVideoView.xib in Resources */,
 				C478DBFC1C45358800164830 /* Assets.xcassets in Resources */,
@@ -665,7 +666,6 @@
 				C4DA92271C7AAA2B0080C9C3 /* LaunchImage-568h@2x.png in Resources */,
 				C4DA92291C7AAA2B0080C9C3 /* LaunchImage-700@2x.png in Resources */,
 				C4AE1CF11CB545E500EFF7CF /* HYMeController.storyboard in Resources */,
-				C4DF62641C7C424E00F6C963 /* HYSubTagCell.xib in Resources */,
 				C44C92601C8FE3E1002FC507 /* HYTopicVoiceView.xib in Resources */,
 				C4DA92281C7AAA2B0080C9C3 /* LaunchImage-700-568h@2x.png in Resources */,
 				C4DA921E1C7AA9600080C9C3 /* HYAdController.xib in Resources */,
@@ -735,6 +735,7 @@
 				C44C92681C8FE698002FC507 /* UIView+HYInit.m in Sources */,
 				C478DC341C4544A900164830 /* HYEssenceController.m in Sources */,
 				C48B75EE1C52E28100004871 /* UIImage+HYOriginal.m in Sources */,
+				C4278FCC1CDDCAEF00591560 /* HYSubTagCell.m in Sources */,
 				C478DC3D1C4544FF00164830 /* HYNewController.m in Sources */,
 				C4DF628A1C818AB100F6C963 /* HYTitleButton.m in Sources */,
 				C4DF62961C83336A00F6C963 /* HYVoiceViewController.m in Sources */,
@@ -742,13 +743,12 @@
 				C4DF629C1C83339A00F6C963 /* HYWordViewController.m in Sources */,
 				C4AE1CF41CBA1C1200EFF7CF /* HYMeController.m in Sources */,
 				C4DF62991C83338400F6C963 /* HYPictureViewController.m in Sources */,
-				C4DF62631C7C424E00F6C963 /* HYSubTagCell.m in Sources */,
+				C4278FC21CD6132A00591560 /* HYVideoPlayController.m in Sources */,
 				C478DBF11C45358800164830 /* main.m in Sources */,
 				C4DA29111C886AC400B2DBDB /* HYFooter.m in Sources */,
 				C478DC2E1C453BD500164830 /* AppDelegate.m in Sources */,
 				C4DF62931C83334700F6C963 /* HYVideoViewController.m in Sources */,
 				C49E5A951C7B45AB003EDCB0 /* HYAdItem.m in Sources */,
-				C4DF625C1C7C0D4300F6C963 /* HYSubTagController.m in Sources */,
 				C4DA921D1C7AA9600080C9C3 /* HYAdController.m in Sources */,
 				C48B76021C564EF600004871 /* UIBarButtonItem+HYItem.m in Sources */,
 				C4CB4E2B1C5F7F0B006FE981 /* HYNavigationController.m in Sources */,
@@ -761,7 +761,7 @@
 				C4AE1CFB1CBFDCB100EFF7CF /* HYSquareCell.m in Sources */,
 				C44C92591C8FE373002FC507 /* HYTopicPictureView.m in Sources */,
 				C4AE1D0A1CC20C7400EFF7CF /* HYHtmlController.m in Sources */,
-				C4DF625F1C7C11CE00F6C963 /* HYSubTagItem.m in Sources */,
+				C4278FC81CDDCAE400591560 /* HYSubTagItem.m in Sources */,
 				C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */,
 				C4CB4E281C5EF563006FE981 /* HYSettingController.m in Sources */,
 				C44C92631C8FE40F002FC507 /* HYTopicVideoView.m in Sources */,
