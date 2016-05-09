@@ -9,6 +9,7 @@
 #import "HYTopicVideoView.h"
 #import "HYTopicItem.h"
 #import "HYVideoPlayController.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 #import <UIImageView+WebCache.h>
 
@@ -20,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *playCountLabel;
 /** 播放时长 */
 @property (weak, nonatomic) IBOutlet UILabel *videoTimeLabel;
+/** 视频播放器 */
+@property (nonatomic, readonly) MPMoviePlayerController *moviePlayer;
 
 @end
 
@@ -50,6 +53,13 @@
     NSInteger minute = topicItem.videotime / 60;
     NSInteger second = topicItem.videotime % 60;
     self.videoTimeLabel.text = [NSString stringWithFormat:@"%02zd : %02zd", minute, second];
+}
+
+#pragma mark - 视频播放功能
+- (void)awakeFromNib
+{
+    self.imageView.userInteractionEnabled = YES;
+    [self.imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(videoPlay)]];
 }
 
 - (IBAction)playOrPause:(UIButton *)sender

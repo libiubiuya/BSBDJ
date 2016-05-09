@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		76C1DF3804DC15DDF3163AD3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4801C05ACDCAED193D19F934 /* libPods.a */; };
-		C4278FC21CD6132A00591560 /* HYVideoPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4278FC11CD6132A00591560 /* HYVideoPlayController.m */; };
 		C4278FC81CDDCAE400591560 /* HYSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4278FC71CDDCAE400591560 /* HYSubTagItem.m */; };
 		C4278FCC1CDDCAEF00591560 /* HYSubTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4278FCA1CDDCAEF00591560 /* HYSubTagCell.m */; };
 		C4278FCD1CDDCAEF00591560 /* HYSubTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4278FCB1CDDCAEF00591560 /* HYSubTagCell.xib */; };
 		C4278FE21CDE393400591560 /* HYTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4278FE11CDE393400591560 /* HYTopicController.m */; };
+		C4278FE81CE0505200591560 /* HYVideoPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4278FE61CE0505100591560 /* HYVideoPlayController.m */; };
+		C4278FE91CE0505200591560 /* HYVideoPlayController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4278FE71CE0505100591560 /* HYVideoPlayController.xib */; };
 		C44C92591C8FE373002FC507 /* HYTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = C44C92581C8FE373002FC507 /* HYTopicPictureView.m */; };
 		C44C925B1C8FE38D002FC507 /* HYTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44C925A1C8FE38D002FC507 /* HYTopicPictureView.xib */; };
 		C44C925E1C8FE3CF002FC507 /* HYTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = C44C925D1C8FE3CF002FC507 /* HYTopicVoiceView.m */; };
@@ -68,8 +69,6 @@
 		0FE83424EF42512036031C5C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4801C05ACDCAED193D19F934 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CAD60CA60ECC5B554FD4EF9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		C4278FC01CD6132A00591560 /* HYVideoPlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYVideoPlayController.h; sourceTree = "<group>"; };
-		C4278FC11CD6132A00591560 /* HYVideoPlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYVideoPlayController.m; sourceTree = "<group>"; };
 		C4278FC61CDDCAE400591560 /* HYSubTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSubTagItem.h; sourceTree = "<group>"; };
 		C4278FC71CDDCAE400591560 /* HYSubTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSubTagItem.m; sourceTree = "<group>"; };
 		C4278FC91CDDCAEF00591560 /* HYSubTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSubTagCell.h; sourceTree = "<group>"; };
@@ -77,6 +76,9 @@
 		C4278FCB1CDDCAEF00591560 /* HYSubTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYSubTagCell.xib; sourceTree = "<group>"; };
 		C4278FE01CDE393400591560 /* HYTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTopicController.h; sourceTree = "<group>"; };
 		C4278FE11CDE393400591560 /* HYTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTopicController.m; sourceTree = "<group>"; };
+		C4278FE51CE0505100591560 /* HYVideoPlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYVideoPlayController.h; sourceTree = "<group>"; };
+		C4278FE61CE0505100591560 /* HYVideoPlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYVideoPlayController.m; sourceTree = "<group>"; };
+		C4278FE71CE0505100591560 /* HYVideoPlayController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYVideoPlayController.xib; sourceTree = "<group>"; };
 		C44C92571C8FE373002FC507 /* HYTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTopicPictureView.h; sourceTree = "<group>"; };
 		C44C92581C8FE373002FC507 /* HYTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTopicPictureView.m; sourceTree = "<group>"; };
 		C44C925A1C8FE38D002FC507 /* HYTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYTopicPictureView.xib; sourceTree = "<group>"; };
@@ -307,10 +309,11 @@
 				C4DF62981C83338400F6C963 /* HYPictureViewController.m */,
 				C4DF629A1C83339A00F6C963 /* HYWordViewController.h */,
 				C4DF629B1C83339A00F6C963 /* HYWordViewController.m */,
-				C4278FC01CD6132A00591560 /* HYVideoPlayController.h */,
-				C4278FC11CD6132A00591560 /* HYVideoPlayController.m */,
 				C4278FE01CDE393400591560 /* HYTopicController.h */,
 				C4278FE11CDE393400591560 /* HYTopicController.m */,
+				C4278FE51CE0505100591560 /* HYVideoPlayController.h */,
+				C4278FE61CE0505100591560 /* HYVideoPlayController.m */,
+				C4278FE71CE0505100591560 /* HYVideoPlayController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -663,6 +666,7 @@
 				C4DA922D1C7AAA2B0080C9C3 /* LaunchImage@2x.png in Resources */,
 				C44C925B1C8FE38D002FC507 /* HYTopicPictureView.xib in Resources */,
 				C4AE1CFC1CBFDCB100EFF7CF /* HYSquareCell.xib in Resources */,
+				C4278FE91CE0505200591560 /* HYVideoPlayController.xib in Resources */,
 				C4278FCD1CDDCAEF00591560 /* HYSubTagCell.xib in Resources */,
 				C4AE1D0B1CC20C7400EFF7CF /* HYHtmlController.xib in Resources */,
 				C44C92651C8FE422002FC507 /* HYTopicVideoView.xib in Resources */,
@@ -747,8 +751,8 @@
 				C478DC371C4544CF00164830 /* HYFriendTrendsController.m in Sources */,
 				C4DF629C1C83339A00F6C963 /* HYWordViewController.m in Sources */,
 				C4AE1CF41CBA1C1200EFF7CF /* HYMeController.m in Sources */,
+				C4278FE81CE0505200591560 /* HYVideoPlayController.m in Sources */,
 				C4DF62991C83338400F6C963 /* HYPictureViewController.m in Sources */,
-				C4278FC21CD6132A00591560 /* HYVideoPlayController.m in Sources */,
 				C478DBF11C45358800164830 /* main.m in Sources */,
 				C4DA29111C886AC400B2DBDB /* HYFooter.m in Sources */,
 				C4278FE21CDE393400591560 /* HYTopicController.m in Sources */,
