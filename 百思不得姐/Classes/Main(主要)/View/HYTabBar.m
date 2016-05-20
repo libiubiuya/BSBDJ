@@ -7,6 +7,7 @@
 //
 
 #import "HYTabBar.h"
+#import "HYPublishController.h"
 
 @interface HYTabBar ()
 
@@ -56,6 +57,13 @@
     
     // 设置发布按钮的位置
     self.publishBtn.frame = CGRectMake(2 * btnW, btnY, btnW, btnH);
+    [self.publishBtn addTarget:self action:@selector(publishBtnClick) forControlEvents:UIControlEventTouchUpInside];
 }
 
+- (void)publishBtnClick
+{
+    HYPublishController *publishController = [[HYPublishController alloc] init];
+    publishController.topicItem = self.topicItem;
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publishController animated:YES completion:nil];
+}
 @end

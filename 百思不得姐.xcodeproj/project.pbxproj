@@ -21,6 +21,8 @@
 		C44C92631C8FE40F002FC507 /* HYTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C44C92621C8FE40F002FC507 /* HYTopicVideoView.m */; };
 		C44C92651C8FE422002FC507 /* HYTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44C92641C8FE422002FC507 /* HYTopicVideoView.xib */; };
 		C44C92681C8FE698002FC507 /* UIView+HYInit.m in Sources */ = {isa = PBXBuildFile; fileRef = C44C92671C8FE698002FC507 /* UIView+HYInit.m */; };
+		C4636BAC1CE5FAFC00B1C888 /* HYPublishController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4636BAA1CE5FAFC00B1C888 /* HYPublishController.m */; };
+		C4636BAD1CE5FAFC00B1C888 /* HYPublishController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4636BAB1CE5FAFC00B1C888 /* HYPublishController.xib */; };
 		C478DBF11C45358800164830 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DBF01C45358800164830 /* main.m */; };
 		C478DBFC1C45358800164830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C478DBFB1C45358800164830 /* Assets.xcassets */; };
 		C478DC2E1C453BD500164830 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C478DC241C453BD500164830 /* AppDelegate.m */; };
@@ -90,6 +92,9 @@
 		C44C92641C8FE422002FC507 /* HYTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYTopicVideoView.xib; sourceTree = "<group>"; };
 		C44C92661C8FE698002FC507 /* UIView+HYInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HYInit.h"; sourceTree = "<group>"; };
 		C44C92671C8FE698002FC507 /* UIView+HYInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HYInit.m"; sourceTree = "<group>"; };
+		C4636BA91CE5FAFC00B1C888 /* HYPublishController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPublishController.h; sourceTree = "<group>"; };
+		C4636BAA1CE5FAFC00B1C888 /* HYPublishController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPublishController.m; sourceTree = "<group>"; };
+		C4636BAB1CE5FAFC00B1C888 /* HYPublishController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYPublishController.xib; sourceTree = "<group>"; };
 		C478DBEC1C45358800164830 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C478DBF01C45358800164830 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C478DBFB1C45358800164830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -194,6 +199,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C4636BA81CE5FADD00B1C888 /* Publish(发布) */ = {
+			isa = PBXGroup;
+			children = (
+				C4636BA91CE5FAFC00B1C888 /* HYPublishController.h */,
+				C4636BAA1CE5FAFC00B1C888 /* HYPublishController.m */,
+				C4636BAB1CE5FAFC00B1C888 /* HYPublishController.xib */,
+			);
+			path = "Publish(发布)";
+			sourceTree = "<group>";
+		};
 		C478DBE31C45358800164830 = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +255,7 @@
 				C478DC071C453BD500164830 /* AD(广告) */,
 				C478DC281C453BD500164830 /* Setting(设置) */,
 				C478DC0B1C453BD500164830 /* Essence(精华) */,
+				C4636BA81CE5FADD00B1C888 /* Publish(发布) */,
 				C478DC0F1C453BD500164830 /* FriendTrends(关注) */,
 				C478DC131C453BD500164830 /* Me(我) */,
 				C478DC1A1C453BD500164830 /* New(新帖) */,
@@ -670,6 +686,7 @@
 				C4278FCD1CDDCAEF00591560 /* HYSubTagCell.xib in Resources */,
 				C4AE1D0B1CC20C7400EFF7CF /* HYHtmlController.xib in Resources */,
 				C44C92651C8FE422002FC507 /* HYTopicVideoView.xib in Resources */,
+				C4636BAD1CE5FAFC00B1C888 /* HYPublishController.xib in Resources */,
 				C478DBFC1C45358800164830 /* Assets.xcassets in Resources */,
 				C4DA922A1C7AAA2B0080C9C3 /* LaunchImage-800-667h@2x.png in Resources */,
 				C4DA92271C7AAA2B0080C9C3 /* LaunchImage-568h@2x.png in Resources */,
@@ -772,6 +789,7 @@
 				C44C92591C8FE373002FC507 /* HYTopicPictureView.m in Sources */,
 				C4AE1D0A1CC20C7400EFF7CF /* HYHtmlController.m in Sources */,
 				C4278FC81CDDCAE400591560 /* HYSubTagItem.m in Sources */,
+				C4636BAC1CE5FAFC00B1C888 /* HYPublishController.m in Sources */,
 				C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */,
 				C4CB4E281C5EF563006FE981 /* HYSettingController.m in Sources */,
 				C44C92631C8FE40F002FC507 /* HYTopicVideoView.m in Sources */,

@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class HYTopicItem;
 @interface HYTabBar : UITabBar
+
+/** 帖子模型 */
+@property (nonatomic, strong) HYTopicItem *topicItem;
 
 @end

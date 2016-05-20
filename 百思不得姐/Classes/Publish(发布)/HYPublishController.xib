@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HYPublishController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHv-0s-amf">
+                    <rect key="frame" x="0.0" y="20" width="600" height="250"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="要发布的内容:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlZ-W8-l6r">
+                            <rect key="frame" x="10" y="10" width="95" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9Uw-fe-u6n">
+                            <rect key="frame" x="10" y="38" width="580" height="100"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="VaL-HB-tTw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwI-4F-Hya">
+                            <rect key="frame" x="10" y="148" width="32" height="32"/>
+                            <state key="normal" image="publish_add"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U12-zx-yE1">
+                            <rect key="frame" x="544" y="210" width="46" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="921-Hy-K56"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="C4D-rf-y9b"/>
+                                <constraint firstAttribute="width" constant="46" id="gat-tb-Qsd"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="koz-Ti-34B"/>
+                            </constraints>
+                            <state key="normal" title="发布" backgroundImage="shareBottomBackground">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="jwI-4F-Hya" firstAttribute="leading" secondItem="jHv-0s-amf" secondAttribute="leading" constant="10" id="Efc-OM-kfY"/>
+                        <constraint firstAttribute="trailing" secondItem="U12-zx-yE1" secondAttribute="trailing" constant="10" id="Kyi-fZ-1qZ"/>
+                        <constraint firstAttribute="bottom" secondItem="U12-zx-yE1" secondAttribute="bottom" constant="10" id="LHh-eB-n7h"/>
+                        <constraint firstItem="jwI-4F-Hya" firstAttribute="top" secondItem="9Uw-fe-u6n" secondAttribute="bottom" constant="10" id="XqE-tR-uxX"/>
+                        <constraint firstItem="9Uw-fe-u6n" firstAttribute="top" secondItem="vlZ-W8-l6r" secondAttribute="bottom" constant="10" id="bsi-Lk-LJb"/>
+                        <constraint firstItem="vlZ-W8-l6r" firstAttribute="top" secondItem="jHv-0s-amf" secondAttribute="top" constant="10" id="gB3-a5-Imk"/>
+                        <constraint firstItem="9Uw-fe-u6n" firstAttribute="leading" secondItem="jHv-0s-amf" secondAttribute="leading" constant="10" id="gH4-Uv-SC2"/>
+                        <constraint firstAttribute="trailing" secondItem="9Uw-fe-u6n" secondAttribute="trailing" constant="10" id="idd-EM-VKH"/>
+                        <constraint firstItem="vlZ-W8-l6r" firstAttribute="leading" secondItem="jHv-0s-amf" secondAttribute="leading" constant="10" id="z2V-76-Kut"/>
+                        <constraint firstAttribute="height" constant="250" id="zJ2-b6-Uc4"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DD-3N-NcV">
+                    <rect key="frame" x="156" y="520" width="289" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2aH-ng-2G2"/>
+                        <constraint firstAttribute="width" constant="289" id="RZo-BQ-rrl"/>
+                    </constraints>
+                    <state key="normal" image="shareButtonCancel" backgroundImage="shareBottomBackground"/>
+                    <state key="highlighted" image="shareButtonCancelClick" backgroundImage="shareBottomBackground"/>
+                    <connections>
+                        <action selector="cancel" destination="-1" eventType="touchUpInside" id="MtK-VP-Jc6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jHv-0s-amf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="01T-LO-21M"/>
+                <constraint firstItem="jHv-0s-amf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7IN-F1-XWj"/>
+                <constraint firstAttribute="bottom" secondItem="8DD-3N-NcV" secondAttribute="bottom" constant="40" id="LXd-im-l1a"/>
+                <constraint firstAttribute="trailing" secondItem="jHv-0s-amf" secondAttribute="trailing" id="Ndw-0b-Ppg"/>
+                <constraint firstItem="8DD-3N-NcV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="h5t-Z4-5eG"/>
+                <constraint firstItem="jHv-0s-amf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iiJ-dq-hJE"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="iiJ-dq-hJE"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="publish_add" width="32" height="32"/>
+        <image name="shareBottomBackground" width="320" height="343"/>
+        <image name="shareButtonCancel" width="289" height="40"/>
+        <image name="shareButtonCancelClick" width="289" height="40"/>
+    </resources>
+</document>
