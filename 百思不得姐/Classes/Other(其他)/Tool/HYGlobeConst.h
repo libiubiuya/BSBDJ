@@ -22,3 +22,9 @@ UIKIT_EXTERN CGFloat const HYMargin;
 
 /** UITabBar的高度 */
 UIKIT_EXTERN CGFloat const HYTabBarH;
+
+/** 全局统一的按钮的边距X */
+UIKIT_EXTERN CGFloat const HYBtnMarginX;
+
+/** 全局统一的按钮的宽高 */
+UIKIT_EXTERN CGFloat const HYBtnWH;

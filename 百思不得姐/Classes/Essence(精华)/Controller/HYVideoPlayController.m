@@ -17,6 +17,10 @@
 @property (nonatomic ,strong) AVPlayer *player;
 /** 图层 */
 @property (nonatomic, weak) AVPlayerLayer *layer;
+/** 关闭按钮 */
+@property (weak, nonatomic) IBOutlet UIButton *closeBtn;
+/** 播放或暂停按钮 */
+@property (weak, nonatomic) IBOutlet UIButton *playOrPauseBtn;
 
 @end
 
@@ -50,27 +54,18 @@
     [self.player play];
 }
 
-/**
- *  暂停播放
- *
- *  @param touches 点击
- *  @param event   暂停播放视频
- */
-//- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-//{
-//    [self.player pause];
-//}
-
 -(void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
+    self.closeBtn.frame = CGRectMake(HYBtnMarginX, HYBtnMarginX, HYBtnWH, HYBtnWH);
+    self.playOrPauseBtn.frame = CGRectMake(HYBtnMarginX, HYScreenH - HYBtnMarginX - HYBtnWH, HYBtnWH, HYBtnWH);
     self.layer.frame = self.view.bounds;
 }
 
-- (IBAction)playOrPause:(UIButton *)sender
+- (IBAction)playOrPause
 {
-    sender.selected = !sender.selected;
-    if (sender.selected) {
+    self.playOrPauseBtn.selected = !self.playOrPauseBtn.selected;
+    if (self.playOrPauseBtn.selected) {
         [self.player play];
     }else{
         [self.player pause];

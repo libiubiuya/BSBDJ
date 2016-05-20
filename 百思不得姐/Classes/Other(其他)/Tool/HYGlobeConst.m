@@ -22,3 +22,9 @@ CGFloat const HYMargin = 10;
 
 /** UITabBar的高度 */
 CGFloat const HYTabBarH = 49;
+
+/** 全局统一的按钮的边距X */
+CGFloat const HYBtnMarginX = 20;
+
+/** 全局统一的按钮的宽高 */
+CGFloat const HYBtnWH = 40;
