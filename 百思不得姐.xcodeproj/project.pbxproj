@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		76C1DF3804DC15DDF3163AD3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4801C05ACDCAED193D19F934 /* libPods.a */; };
+		C41E8A741CEF3AFF0076FE53 /* HYLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41E8A721CEF3AFF0076FE53 /* HYLoginController.m */; };
+		C41E8A751CEF3AFF0076FE53 /* HYLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C41E8A731CEF3AFF0076FE53 /* HYLoginController.xib */; };
+		C41E8A7B1CEF444F0076FE53 /* HYQuickLoginBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C41E8A7A1CEF444F0076FE53 /* HYQuickLoginBtn.m */; };
 		C4278FC81CDDCAE400591560 /* HYSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4278FC71CDDCAE400591560 /* HYSubTagItem.m */; };
 		C4278FCC1CDDCAEF00591560 /* HYSubTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4278FCA1CDDCAEF00591560 /* HYSubTagCell.m */; };
 		C4278FCD1CDDCAEF00591560 /* HYSubTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4278FCB1CDDCAEF00591560 /* HYSubTagCell.xib */; };
@@ -71,6 +74,11 @@
 		0FE83424EF42512036031C5C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4801C05ACDCAED193D19F934 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CAD60CA60ECC5B554FD4EF9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C41E8A711CEF3AFF0076FE53 /* HYLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLoginController.h; sourceTree = "<group>"; };
+		C41E8A721CEF3AFF0076FE53 /* HYLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLoginController.m; sourceTree = "<group>"; };
+		C41E8A731CEF3AFF0076FE53 /* HYLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYLoginController.xib; sourceTree = "<group>"; };
+		C41E8A791CEF444F0076FE53 /* HYQuickLoginBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYQuickLoginBtn.h; sourceTree = "<group>"; };
+		C41E8A7A1CEF444F0076FE53 /* HYQuickLoginBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYQuickLoginBtn.m; sourceTree = "<group>"; };
 		C4278FC61CDDCAE400591560 /* HYSubTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSubTagItem.h; sourceTree = "<group>"; };
 		C4278FC71CDDCAE400591560 /* HYSubTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSubTagItem.m; sourceTree = "<group>"; };
 		C4278FC91CDDCAEF00591560 /* HYSubTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSubTagCell.h; sourceTree = "<group>"; };
@@ -199,6 +207,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C41E8A6D1CEF3AE60076FE53 /* Login(登陆) */ = {
+			isa = PBXGroup;
+			children = (
+				C41E8A6E1CEF3AE60076FE53 /* Controller */,
+				C41E8A6F1CEF3AE60076FE53 /* Model */,
+				C41E8A701CEF3AE60076FE53 /* View */,
+			);
+			path = "Login(登陆)";
+			sourceTree = "<group>";
+		};
+		C41E8A6E1CEF3AE60076FE53 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C41E8A711CEF3AFF0076FE53 /* HYLoginController.h */,
+				C41E8A721CEF3AFF0076FE53 /* HYLoginController.m */,
+				C41E8A731CEF3AFF0076FE53 /* HYLoginController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C41E8A6F1CEF3AE60076FE53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C41E8A701CEF3AE60076FE53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C41E8A791CEF444F0076FE53 /* HYQuickLoginBtn.h */,
+				C41E8A7A1CEF444F0076FE53 /* HYQuickLoginBtn.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C4636BA81CE5FADD00B1C888 /* Publish(发布) */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +298,7 @@
 				C48B75F31C55F39800004871 /* Main(主要) */,
 				C478DC071C453BD500164830 /* AD(广告) */,
 				C478DC281C453BD500164830 /* Setting(设置) */,
+				C41E8A6D1CEF3AE60076FE53 /* Login(登陆) */,
 				C478DC0B1C453BD500164830 /* Essence(精华) */,
 				C4636BA81CE5FADD00B1C888 /* Publish(发布) */,
 				C478DC0F1C453BD500164830 /* FriendTrends(关注) */,
@@ -686,6 +731,7 @@
 				C4278FCD1CDDCAEF00591560 /* HYSubTagCell.xib in Resources */,
 				C4AE1D0B1CC20C7400EFF7CF /* HYHtmlController.xib in Resources */,
 				C44C92651C8FE422002FC507 /* HYTopicVideoView.xib in Resources */,
+				C41E8A751CEF3AFF0076FE53 /* HYLoginController.xib in Resources */,
 				C4636BAD1CE5FAFC00B1C888 /* HYPublishController.xib in Resources */,
 				C478DBFC1C45358800164830 /* Assets.xcassets in Resources */,
 				C4DA922A1C7AAA2B0080C9C3 /* LaunchImage-800-667h@2x.png in Resources */,
@@ -763,6 +809,7 @@
 				C48B75EE1C52E28100004871 /* UIImage+HYOriginal.m in Sources */,
 				C4278FCC1CDDCAEF00591560 /* HYSubTagCell.m in Sources */,
 				C478DC3D1C4544FF00164830 /* HYNewController.m in Sources */,
+				C41E8A741CEF3AFF0076FE53 /* HYLoginController.m in Sources */,
 				C4DF628A1C818AB100F6C963 /* HYTitleButton.m in Sources */,
 				C4DF62961C83336A00F6C963 /* HYVoiceViewController.m in Sources */,
 				C478DC371C4544CF00164830 /* HYFriendTrendsController.m in Sources */,
@@ -777,6 +824,7 @@
 				C4DF62931C83334700F6C963 /* HYVideoViewController.m in Sources */,
 				C49E5A951C7B45AB003EDCB0 /* HYAdItem.m in Sources */,
 				C4DA921D1C7AA9600080C9C3 /* HYAdController.m in Sources */,
+				C41E8A7B1CEF444F0076FE53 /* HYQuickLoginBtn.m in Sources */,
 				C48B76021C564EF600004871 /* UIBarButtonItem+HYItem.m in Sources */,
 				C4CB4E2B1C5F7F0B006FE981 /* HYNavigationController.m in Sources */,
 				C4DA290E1C8866CC00B2DBDB /* HYHeader.m in Sources */,

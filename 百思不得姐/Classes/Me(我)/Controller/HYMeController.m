@@ -11,6 +11,7 @@
 #import "HYSquareItem.h"
 #import "HYSquareCell.h"
 #import "HYHtmlController.h"
+#import "HYLoginController.h"
 
 #import <AFNetworking/AFNetworking.h>
 #import <MJExtension/MJExtension.h>
@@ -139,6 +140,15 @@ static NSString *const ID = @"cell";
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
     }];
+}
+
+#pragma mark - UITableViewDataSource
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0 && indexPath.row == 0) {
+        HYLoginController *loginController = [[HYLoginController alloc] init];
+        [self presentViewController:loginController animated:YES completion:nil];
+    }
 }
 
 #pragma mark - UICollectionViewDataSource
