@@ -32,6 +32,9 @@
                     <state key="normal" title="点击查看大图" image="see-big-picture" backgroundImage="see-big-picture-background">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="seeBigPicture" destination="JCX-Ei-5FH" eventType="touchUpInside" id="Ze5-BT-lLS"/>
+                    </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common-gif" translatesAutoresizingMaskIntoConstraints="NO" id="9OK-hY-EzU">
                     <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>

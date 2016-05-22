@@ -251,8 +251,8 @@
                             </constraints>
                             <variation key="default">
                                 <mask key="constraints">
-                                    <exclude reference="mXa-Kd-24Y"/>
                                     <exclude reference="Zb4-lL-8ZD"/>
+                                    <exclude reference="mXa-Kd-24Y"/>
                                     <exclude reference="ncC-NY-Acm"/>
                                     <exclude reference="mwP-ur-61v"/>
                                     <exclude reference="gWR-aJ-D9v"/>
@@ -301,8 +301,8 @@
             </constraints>
             <variation key="default">
                 <mask key="constraints">
-                    <exclude reference="hvJ-QH-glo"/>
                     <exclude reference="R7D-UP-Kb1"/>
+                    <exclude reference="hvJ-QH-glo"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="210" y="237"/>

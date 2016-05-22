@@ -50,6 +50,8 @@
 		C4AE1D0B1CC20C7400EFF7CF /* HYHtmlController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4AE1D091CC20C7400EFF7CF /* HYHtmlController.xib */; };
 		C4CB4E281C5EF563006FE981 /* HYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CB4E271C5EF563006FE981 /* HYSettingController.m */; };
 		C4CB4E2B1C5F7F0B006FE981 /* HYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CB4E2A1C5F7F0B006FE981 /* HYNavigationController.m */; };
+		C4D557271CF1F1BD0042D0D6 /* HYSeeBigPictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D557251CF1F1BD0042D0D6 /* HYSeeBigPictureController.m */; };
+		C4D557281CF1F1BD0042D0D6 /* HYSeeBigPictureController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4D557261CF1F1BD0042D0D6 /* HYSeeBigPictureController.xib */; };
 		C4DA290E1C8866CC00B2DBDB /* HYHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DA290D1C8866CC00B2DBDB /* HYHeader.m */; };
 		C4DA29111C886AC400B2DBDB /* HYFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DA29101C886AC400B2DBDB /* HYFooter.m */; };
 		C4DA921D1C7AA9600080C9C3 /* HYAdController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DA921B1C7AA9600080C9C3 /* HYAdController.m */; };
@@ -148,6 +150,9 @@
 		C4CB4E271C5EF563006FE981 /* HYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSettingController.m; sourceTree = "<group>"; };
 		C4CB4E291C5F7F0B006FE981 /* HYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYNavigationController.h; sourceTree = "<group>"; };
 		C4CB4E2A1C5F7F0B006FE981 /* HYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYNavigationController.m; sourceTree = "<group>"; };
+		C4D557241CF1F1BD0042D0D6 /* HYSeeBigPictureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSeeBigPictureController.h; sourceTree = "<group>"; };
+		C4D557251CF1F1BD0042D0D6 /* HYSeeBigPictureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSeeBigPictureController.m; sourceTree = "<group>"; };
+		C4D557261CF1F1BD0042D0D6 /* HYSeeBigPictureController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYSeeBigPictureController.xib; sourceTree = "<group>"; };
 		C4DA290C1C8866CC00B2DBDB /* HYHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYHeader.h; sourceTree = "<group>"; };
 		C4DA290D1C8866CC00B2DBDB /* HYHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYHeader.m; sourceTree = "<group>"; };
 		C4DA290F1C886AC400B2DBDB /* HYFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYFooter.h; sourceTree = "<group>"; };
@@ -375,6 +380,9 @@
 				C4278FE51CE0505100591560 /* HYVideoPlayController.h */,
 				C4278FE61CE0505100591560 /* HYVideoPlayController.m */,
 				C4278FE71CE0505100591560 /* HYVideoPlayController.xib */,
+				C4D557241CF1F1BD0042D0D6 /* HYSeeBigPictureController.h */,
+				C4D557251CF1F1BD0042D0D6 /* HYSeeBigPictureController.m */,
+				C4D557261CF1F1BD0042D0D6 /* HYSeeBigPictureController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -735,6 +743,7 @@
 				C4636BAD1CE5FAFC00B1C888 /* HYPublishController.xib in Resources */,
 				C478DBFC1C45358800164830 /* Assets.xcassets in Resources */,
 				C4DA922A1C7AAA2B0080C9C3 /* LaunchImage-800-667h@2x.png in Resources */,
+				C4D557281CF1F1BD0042D0D6 /* HYSeeBigPictureController.xib in Resources */,
 				C4DA92271C7AAA2B0080C9C3 /* LaunchImage-568h@2x.png in Resources */,
 				C4DA92291C7AAA2B0080C9C3 /* LaunchImage-700@2x.png in Resources */,
 				C4AE1CF11CB545E500EFF7CF /* HYMeController.storyboard in Resources */,
@@ -836,6 +845,7 @@
 				C4AE1CFB1CBFDCB100EFF7CF /* HYSquareCell.m in Sources */,
 				C44C92591C8FE373002FC507 /* HYTopicPictureView.m in Sources */,
 				C4AE1D0A1CC20C7400EFF7CF /* HYHtmlController.m in Sources */,
+				C4D557271CF1F1BD0042D0D6 /* HYSeeBigPictureController.m in Sources */,
 				C4278FC81CDDCAE400591560 /* HYSubTagItem.m in Sources */,
 				C4636BAC1CE5FAFC00B1C888 /* HYPublishController.m in Sources */,
 				C48B75FC1C55F3C700004871 /* HYTabBar.m in Sources */,

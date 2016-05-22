@@ -8,6 +8,7 @@
 
 #import "HYTopicPictureView.h"
 #import "HYTopicItem.h"
+#import "HYSeeBigPictureController.h"
 
 #import <UIImageView+WebCache.h>
 
@@ -23,6 +24,19 @@
 @end
 
 @implementation HYTopicPictureView
+
+- (void)awakeFromNib
+{
+    self.imageView.userInteractionEnabled = YES;
+    [self.imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(seeBigPicture)]];
+}
+
+- (IBAction)seeBigPicture
+{
+    HYSeeBigPictureController *seeBigPictureController = [[HYSeeBigPictureController alloc] init];
+    seeBigPictureController.topicItem = self.topicItem;
+    [self.window.rootViewController presentViewController:seeBigPictureController animated:YES completion:nil];
+}
 
 - (void)setTopicItem:(HYTopicItem *)topicItem
 {
