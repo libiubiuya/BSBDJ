@@ -40,7 +40,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
-    [self.view.layer addSublayer:self.layer];
+    [self.view.layer insertSublayer:self.layer atIndex:0];
 }
 
 /**
