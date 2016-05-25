@@ -7,6 +7,9 @@
 //
 
 #import "HYLoginController.h"
+#import "HYMeController.h"
+
+#import "MBProgressHUD+HYHUD.h"
 
 @interface HYLoginController ()<UITextFieldDelegate>
 
@@ -70,6 +73,40 @@
     if (sender.on == YES) {
         [_rmbPwdSwitch setOn:YES animated:YES];
     }
+}
+
+/**
+ *  点击登录按钮时调用
+ */
+- (IBAction)login:(UIButton *)sender
+{
+    [MBProgressHUD showMessage:@"正在登录ing..."];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        // 隐藏蒙版
+        [MBProgressHUD hideHUD];
+        
+        if ([_accountField.text isEqualToString:@"lhy"] && [_passwordField.text isEqualToString:@"123"]) {
+            
+            // 登录成功
+            [MBProgressHUD showSuccess:@"登录成功"];
+            
+            // 关掉当前页面，把值传给之前的界面显示
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                
+                // 关掉当前页面
+                [self close];
+                
+                // 设置tableView第一个cell为用户名
+                NSLog(@"%@", self.superclass);
+            });
+            
+        } else {
+            // 提示用户输入账户或者密码错误
+            [MBProgressHUD showError:@"账户或者密码错误"];
+        }
+    });
 }
 
 /**

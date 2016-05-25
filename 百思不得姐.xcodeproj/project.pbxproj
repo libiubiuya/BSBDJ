@@ -70,6 +70,9 @@
 		C4DF62961C83336A00F6C963 /* HYVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF62951C83336A00F6C963 /* HYVoiceViewController.m */; };
 		C4DF62991C83338400F6C963 /* HYPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF62981C83338400F6C963 /* HYPictureViewController.m */; };
 		C4DF629C1C83339A00F6C963 /* HYWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DF629B1C83339A00F6C963 /* HYWordViewController.m */; };
+		C50D0D641CF59E4C00D163F4 /* MBProgressHUD+HYHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C50D0D631CF59E4C00D163F4 /* MBProgressHUD+HYHUD.m */; };
+		C5A512AF1CF597BC004C1B81 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5A512AC1CF597BC004C1B81 /* MBProgressHUD.bundle */; };
+		C5A512B01CF597BC004C1B81 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A512AE1CF597BC004C1B81 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -181,6 +184,11 @@
 		C4DF62981C83338400F6C963 /* HYPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPictureViewController.m; sourceTree = "<group>"; };
 		C4DF629A1C83339A00F6C963 /* HYWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYWordViewController.h; sourceTree = "<group>"; };
 		C4DF629B1C83339A00F6C963 /* HYWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYWordViewController.m; sourceTree = "<group>"; };
+		C50D0D621CF59E4C00D163F4 /* MBProgressHUD+HYHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+HYHUD.h"; sourceTree = "<group>"; };
+		C50D0D631CF59E4C00D163F4 /* MBProgressHUD+HYHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+HYHUD.m"; sourceTree = "<group>"; };
+		C5A512AC1CF597BC004C1B81 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		C5A512AD1CF597BC004C1B81 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		C5A512AE1CF597BC004C1B81 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +299,7 @@
 		C478DBEF1C45358800164830 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C5A512AB1CF597BC004C1B81 /* MBProgressHUD */,
 				C4DA921F1C7AAA2B0080C9C3 /* LaunchImage */,
 				C478DBF01C45358800164830 /* main.m */,
 			);
@@ -669,6 +678,18 @@
 			path = LaunchImage;
 			sourceTree = "<group>";
 		};
+		C5A512AB1CF597BC004C1B81 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				C5A512AC1CF597BC004C1B81 /* MBProgressHUD.bundle */,
+				C5A512AD1CF597BC004C1B81 /* MBProgressHUD.h */,
+				C5A512AE1CF597BC004C1B81 /* MBProgressHUD.m */,
+				C50D0D621CF59E4C00D163F4 /* MBProgressHUD+HYHUD.h */,
+				C50D0D631CF59E4C00D163F4 /* MBProgressHUD+HYHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -734,6 +755,7 @@
 				C4DA922C1C7AAA2B0080C9C3 /* LaunchImage.png in Resources */,
 				C4DA922D1C7AAA2B0080C9C3 /* LaunchImage@2x.png in Resources */,
 				C44C925B1C8FE38D002FC507 /* HYTopicPictureView.xib in Resources */,
+				C5A512AF1CF597BC004C1B81 /* MBProgressHUD.bundle in Resources */,
 				C4AE1CFC1CBFDCB100EFF7CF /* HYSquareCell.xib in Resources */,
 				C4278FE91CE0505200591560 /* HYVideoPlayController.xib in Resources */,
 				C4278FCD1CDDCAEF00591560 /* HYSubTagCell.xib in Resources */,
@@ -823,8 +845,10 @@
 				C4DF62961C83336A00F6C963 /* HYVoiceViewController.m in Sources */,
 				C478DC371C4544CF00164830 /* HYFriendTrendsController.m in Sources */,
 				C4DF629C1C83339A00F6C963 /* HYWordViewController.m in Sources */,
+				C5A512B01CF597BC004C1B81 /* MBProgressHUD.m in Sources */,
 				C4AE1CF41CBA1C1200EFF7CF /* HYMeController.m in Sources */,
 				C4278FE81CE0505200591560 /* HYVideoPlayController.m in Sources */,
+				C50D0D641CF59E4C00D163F4 /* MBProgressHUD+HYHUD.m in Sources */,
 				C4DF62991C83338400F6C963 /* HYPictureViewController.m in Sources */,
 				C478DBF11C45358800164830 /* main.m in Sources */,
 				C4DA29111C886AC400B2DBDB /* HYFooter.m in Sources */,

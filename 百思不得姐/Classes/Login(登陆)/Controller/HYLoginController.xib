@@ -86,6 +86,9 @@
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <state key="normal" title="登陆" backgroundImage="login_register_button"/>
                             <state key="highlighted" backgroundImage="login_register_button_click"/>
+                            <connections>
+                                <action selector="login:" destination="-1" eventType="touchUpInside" id="zcp-4m-ILg"/>
+                            </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oy3-lC-oSI">
                             <rect key="frame" x="167" y="122" width="266" height="68"/>
