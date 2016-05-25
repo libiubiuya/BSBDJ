@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HYLoginController">
             <connections>
+                <outlet property="accountField" destination="xyL-cH-843" id="edy-67-Ftp"/>
+                <outlet property="autoLoginSwitch" destination="mkU-Tv-M39" id="aQl-gK-e6V"/>
+                <outlet property="loginBtn" destination="f5q-6e-ghy" id="370-MS-Zrn"/>
+                <outlet property="passwordField" destination="6R3-Bm-HAo" id="RBN-3g-i8h"/>
+                <outlet property="rmbPwdSwitch" destination="awI-ig-Ce0" id="Ye5-fG-EGM"/>
                 <outlet property="view" destination="a3D-qc-3Dd" id="wzC-WI-yXB"/>
             </connections>
         </placeholder>
@@ -72,7 +77,7 @@
                                 <constraint firstItem="6R3-Bm-HAo" firstAttribute="height" secondItem="xyL-cH-843" secondAttribute="height" id="Pkt-QS-lH4"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5q-6e-ghy">
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5q-6e-ghy">
                             <rect key="frame" x="167" y="200" width="266" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="266" id="jbx-uT-U5d"/>
@@ -109,6 +114,9 @@
                                         <constraint firstAttribute="width" constant="49" id="sqA-z3-GVs"/>
                                         <constraint firstAttribute="height" constant="31" id="uSK-AF-wz8"/>
                                     </constraints>
+                                    <connections>
+                                        <action selector="autoLoginChange:" destination="-1" eventType="valueChanged" id="Moq-59-C83"/>
+                                    </connections>
                                 </switch>
                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="awI-ig-Ce0">
                                     <rect key="frame" x="78" y="18" width="51" height="31"/>
@@ -116,6 +124,9 @@
                                         <constraint firstAttribute="width" constant="49" id="AUo-4T-HSQ"/>
                                         <constraint firstAttribute="height" constant="31" id="bxd-8e-IC8"/>
                                     </constraints>
+                                    <connections>
+                                        <action selector="rmbPwdChange:" destination="-1" eventType="valueChanged" id="xhn-Xz-TQO"/>
+                                    </connections>
                                 </switch>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

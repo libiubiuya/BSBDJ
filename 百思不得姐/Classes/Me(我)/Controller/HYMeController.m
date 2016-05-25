@@ -167,7 +167,6 @@ static NSString *const ID = @"cell";
     return cell;
 }
 
-
 #pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {

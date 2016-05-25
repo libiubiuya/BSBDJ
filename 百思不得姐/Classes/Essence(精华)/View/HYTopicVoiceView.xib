@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -29,10 +29,14 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4a8-C4-cuQ">
-                    <rect key="frame" x="176" y="100" width="63" height="63"/>
+                    <rect key="frame" x="182" y="106" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="76q-kg-Pre"/>
+                        <constraint firstAttribute="height" constant="50" id="F4F-mX-7eP"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" image="play_voice_play" backgroundImage="playButton"/>
-                    <state key="selected" image="play_voice_pause"/>
+                    <state key="normal" image="play-voice-play" backgroundImage="playButton"/>
+                    <state key="selected" image="play-voice-pause"/>
                     <connections>
                         <action selector="playOrPause:" destination="iN0-l3-epB" eventType="touchUpInside" id="EdP-ta-zOx"/>
                     </connections>
@@ -58,12 +62,12 @@
                 <outlet property="playCountLabel" destination="Qtt-Tb-UE6" id="Gdz-it-akx"/>
                 <outlet property="voiceTimeLabel" destination="ayB-y4-ry7" id="PWp-84-dbh"/>
             </connections>
-            <point key="canvasLocation" x="307" y="314"/>
+            <point key="canvasLocation" x="541" y="277"/>
         </view>
     </objects>
     <resources>
+        <image name="play-voice-pause" width="9" height="15"/>
+        <image name="play-voice-play" width="12" height="12"/>
         <image name="playButton" width="63" height="63"/>
-        <image name="play_voice_pause" width="22" height="23"/>
-        <image name="play_voice_play" width="21" height="23"/>
     </resources>
 </document>
