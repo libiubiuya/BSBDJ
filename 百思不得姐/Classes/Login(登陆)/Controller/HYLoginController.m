@@ -98,8 +98,6 @@
                 // 关掉当前页面
                 [self close];
                 
-                // 设置tableView第一个cell为用户名
-                NSLog(@"%@", self.superclass);
             });
             
         } else {

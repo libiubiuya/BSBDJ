@@ -69,12 +69,12 @@ static NSString *const ID = @"cell";
  */
 - (void)setting
 {
-    HYSettingController *setting = [[HYSettingController alloc] init];
-    
-    // 隐藏tabBar
-    setting.hidesBottomBarWhenPushed = YES;
-    
-    [self.navigationController pushViewController:setting animated:YES];
+//    HYSettingController *setting = [[HYSettingController alloc] init];
+//    
+//    // 隐藏tabBar
+//    setting.hidesBottomBarWhenPushed = YES;
+//    
+//    [self.navigationController pushViewController:setting animated:YES];
 }
 
 /**

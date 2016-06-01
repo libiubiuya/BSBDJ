@@ -16,16 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"jump" style:0 target:self action:@selector(jump)];
 }
-
-- (void)jump
-{
-    UIViewController *vc = [[UIViewController alloc] init];
-    vc.view.backgroundColor = [UIColor orangeColor];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-
 
 @end
